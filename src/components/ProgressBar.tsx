@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 interface ProgressBarProps {
   current: number;
   total: number;
@@ -8,18 +10,15 @@ export default function ProgressBar({ current, total }: ProgressBarProps) {
 
   return (
     <div className="w-full">
-      <div className="flex justify-between items-center mb-2">
-        <span className="text-sm font-semibold text-gray-300">
-          İlerleme
-        </span>
-        <span className="text-sm text-gray-300">
-          {current} / {total}
-        </span>
-      </div>
-      <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden border border-gray-600">
-        <div
-          className="bg-white h-full rounded-full transition-all duration-300"
-          style={{ width: `${percentage}%` }}
+      <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden border border-white/20 backdrop-blur-sm">
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: `${percentage}%` }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="h-full bg-linear-to-r from-purple-400 via-pink-400 to-purple-400 rounded-full shadow-modern"
+          style={{
+            backgroundSize: '200% 100%',
+          }}
         />
       </div>
     </div>

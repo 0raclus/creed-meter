@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { CheckCircle2, Circle } from 'lucide-react';
 import type { Question } from '../types';
 
 interface QuestionCardProps {
@@ -15,82 +17,128 @@ const categoryLabels: Record<string, string> = {
   modernite: 'Modernite'
 };
 
+const categoryColors: Record<string, string> = {
+  akide: 'from-blue-500 to-blue-600',
+  fiqh_usul: 'from-purple-500 to-purple-600',
+  fiqh_amel: 'from-green-500 to-green-600',
+  tasavvuf: 'from-pink-500 to-pink-600',
+  siyaset: 'from-orange-500 to-orange-600',
+  modernite: 'from-cyan-500 to-cyan-600'
+};
+
 export default function QuestionCard({
   question,
   onAnswer,
   selectedAnswer
 }: QuestionCardProps) {
+  const categoryColor = categoryColors[question.category] || 'from-gray-500 to-gray-600';
+
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-10 border-2 border-black">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.4 }}
+      className="w-full h-full flex flex-col"
+    >
       {/* Kategori Badge */}
-      <div className="inline-block px-4 py-2 rounded-full text-sm font-bold mb-6 bg-black text-white border-2 border-black">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.1, duration: 0.3 }}
+        className={`inline-block px-4 py-2 rounded-full text-sm font-bold mb-6 bg-linear-to-r ${categoryColor} text-white shadow-modern w-fit`}
+      >
         {categoryLabels[question.category]}
-      </div>
+      </motion.div>
 
       {/* Soru Başlığı */}
-      <h2 className="text-4xl font-bold text-black mb-3 leading-tight" style={{ fontFamily: 'Space Grotesk' }}>
+      <motion.h2
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.15, duration: 0.4 }}
+        className="text-5xl font-bold text-black mb-6 leading-tight"
+        style={{ fontFamily: 'Space Grotesk' }}
+      >
         {question.text}
-      </h2>
+      </motion.h2>
 
-      <div className="h-1 w-20 bg-black rounded-full mb-8"></div>
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: 80 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        className="h-1 bg-linear-to-r from-purple-500 to-pink-500 rounded-full mb-8"
+      />
 
       {/* Cevap Seçenekleri */}
-      <div className="space-y-4">
+      <div className="space-y-3 flex-1">
         {question.options.map((option, index) => (
-          <button
+          <motion.button
             key={option.id}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 + index * 0.05, duration: 0.3 }}
+            whileHover={{ scale: 1.02, x: 5 }}
+            whileTap={{ scale: 0.98 }}
             onClick={() => onAnswer(option.id)}
-            className={`w-full text-left p-5 rounded-xl border-2 transition-all duration-200 group ${
+            className={`w-full text-left p-5 rounded-xl transition-all duration-300 group ${
               selectedAnswer === option.id
-                ? 'border-black bg-black text-white shadow-lg'
-                : 'border-black bg-white text-black hover:bg-gray-50'
+                ? 'bg-linear-to-r from-purple-500 to-pink-500 text-white border border-purple-600'
+                : 'bg-white text-black border border-gray-200 hover:border-purple-300'
             }`}
+            style={{
+              boxShadow: selectedAnswer === option.id
+                ? '0 20px 50px rgba(0, 0, 0, 0.15)'
+                : 'none'
+            }}
+            onMouseEnter={(e) => {
+              if (selectedAnswer !== option.id) {
+                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (selectedAnswer !== option.id) {
+                e.currentTarget.style.boxShadow = 'none';
+              }
+            }}
           >
             <div className="flex items-start gap-4">
               {/* Radio Button */}
-              <div
-                className={`w-6 h-6 rounded-full border-2 mt-1 flex items-center justify-center shrink-0 transition-all ${
-                  selectedAnswer === option.id
-                    ? 'border-white bg-white'
-                    : 'border-black bg-white'
-                }`}
+              <motion.div
+                initial={false}
+                animate={{
+                  scale: selectedAnswer === option.id ? 1.2 : 1,
+                }}
+                transition={{ duration: 0.2 }}
+                className="mt-1 shrink-0"
               >
-                {selectedAnswer === option.id && (
-                  <div className="w-2.5 h-2.5 bg-black rounded-full" />
+                {selectedAnswer === option.id ? (
+                  <CheckCircle2 className="w-6 h-6 text-white" />
+                ) : (
+                  <Circle className="w-6 h-6 text-gray-400 group-hover:text-purple-400" />
                 )}
-              </div>
+              </motion.div>
 
               {/* Seçenek Metni */}
               <div className="flex-1">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className={`text-sm font-bold px-2.5 py-0.5 rounded-lg ${
-                    selectedAnswer === option.id
-                      ? 'bg-white text-black'
-                      : 'bg-black text-white'
-                  }`}>
-                    {String.fromCharCode(65 + index)}
-                  </span>
-                </div>
-                <p className={`text-base leading-relaxed font-medium ${
-                  selectedAnswer === option.id
-                    ? 'text-white'
-                    : 'text-black'
-                }`} style={{ fontFamily: 'Space Grotesk' }}>
+                <p className="font-semibold text-lg leading-relaxed">
                   {option.text}
                 </p>
               </div>
             </div>
-          </button>
+          </motion.button>
         ))}
       </div>
 
-      {/* Yardımcı Metin */}
-      <div className="mt-8 p-4 bg-gray-100 rounded-lg border-2 border-black">
-        <p className="text-sm text-black font-medium">
-          <span className="font-bold">💡 İpucu:</span> Cevaplarınız ne kadar samimi olursa, sonuçlar o kadar doğru olur.
-        </p>
-      </div>
-    </div>
+      {/* Footer Info */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.3 }}
+        className="mt-8 pt-6 border-t border-gray-200 text-gray-500 text-sm"
+      >
+        Seçiminizi yaparak devam edin
+      </motion.div>
+    </motion.div>
   );
 }
 
