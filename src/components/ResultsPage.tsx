@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
-import { Award, BookOpen, Users, Zap, Share2 } from 'lucide-react';
+import { Award, BookOpen, Users, Zap, Share2, Download } from 'lucide-react';
 import type { TestResult } from '../types';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
 import { TwitterShareButton, FacebookShareButton, WhatsappShareButton, TwitterIcon, FacebookIcon, WhatsappIcon } from 'react-share';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 import schools from '../data/schools.json';
 import scholars from '../data/scholars.json';
 import recommendations from '../data/recommendations.json';
@@ -37,6 +39,47 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
     name: getSchoolName(school.school),
     value: school.percentage
   }));
+
+  const exportToPDF = async () => {
+    const element = document.getElementById('results-content');
+    if (!element) return;
+
+    try {
+      const canvas = await html2canvas(element, {
+        scale: 2,
+        useCORS: true,
+        logging: false,
+        backgroundColor: '#ffffff'
+      });
+
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF({
+        orientation: 'portrait',
+        unit: 'mm',
+        format: 'a4'
+      });
+
+      const imgWidth = 210; // A4 width in mm
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      let heightLeft = imgHeight;
+      let position = 0;
+
+      pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+      heightLeft -= 297; // A4 height in mm
+
+      while (heightLeft > 0) {
+        position = heightLeft - imgHeight;
+        pdf.addPage();
+        pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+        heightLeft -= 297;
+      }
+
+      pdf.save(`islam-mezhepleri-test-sonucu-${new Date().toISOString().split('T')[0]}.pdf`);
+    } catch (error) {
+      console.error('PDF oluşturulurken hata:', error);
+      alert('PDF oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.');
+    }
+  };
 
   return (
     <motion.div
@@ -73,46 +116,60 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
             className="h-1 bg-linear-to-r from-purple-500 to-pink-500 rounded-full mx-auto mt-4"
           />
 
-          {/* Sosyal Medya Paylaşım Butonları */}
+          {/* Sosyal Medya Paylaşım ve PDF Export Butonları */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="mt-8 flex items-center justify-center gap-4"
+            className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6"
           >
-            <div className="flex items-center gap-2 text-gray-700">
-              <Share2 className="w-5 h-5" />
-              <span className="font-medium">Sonuçlarını Paylaş:</span>
-            </div>
-            <div className="flex gap-3">
-              <TwitterShareButton
-                url={window.location.href}
-                title={`İslam Mezhepleri Kişilik Testi sonucum: ${getSchoolName(result.topSchools[0].school)} - %${result.topSchools[0].percentage.toFixed(1)}`}
-                hashtags={['İslamMezhepleri', 'KişilikTesti']}
-              >
-                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <TwitterIcon size={40} round />
-                </motion.div>
-              </TwitterShareButton>
+            {/* Sosyal Medya Paylaşım */}
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 text-gray-700">
+                <Share2 className="w-5 h-5" />
+                <span className="font-medium">Paylaş:</span>
+              </div>
+              <div className="flex gap-3">
+                <TwitterShareButton
+                  url={window.location.href}
+                  title={`İslam Mezhepleri Kişilik Testi sonucum: ${getSchoolName(result.topSchools[0].school)} - %${result.topSchools[0].percentage.toFixed(1)}`}
+                  hashtags={['İslamMezhepleri', 'KişilikTesti']}
+                >
+                  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                    <TwitterIcon size={40} round />
+                  </motion.div>
+                </TwitterShareButton>
 
-              <FacebookShareButton
-                url={window.location.href}
-                hashtag="#İslamMezhepleri"
-              >
-                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <FacebookIcon size={40} round />
-                </motion.div>
-              </FacebookShareButton>
+                <FacebookShareButton
+                  url={window.location.href}
+                  hashtag="#İslamMezhepleri"
+                >
+                  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                    <FacebookIcon size={40} round />
+                  </motion.div>
+                </FacebookShareButton>
 
-              <WhatsappShareButton
-                url={window.location.href}
-                title={`İslam Mezhepleri Kişilik Testi sonucum: ${getSchoolName(result.topSchools[0].school)} - %${result.topSchools[0].percentage.toFixed(1)}`}
-              >
-                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <WhatsappIcon size={40} round />
-                </motion.div>
-              </WhatsappShareButton>
+                <WhatsappShareButton
+                  url={window.location.href}
+                  title={`İslam Mezhepleri Kişilik Testi sonucum: ${getSchoolName(result.topSchools[0].school)} - %${result.topSchools[0].percentage.toFixed(1)}`}
+                >
+                  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                    <WhatsappIcon size={40} round />
+                  </motion.div>
+                </WhatsappShareButton>
+              </div>
             </div>
+
+            {/* PDF Export Butonu */}
+            <motion.button
+              onClick={exportToPDF}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-2 px-6 py-3 bg-linear-to-r from-green-600 to-green-700 text-white rounded-full shadow-modern hover:shadow-modern-lg transition-all duration-300 font-medium"
+            >
+              <Download className="w-5 h-5" />
+              <span>PDF İndir</span>
+            </motion.button>
           </motion.div>
         </motion.div>
 
