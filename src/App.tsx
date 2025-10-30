@@ -49,14 +49,14 @@ function App() {
 
 
   return (
-    <div className="min-h-screen bg-gradient-light">
+    <div className="min-h-screen bg-white">
       <div className="flex h-screen overflow-hidden">
-        {/* Sol Panel - Modern Tasarım */}
+        {/* Sol Panel - Soft Contrast Tasarım */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-1/3 bg-gradient-modern text-white p-8 border-r border-gray-800 flex flex-col justify-between shadow-modern-lg"
+          className="w-1/3 bg-gradient-cucumber text-white p-8 border-r-2 border-black flex flex-col justify-between shadow-modern-lg"
         >
           <div>
             {/* Header */}
@@ -71,31 +71,32 @@ function App() {
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 >
-                  <Sparkles className="w-8 h-8 text-purple-400" />
+                  <Sparkles className="w-8 h-8" style={{ color: 'rgb(66 43 33)' }} />
                 </motion.div>
-                <h1 className="text-4xl font-bold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <h1 className="text-4xl font-bold" style={{ color: 'rgb(66 43 33)' }}>
                   İslam Mezhepleri
                 </h1>
               </div>
-              <h2 className="text-2xl font-semibold text-white mb-4">Kişilik Testi</h2>
-              <p className="text-gray-300 text-sm leading-relaxed font-light">
+              <h2 className="text-2xl font-semibold" style={{ color: 'rgb(66 43 33)' }}>Kişilik Testi</h2>
+              <p className="text-sm leading-relaxed font-light" style={{ color: 'rgb(66 43 33)' }}>
                 Teolojik, fıkhi, tasavvufi, siyasi ve felsefi eğilimlerinizi keşfedin.
               </p>
             </motion.div>
 
             {/* Progress Card */}
             <motion.div
-              className="bg-white/10 backdrop-blur-md rounded-2xl p-6 mb-8 border border-white/20 shadow-modern"
+              className="bg-white rounded-2xl p-6 mb-8 border-2 border-black shadow-modern"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
-                  <Zap className="w-5 h-5 text-yellow-400" />
-                  <span className="text-white font-semibold text-sm">İlerleme</span>
+                  <Zap className="w-5 h-5" style={{ color: 'rgb(228 208 133)' }} />
+                  <span className="font-semibold text-sm" style={{ color: 'rgb(66 43 33)' }}>İlerleme</span>
                 </div>
                 <motion.span
-                  className="text-white font-bold text-lg"
+                  className="font-bold text-lg"
+                  style={{ color: 'rgb(66 43 33)' }}
                   key={currentQuestion}
                   initial={{ scale: 1.2 }}
                   animate={{ scale: 1 }}
@@ -106,7 +107,8 @@ function App() {
               </div>
               <ProgressBar current={currentQuestion + 1} total={questions.length} />
               <motion.p
-                className="text-gray-300 text-xs mt-3"
+                className="text-xs mt-3"
+                style={{ color: 'rgb(66 43 33)' }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -122,12 +124,12 @@ function App() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              <div className="text-gray-300 text-sm">
-                <p className="font-semibold text-white mb-2 flex items-center gap-2">
+              <div className="text-sm">
+                <p className="font-semibold mb-2 flex items-center gap-2" style={{ color: 'rgb(66 43 33)' }}>
                   <BookOpen className="w-4 h-4" />
                   Kategori:
                 </p>
-                <p className="text-gray-200 font-medium">
+                <p className="font-medium" style={{ color: 'rgb(66 43 33)' }}>
                   {questions[currentQuestion]?.category === 'akide' && '📖 Akide (İnanç)'}
                   {questions[currentQuestion]?.category === 'fiqh_usul' && '⚖️ Fıkıh Usulü (Metodoloji)'}
                   {questions[currentQuestion]?.category === 'fiqh_amel' && '🤲 Fıkıh Ameli (Pratik)'}
@@ -143,14 +145,19 @@ function App() {
             <button
               onClick={() => setCurrentQuestion(Math.max(0, currentQuestion - 1))}
               disabled={currentQuestion === 0}
-              className="flex-1 px-4 py-3 bg-gray-800 text-white rounded-lg disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-700 transition font-semibold border border-gray-600"
+              className="flex-1 px-4 py-3 bg-white rounded-lg disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition font-semibold border-2 border-black"
+              style={{ color: 'rgb(66 43 33)' }}
             >
               ← Geri
             </button>
             <button
               onClick={() => handleAnswer(answers[questions[currentQuestion].id] || '')}
               disabled={!answers[questions[currentQuestion].id]}
-              className="flex-1 px-4 py-3 bg-white text-black rounded-lg disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-100 transition font-bold border border-black"
+              className="flex-1 px-4 py-3 rounded-lg disabled:opacity-30 disabled:cursor-not-allowed transition font-bold border-2 border-black"
+              style={{
+                backgroundColor: 'rgb(228 208 133)',
+                color: 'rgb(66 43 33)'
+              }}
             >
               {currentQuestion === questions.length - 1 ? 'Tamamla ✓' : 'İleri →'}
             </button>
@@ -162,7 +169,7 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="w-2/3 bg-gradient-light p-12 overflow-y-auto flex items-center justify-center border-l border-gray-200"
+          className="w-2/3 bg-white p-12 overflow-y-auto flex items-center justify-center"
         >
           <div className="w-full max-w-2xl">
             <QuestionCard

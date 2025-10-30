@@ -86,7 +86,7 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen bg-gradient-light py-12"
+      className="min-h-screen bg-white py-12"
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Başlık */}
@@ -101,19 +101,20 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           >
-            <Award className="w-12 h-12 text-purple-500" />
+            <Award className="w-12 h-12" style={{ color: 'rgb(168 185 119)' }} />
           </motion.div>
           <h1 className="text-5xl font-bold text-black mb-3" style={{ fontFamily: 'Space Grotesk' }}>
             Sonuçlarınız Hazır!
           </h1>
-          <p className="text-xl text-gray-700 font-medium">
+          <p className="text-xl font-medium" style={{ color: 'rgb(66 43 33)' }}>
             İslam mezhepleri ve düşünce ekollerindeki konumunuz
           </p>
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="h-1 bg-linear-to-r from-purple-500 to-pink-500 rounded-full mx-auto mt-4"
+            className="h-1 rounded-full mx-auto mt-4"
+            style={{ backgroundColor: 'rgb(168 185 119)' }}
           />
 
           {/* Sosyal Medya Paylaşım ve PDF Export Butonları */}
@@ -125,7 +126,7 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
           >
             {/* Sosyal Medya Paylaşım */}
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2 text-gray-700">
+              <div className="flex items-center gap-2" style={{ color: 'rgb(66 43 33)' }}>
                 <Share2 className="w-5 h-5" />
                 <span className="font-medium">Paylaş:</span>
               </div>
@@ -165,7 +166,8 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
               onClick={exportToPDF}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-6 py-3 bg-linear-to-r from-green-600 to-green-700 text-white rounded-full shadow-modern hover:shadow-modern-lg transition-all duration-300 font-medium"
+              className="flex items-center gap-2 px-6 py-3 rounded-full shadow-modern hover:shadow-modern-lg transition-all duration-300 font-medium border-2 border-black"
+              style={{ backgroundColor: 'rgb(170 198 173)', color: 'rgb(66 43 33)' }}
             >
               <Download className="w-5 h-5" />
               <span>PDF İndir</span>
@@ -173,19 +175,21 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
           </motion.div>
         </motion.div>
 
-        {/* Ana Profil Kartları */}
-        <motion.div
-          className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        >
+        {/* PDF Export için içerik wrapper */}
+        <div id="results-content">
+          {/* Ana Profil Kartları */}
+          <motion.div
+            className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
           {result.topSchools.slice(0, 3).map((school, index) => {
             const schoolData = schools.find(s => s.id === school.school) as any;
-            const gradients = [
-              'bg-linear-to-br from-purple-600 to-purple-800',
-              'bg-linear-to-br from-pink-600 to-pink-800',
-              'bg-linear-to-br from-blue-600 to-blue-800'
+            const colors = [
+              { bg: 'rgb(168 185 119)', text: 'rgb(66 43 33)' }, // Cucumber
+              { bg: 'rgb(235 153 119)', text: 'rgb(66 43 33)' }, // Grapefruit
+              { bg: 'rgb(170 198 173)', text: 'rgb(66 43 33)' }  // Mint
             ];
             return (
               <motion.div
@@ -194,7 +198,8 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className={`${gradients[index]} rounded-2xl shadow-modern-lg p-8 text-white border border-white/20`}
+                className="rounded-2xl shadow-modern-lg p-8 border-2 border-black"
+                style={{ backgroundColor: colors[index].bg, color: colors[index].text }}
               >
                 <div className="flex items-center justify-between mb-4">
                   <motion.span
@@ -214,8 +219,8 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
                   </motion.span>
                 </div>
                 <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Space Grotesk' }}>{getSchoolName(school.school)}</h3>
-                <p className="text-sm text-white/70 mb-4">{schoolData?.era}</p>
-                <p className="text-sm leading-relaxed text-white/80">{schoolData?.description}</p>
+                <p className="text-sm mb-4 opacity-70">{schoolData?.era}</p>
+                <p className="text-sm leading-relaxed opacity-80">{schoolData?.description}</p>
               </motion.div>
             );
           })}
@@ -428,6 +433,7 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
             🖨️ Yazdır
           </motion.button>
         </motion.div>
+        </div> {/* results-content wrapper end */}
       </div>
     </motion.div>
   );

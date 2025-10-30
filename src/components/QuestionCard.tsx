@@ -17,13 +17,13 @@ const categoryLabels: Record<string, string> = {
   modernite: 'Modernite'
 };
 
-const categoryColors: Record<string, string> = {
-  akide: 'from-blue-500 to-blue-600',
-  fiqh_usul: 'from-purple-500 to-purple-600',
-  fiqh_amel: 'from-green-500 to-green-600',
-  tasavvuf: 'from-pink-500 to-pink-600',
-  siyaset: 'from-orange-500 to-orange-600',
-  modernite: 'from-cyan-500 to-cyan-600'
+const categoryColors: Record<string, { bg: string, text: string }> = {
+  akide: { bg: 'rgb(170 198 173)', text: 'rgb(66 43 33)' }, // Mint
+  fiqh_usul: { bg: 'rgb(168 185 119)', text: 'rgb(66 43 33)' }, // Cucumber
+  fiqh_amel: { bg: 'rgb(228 208 133)', text: 'rgb(66 43 33)' }, // Lemon
+  tasavvuf: { bg: 'rgb(235 153 119)', text: 'rgb(66 43 33)' }, // Grapefruit
+  siyaset: { bg: 'rgb(220 49 47)', text: 'white' }, // Strawberry
+  modernite: { bg: 'rgb(66 43 33)', text: 'white' } // Chocolate
 };
 
 export default function QuestionCard({
@@ -31,7 +31,7 @@ export default function QuestionCard({
   onAnswer,
   selectedAnswer
 }: QuestionCardProps) {
-  const categoryColor = categoryColors[question.category] || 'from-gray-500 to-gray-600';
+  const categoryColor = categoryColors[question.category] || { bg: 'rgb(168 185 119)', text: 'rgb(66 43 33)' };
 
   return (
     <motion.div
@@ -46,7 +46,8 @@ export default function QuestionCard({
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.1, duration: 0.3 }}
-        className={`inline-block px-4 py-2 rounded-full text-sm font-bold mb-6 bg-linear-to-r ${categoryColor} text-white shadow-modern w-fit`}
+        className="inline-block px-4 py-2 rounded-full text-sm font-bold mb-6 shadow-modern w-fit border-2 border-black"
+        style={{ backgroundColor: categoryColor.bg, color: categoryColor.text }}
       >
         {categoryLabels[question.category]}
       </motion.div>
@@ -66,7 +67,8 @@ export default function QuestionCard({
         initial={{ width: 0 }}
         animate={{ width: 80 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="h-1 bg-linear-to-r from-purple-500 to-pink-500 rounded-full mb-8"
+        className="h-1 rounded-full mb-8"
+        style={{ backgroundColor: categoryColor.bg }}
       />
 
       {/* Cevap Seçenekleri */}
@@ -80,12 +82,10 @@ export default function QuestionCard({
             whileHover={{ scale: 1.02, x: 5 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => onAnswer(option.id)}
-            className={`w-full text-left p-5 rounded-xl transition-all duration-300 group ${
-              selectedAnswer === option.id
-                ? 'bg-linear-to-r from-purple-500 to-pink-500 text-white border border-purple-600'
-                : 'bg-white text-black border border-gray-200 hover:border-purple-300'
-            }`}
+            className="w-full text-left p-5 rounded-xl transition-all duration-300 group border-2 border-black"
             style={{
+              backgroundColor: selectedAnswer === option.id ? categoryColor.bg : 'white',
+              color: selectedAnswer === option.id ? categoryColor.text : 'rgb(66 43 33)',
               boxShadow: selectedAnswer === option.id
                 ? '0 20px 50px rgba(0, 0, 0, 0.15)'
                 : 'none'
@@ -112,9 +112,9 @@ export default function QuestionCard({
                 className="mt-1 shrink-0"
               >
                 {selectedAnswer === option.id ? (
-                  <CheckCircle2 className="w-6 h-6 text-white" />
+                  <CheckCircle2 className="w-6 h-6" style={{ color: categoryColor.text }} />
                 ) : (
-                  <Circle className="w-6 h-6 text-gray-400 group-hover:text-purple-400" />
+                  <Circle className="w-6 h-6 text-gray-400" />
                 )}
               </motion.div>
 
@@ -134,7 +134,8 @@ export default function QuestionCard({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.3 }}
-        className="mt-8 pt-6 border-t border-gray-200 text-gray-500 text-sm"
+        className="mt-8 pt-6 border-t-2 border-black text-sm"
+        style={{ color: 'rgb(66 43 33)' }}
       >
         Seçiminizi yaparak devam edin
       </motion.div>
