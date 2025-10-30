@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { Award, BookOpen, Users, Zap } from 'lucide-react';
+import { Award, BookOpen, Users, Zap, Share2 } from 'lucide-react';
 import type { TestResult } from '../types';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
+import { TwitterShareButton, FacebookShareButton, WhatsappShareButton, TwitterIcon, FacebookIcon, WhatsappIcon } from 'react-share';
 import schools from '../data/schools.json';
 import scholars from '../data/scholars.json';
 import recommendations from '../data/recommendations.json';
@@ -71,6 +72,48 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="h-1 bg-linear-to-r from-purple-500 to-pink-500 rounded-full mx-auto mt-4"
           />
+
+          {/* Sosyal Medya Paylaşım Butonları */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            className="mt-8 flex items-center justify-center gap-4"
+          >
+            <div className="flex items-center gap-2 text-gray-700">
+              <Share2 className="w-5 h-5" />
+              <span className="font-medium">Sonuçlarını Paylaş:</span>
+            </div>
+            <div className="flex gap-3">
+              <TwitterShareButton
+                url={window.location.href}
+                title={`İslam Mezhepleri Kişilik Testi sonucum: ${getSchoolName(result.topSchools[0].school)} - %${result.topSchools[0].percentage.toFixed(1)}`}
+                hashtags={['İslamMezhepleri', 'KişilikTesti']}
+              >
+                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                  <TwitterIcon size={40} round />
+                </motion.div>
+              </TwitterShareButton>
+
+              <FacebookShareButton
+                url={window.location.href}
+                hashtag="#İslamMezhepleri"
+              >
+                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                  <FacebookIcon size={40} round />
+                </motion.div>
+              </FacebookShareButton>
+
+              <WhatsappShareButton
+                url={window.location.href}
+                title={`İslam Mezhepleri Kişilik Testi sonucum: ${getSchoolName(result.topSchools[0].school)} - %${result.topSchools[0].percentage.toFixed(1)}`}
+              >
+                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                  <WhatsappIcon size={40} round />
+                </motion.div>
+              </WhatsappShareButton>
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* Ana Profil Kartları */}

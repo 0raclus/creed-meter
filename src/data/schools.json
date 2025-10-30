@@ -764,6 +764,580 @@
     ],
     "regions": ["Hindistan", "Pakistan", "Doğu Afrika", "Orta Asya"],
     "modernRepresentatives": ["Ağa Han", "Bohra Cemaati"]
+  },
+  {
+    "id": "athari",
+    "name": "Atharî (Ehl-i Hadis Klasik)",
+    "era": "8-10. yüzyıl",
+    "founder": "İmam Ahmed bin Hanbel, İmam Buhari",
+    "description": "Sıfatları zahiri olarak kabul, Kur'an ve Sünnet'e tam bağlılık, bid'at karşıtlığı",
+    "detailedProfile": "Atharî akidesi, Allah'ın sıfatlarını Kur'an ve Sünnet'te geçtiği şekliyle zahiri anlamda kabul eder. Teşbih ve te'vil yapmaz, sıfatları olduğu gibi alır. 'Keyf' sorusuna cevap vermez (nasıl olduğu bilinmez). Selef'in yolunu takip etme konusunda katı bir tutum sergiler. Mu'tezile'nin akılcı yaklaşımını reddeder. Modern dönemde Suudi Arabistan'da ve Körfez ülkelerinde güçlüdür.",
+    "characteristics": [
+      "Sıfatları zahiri kabul",
+      "Te'vil yapmaz",
+      "Selef'e tam bağlılık",
+      "Bid'at karşıtlığı",
+      "Akılcılığa karşı",
+      "Nassalara katı bağlılık"
+    ],
+    "regions": ["Suudi Arabistan", "Körfez", "Mısır", "Suriye"],
+    "modernRepresentatives": ["İbn Baz", "Albani", "Uteymin"],
+    "relationships": {
+      "athari": 1.0,
+      "hanbeli": 0.9,
+      "selefi": 0.85,
+      "zahiri": 0.75,
+      "esari": 0.15,
+      "maturidi": 0.1,
+      "mutazila": 0.05
+    }
+  },
+  {
+    "id": "esari",
+    "name": "Eş'arî",
+    "era": "10. yüzyıl",
+    "founder": "Ebu'l-Hasan el-Eş'arî",
+    "description": "Akıl ve nakil dengesi, sıfatlarda te'vil, Mu'tezile ile Ehl-i Hadis arasında orta yol",
+    "detailedProfile": "Eş'arî akidesi, Mu'tezile'nin aşırı akılcılığı ile Ehl-i Hadis'in zahiri yaklaşımı arasında orta bir yol benimser. Allah'ın sıfatlarını akla uygun şekilde te'vil eder. Kaza ve kader meselesinde 'kesb' (seçim) teorisini kabul eder. Kur'an'ın yaratılmışlığını reddeder. Gazzâlî, Râzî, Âmidî gibi büyük düşünürler Eş'arî mezhebine mensuptur. Mısır, Suriye, Mağrib ve Osmanlı'da yaygındır.",
+    "characteristics": [
+      "Akıl ve nakil dengesi",
+      "Sıfatlarda te'vil",
+      "Kesb teorisi",
+      "Kur'an'ın ezeliliği",
+      "Mu'tezile ile Ehl-i Hadis arasında orta yol",
+      "Felsefi yaklaşım"
+    ],
+    "regions": ["Mısır", "Suriye", "Mağrib", "Osmanlı", "Ezher"],
+    "modernRepresentatives": ["Gazzâlî", "Râzî", "Âmidî"],
+    "relationships": {
+      "esari": 1.0,
+      "maturidi": 0.8,
+      "mutazila": 0.6,
+      "athari": 0.15,
+      "selefi": 0.2,
+      "hanbeli": 0.1
+    }
+  },
+  {
+    "id": "maturidi",
+    "name": "Mâtürîdî",
+    "era": "10. yüzyıl",
+    "founder": "Ebu Mansur el-Mâtürîdî",
+    "description": "Akıl ve nakil dengesi, Eş'arî'ye benzer ama daha akılcı, Orta Asya'da yaygın",
+    "detailedProfile": "Mâtürîdî akidesi, Eş'arî mezhebine benzer şekilde akıl ve nakil arasında denge kurar, ancak akla daha fazla yer verir. Allah'ın sıfatlarını te'vil eder. Kaza ve kader meselesinde 'kesb' teorisini kabul eder. Kur'an'ın ezeliliğini savunur. Orta Asya, Osmanlı ve Hindistan'da yaygındır. Hanefî fıkhı ile birlikte yaygın olmuştur.",
+    "characteristics": [
+      "Akıl ve nakil dengesi",
+      "Akla daha fazla yer",
+      "Sıfatlarda te'vil",
+      "Kesb teorisi",
+      "Kur'an'ın ezeliliği",
+      "Hanefî fıkhı ile birlikte"
+    ],
+    "regions": ["Orta Asya", "Osmanlı", "Hindistan", "Türkiye"],
+    "modernRepresentatives": ["Osmanlı Müftüleri", "Hindistan Ulemâ"],
+    "relationships": {
+      "maturidi": 1.0,
+      "esari": 0.8,
+      "mutazila": 0.65,
+      "athari": 0.1,
+      "selefi": 0.15,
+      "hanafi": 0.85
+    }
+  },
+  {
+    "id": "quietist_salafi",
+    "name": "Sessiz Selefilik (Ilmi Selefilik)",
+    "era": "20. yüzyıl",
+    "founder": "Albani, İbn Baz",
+    "description": "Siyasetten uzak, ilmi çalışmaya odaklanmış, Medine Üniversitesi ekolü",
+    "detailedProfile": "Sessiz Selefilik, siyasi aktivizmden uzak durarak ilmi çalışmalara odaklanır. Hadis otoritesine yüksek değer verir ve bid'at karşıtlığı konusunda katıdır. Devlet otoritesine itaat etmeyi vurgular. Albani ve İbn Baz tarafından temsil edilir. Medine Üniversitesi'nde güçlü bir temele sahiptir.",
+    "characteristics": [
+      "Siyasetten uzak",
+      "İlmi çalışmaya odaklanmış",
+      "Hadis otoritesi yüksek",
+      "Bid'at karşıtlığı",
+      "Devlet otoritesine itaat",
+      "Akademik yaklaşım"
+    ],
+    "regions": ["Suudi Arabistan", "Mısır", "Körfez"],
+    "modernRepresentatives": ["Albani", "İbn Baz", "Uteymin"],
+    "relationships": {
+      "quietist_salafi": 1.0,
+      "athari": 0.9,
+      "selefi": 0.85,
+      "hanbeli": 0.8,
+      "jihadist_salafi": 0.3,
+      "esari": 0.1
+    }
+  },
+  {
+    "id": "jihadist_salafi",
+    "name": "Cihadi Selefilik",
+    "era": "20. yüzyıl (1980'ler)",
+    "founder": "Abdullah Azzam, Eyman ez-Zevahiri",
+    "description": "Siyasi aktivizm, cihad vurgusu, radikal yorumlar",
+    "detailedProfile": "Cihadi Selefilik, Selefi akideyi siyasi aktivizm ve cihad ile birleştirir. Devlet otoritesine karşı çıkabilir ve radikal yorumlar yapabilir. El-Kaide, IŞİD gibi örgütler bu ideolojiden etkilenmiştir. Sessiz Selefilikten farklı olarak siyasi mücadeleyi ön planda tutar.",
+    "characteristics": [
+      "Siyasi aktivizm",
+      "Cihad vurgusu",
+      "Radikal yorumlar",
+      "Devlet otoritesine karşı çıkabilir",
+      "Şiddet kullanabilir",
+      "Takfir eğilimi"
+    ],
+    "regions": ["Orta Doğu", "Kuzey Afrika", "Afganistan"],
+    "modernRepresentatives": ["Abdullah Azzam", "Eyman ez-Zevahiri"],
+    "relationships": {
+      "jihadist_salafi": 1.0,
+      "quietist_salafi": 0.3,
+      "selefi": 0.5,
+      "athari": 0.2,
+      "esari": 0.05,
+      "sufi": 0.05
+    }
+  },
+  {
+    "id": "mutazila",
+    "name": "Mu'tezile",
+    "era": "8. yüzyıl",
+    "founder": "Vasıl bin Ata",
+    "description": "Akılcı yaklaşım, Kur'an'ın yaratılmışlığı, adalet vurgusu",
+    "detailedProfile": "Mu'tezile, İslami düşüncede akılcı bir yaklaşım benimser. Kur'an'ın yaratılmış olduğunu savunur. Allah'ın sıfatlarını akla uygun şekilde yorumlar. İnsan özgürlüğü ve adalet konularında vurgu yapar. Abbâsî döneminde güçlü olmuş, ancak sonradan Eş'arî ve Mâtürîdî mezhepleri tarafından gölgede bırakılmıştır.",
+    "characteristics": [
+      "Akılcı yaklaşım",
+      "Kur'an'ın yaratılmışlığı",
+      "Sıfatlarda te'vil",
+      "İnsan özgürlüğü",
+      "Adalet vurgusu",
+      "Felsefi yaklaşım"
+    ],
+    "regions": ["Bağdat", "Basra", "Mısır"],
+    "modernRepresentatives": ["Vasıl bin Ata", "Nazzâm"],
+    "relationships": {
+      "mutazila": 1.0,
+      "esari": 0.6,
+      "maturidi": 0.65,
+      "athari": 0.05,
+      "selefi": 0.1,
+      "hanbeli": 0.05
+    }
+  },
+  {
+    "id": "zahiri",
+    "name": "Zâhirî (Zâhiriyye)",
+    "era": "9. yüzyıl",
+    "founder": "Dâvûd ez-Zâhirî",
+    "description": "Nassların zahiri anlamı, kıyas ve istihsan reddi, İbn Hazm tarafından temsil",
+    "detailedProfile": "Zâhirî mezhebinde, Kur'an ve Sünnet'in zahiri anlamı esas alınır. Kıyas ve istihsan reddedilir. Nassların zahiri anlamından başka bir anlam çıkarılmaz. İbn Hazm tarafından temsil edilmiş ve Endülüs'te yaygın olmuştur. Modern dönemde sınırlı sayıda takipçisi vardır.",
+    "characteristics": [
+      "Nassların zahiri anlamı",
+      "Kıyas reddi",
+      "İstihsan reddi",
+      "Katı zahirilik",
+      "Fıkhi esneklik yok",
+      "Nassalara tam bağlılık"
+    ],
+    "regions": ["Endülüs", "Mısır", "Suriye"],
+    "modernRepresentatives": ["İbn Hazm", "Dâvûd ez-Zâhirî"],
+    "relationships": {
+      "zahiri": 1.0,
+      "hanbeli": 0.6,
+      "athari": 0.75,
+      "selefi": 0.7,
+      "esari": 0.2,
+      "maturidi": 0.15
+    }
+  },
+  {
+    "id": "sufi_selefi",
+    "name": "Selefi Sufizm (Sentezci)",
+    "era": "20. yüzyıl",
+    "founder": "İbn Kayyim el-Cevziyye (kökenler)",
+    "description": "Selefi akide ile tasavvuf sentezi, zühd ve takva vurgusu",
+    "detailedProfile": "Selefi Sufizm, Selefi akideyi tasavvufi pratiklerle birleştirir. İbn Kayyim el-Cevziyye'nin zühd ve takva vurgusu bu yaklaşımın temelini oluşturur. Selefiler tasavvufu tamamen reddetmez; zühd, takva, ihlas gibi kavramları kabul ederler. Ancak bid'at olarak gördükleri tasavvufi pratikleri (mürid-şeyh ilişkisi, zikir, vb.) reddederler.",
+    "characteristics": [
+      "Selefi akide",
+      "Tasavvufi pratikler",
+      "Zühd vurgusu",
+      "Takva vurgusu",
+      "İhlas vurgusu",
+      "Bid'at karşıtlığı"
+    ],
+    "regions": ["Suudi Arabistan", "Mısır", "Körfez"],
+    "modernRepresentatives": ["İbn Kayyim el-Cevziyye", "Albani"],
+    "relationships": {
+      "sufi_selefi": 1.0,
+      "quietist_salafi": 0.85,
+      "athari": 0.8,
+      "sufi": 0.4,
+      "naqshbandi": 0.3,
+      "qadiri": 0.25
+    }
+  },
+  {
+    "id": "naqshbandi",
+    "name": "Nakşibendî",
+    "era": "14. yüzyıl",
+    "founder": "Bahauddin Naqshband",
+    "description": "Orta Asya'da yaygın, sessiz zikir, şeyh-mürid ilişkisi, Osmanlı'da güçlü",
+    "detailedProfile": "Nakşibendî tarikatı, Orta Asya'da ortaya çıkmış ve Osmanlı İmparatorluğu'nda güçlü bir temele sahip olmuştur. Sessiz zikir (zikr-i hafî) yapılır. Şeyh-mürid ilişkisine önem verilir. Mâtürîdî akideyi benimser. Modern dönemde Türkiye, Orta Asya ve Hindistan'da yaygındır.",
+    "characteristics": [
+      "Sessiz zikir",
+      "Şeyh-mürid ilişkisi",
+      "Mâtürîdî akide",
+      "Orta Asya kökenli",
+      "Osmanlı geleneği",
+      "Sosyal aktivizm"
+    ],
+    "regions": ["Orta Asya", "Osmanlı", "Türkiye", "Hindistan"],
+    "modernRepresentatives": ["Bahauddin Naqshband", "Mevlânâ Hâlid Bağdâdî"],
+    "relationships": {
+      "naqshbandi": 1.0,
+      "maturidi": 0.85,
+      "sufi": 0.9,
+      "qadiri": 0.6,
+      "suleymanci": 0.8,
+      "athari": 0.2
+    }
+  },
+  {
+    "id": "qadiri",
+    "name": "Kâdirî",
+    "era": "12. yüzyıl",
+    "founder": "Abdülkadir Geylani",
+    "description": "Bağdat'ta kurulmuş, en yaygın tarikat, Eş'arî akide",
+    "detailedProfile": "Kâdirî tarikatı, Abdülkadir Geylani tarafından kurulmuş ve İslam dünyasında en yaygın tarikatlardan biridir. Eş'arî akideyi benimser. Şeyh-mürid ilişkisine önem verilir. Zikir ve dua uygulamaları yapılır. Mısır, Suriye, Mağrib, Hindistan ve Somali'de güçlüdür.",
+    "characteristics": [
+      "Eş'arî akide",
+      "Şeyh-mürid ilişkisi",
+      "Zikir ve dua",
+      "Geniş coğrafi yayılım",
+      "Sosyal hizmet",
+      "Eğitim vurgusu"
+    ],
+    "regions": ["Mısır", "Suriye", "Mağrib", "Hindistan", "Somali"],
+    "modernRepresentatives": ["Abdülkadir Geylani"],
+    "relationships": {
+      "qadiri": 1.0,
+      "esari": 0.8,
+      "sufi": 0.95,
+      "naqshbandi": 0.6,
+      "mevlevi": 0.7,
+      "athari": 0.15
+    }
+  },
+  {
+    "id": "mevlevi",
+    "name": "Mevlevî",
+    "era": "13. yüzyıl",
+    "founder": "Mevlânâ Celâleddin Rûmî",
+    "description": "Aşk ve tasavvuf, sema ritüeli, Osmanlı'da saray tarikatı",
+    "detailedProfile": "Mevlevî tarikatı, Mevlânâ Celâleddin Rûmî tarafından kurulmuş ve Osmanlı İmparatorluğu'nda saray tarikatı olarak kabul edilmiştir. Aşk, tasavvuf ve müzik ön plandadır. Sema ritüeli (dönüş) yapılır. Eş'arî akideyi benimser. Kültür ve sanat alanında önemli katkılar yapmıştır.",
+    "characteristics": [
+      "Aşk ve tasavvuf",
+      "Sema ritüeli",
+      "Müzik ve şiir",
+      "Eş'arî akide",
+      "Osmanlı geleneği",
+      "Kültür ve sanat"
+    ],
+    "regions": ["Konya", "Osmanlı", "Türkiye"],
+    "modernRepresentatives": ["Mevlânâ Celâleddin Rûmî"],
+    "relationships": {
+      "mevlevi": 1.0,
+      "esari": 0.85,
+      "sufi": 0.95,
+      "qadiri": 0.7,
+      "naqshbandi": 0.5,
+      "athari": 0.1
+    }
+  },
+  {
+    "id": "bektashi",
+    "name": "Bektâşî",
+    "era": "13. yüzyıl",
+    "founder": "Hacı Bektaş Veli",
+    "description": "Anadolu'da yaygın, Alevi geleneği, Hz. Ali vurgusu",
+    "detailedProfile": "Bektâşî tarikatı, Hacı Bektaş Veli tarafından kurulmuş ve Anadolu'da yaygın olmuştur. Alevi geleneği ile bağlantılıdır. Hz. Ali'ye özel bir vurgu yapılır. Tasavvufi pratikler ve sosyal hizmet ön plandadır. Osmanlı döneminde Yeniçeri Ocağı ile bağlantılı olmuştur.",
+    "characteristics": [
+      "Hz. Ali vurgusu",
+      "Alevi geleneği",
+      "Tasavvufi pratikler",
+      "Sosyal hizmet",
+      "Anadolu kökenli",
+      "Yeniçeri bağlantısı"
+    ],
+    "regions": ["Anadolu", "Balkanlar", "Arnavutluk"],
+    "modernRepresentatives": ["Hacı Bektaş Veli"],
+    "relationships": {
+      "bektashi": 1.0,
+      "alevi": 0.9,
+      "sufi": 0.85,
+      "shia": 0.6,
+      "naqshbandi": 0.3,
+      "athari": 0.05
+    }
+  },
+  {
+    "id": "alevi",
+    "name": "Alevi (Anadolu-Balkan)",
+    "era": "13-14. yüzyıl",
+    "founder": "Hacı Bektaş Veli, Pir Sultan Abdal",
+    "description": "Hz. Ali vurgusu, tasavvuf, sosyal adalet, Anadolu'da yaygın",
+    "detailedProfile": "Anadolu-Balkan Alevileri, Hz. Ali'ye özel bir vurgu yapan ve tasavvufi pratiklerle sosyal adalet vurgusunu birleştiren bir geleneğe sahiptir. Bektâşî tarikatı ile yakın ilişkilidir. Cem ritüeli yapılır. Modern dönemde Türkiye'de önemli bir sosyal grup olmuştur.",
+    "characteristics": [
+      "Hz. Ali vurgusu",
+      "Tasavvuf",
+      "Sosyal adalet",
+      "Cem ritüeli",
+      "Anadolu kökenli",
+      "Sosyal aktivizm"
+    ],
+    "regions": ["Anadolu", "Balkanlar", "Türkiye"],
+    "modernRepresentatives": ["Pir Sultan Abdal", "Hacı Bektaş Veli"],
+    "relationships": {
+      "alevi": 1.0,
+      "bektashi": 0.9,
+      "shia": 0.7,
+      "sufi": 0.8,
+      "naqshbandi": 0.2,
+      "athari": 0.05
+    }
+  },
+  {
+    "id": "twelver_shia",
+    "name": "On İki İmamcı Şia (İmâmiyye)",
+    "era": "8. yüzyıl",
+    "founder": "Cafer es-Sadık",
+    "description": "İran'da yaygın, İmam konsepti, Usûlî ve Ahbârî kolları",
+    "detailedProfile": "On İki İmamcı Şia, İran'da yaygın olan Şia mezhebinin ana kollarından biridir. İmam konsepti merkezi bir rol oynar. Usûlî (akılcı) ve Ahbârî (hadis merkezli) olmak üzere iki ana kola ayrılır. Velâyet-i Fakīh teorisi İran İslam Cumhuriyeti'nin temelini oluşturmuştur.",
+    "characteristics": [
+      "İmam konsepti",
+      "Usûlî-Ahbârî ayrılığı",
+      "Velâyet-i Fakīh",
+      "Taqiyya (gizli ibadet)",
+      "Mut'a (geçici nikah)",
+      "Khums (beşte bir vergi)"
+    ],
+    "regions": ["İran", "Irak", "Lübnan", "Bahreyn"],
+    "modernRepresentatives": ["Sistani", "Hamaney"],
+    "relationships": {
+      "twelver_shia": 1.0,
+      "zaydi": 0.6,
+      "ismaili_shia": 0.5,
+      "esari": 0.4,
+      "sufi": 0.5,
+      "athari": 0.1
+    }
+  },
+  {
+    "id": "zaydi",
+    "name": "Zeydî Şia",
+    "era": "8. yüzyıl",
+    "founder": "Zeyd bin Ali",
+    "description": "Yemen'de yaygın, Hûsîler, daha az katı Şia",
+    "detailedProfile": "Zeydî Şia, Zeyd bin Ali tarafından kurulmuş ve Yemen'de yaygın olmuştur. Diğer Şia mezheplerinden daha az katıdır. İmam konsepti daha esnek bir şekilde uygulanır. Modern dönemde Hûsî hareketi Zeydî geleneğinden etkilenmiştir.",
+    "characteristics": [
+      "Zeyd bin Ali takipçileri",
+      "Daha az katı Şia",
+      "İmam konsepti esnek",
+      "Yemen kökenli",
+      "Hûsî hareketi",
+      "Siyasi aktivizm"
+    ],
+    "regions": ["Yemen", "Kuzey Yemen"],
+    "modernRepresentatives": ["Hûsîler", "Yemen Zeydîliği"],
+    "relationships": {
+      "zaydi": 1.0,
+      "twelver_shia": 0.6,
+      "ismaili_shia": 0.4,
+      "sufi": 0.5,
+      "athari": 0.15,
+      "esari": 0.3
+    }
+  },
+  {
+    "id": "sufi",
+    "name": "Tasavvuf (Genel)",
+    "era": "8. yüzyıldan itibaren",
+    "founder": "Rabia al-Adawiyya, Hasan al-Basri",
+    "description": "İç hayat, zühd, takva, ihlas, tasavvufi pratikler",
+    "detailedProfile": "Tasavvuf, İslami düşüncede iç hayat, zühd, takva ve ihlas vurgusu yapan bir geleneğe sahiptir. Tarikatlar aracılığıyla organize olmuştur. Selefi yaklaşım tasavvufu tamamen reddetmez; zühd ve takva gibi kavramları kabul eder. Ancak bid'at olarak gördükleri pratikleri (mürid-şeyh ilişkisi, zikir, vb.) reddedebilir.",
+    "characteristics": [
+      "İç hayat vurgusu",
+      "Zühd ve takva",
+      "İhlas vurgusu",
+      "Tasavvufi pratikler",
+      "Tarikat yapısı",
+      "Şeyh-mürid ilişkisi"
+    ],
+    "regions": ["Tüm İslam dünyası"],
+    "modernRepresentatives": ["Rabia al-Adawiyya", "Hasan al-Basri"],
+    "relationships": {
+      "sufi": 1.0,
+      "qadiri": 0.95,
+      "mevlevi": 0.95,
+      "naqshbandi": 0.9,
+      "bektashi": 0.85,
+      "athari": 0.2,
+      "selefi": 0.15
+    }
+  },
+  {
+    "id": "ikhwan_muslim",
+    "name": "İhvan-ı Müslimîn (Müslüman Kardeşler)",
+    "era": "1928",
+    "founder": "Hasan el-Benna",
+    "description": "Modernist İslam, siyasi aktivizm, sosyal hizmet, Mısır'da kurulmuş",
+    "detailedProfile": "İhvan-ı Müslimîn, Hasan el-Benna tarafından Mısır'da kurulmuş ve İslam dünyasında önemli bir siyasi hareket haline gelmiştir. Modernist İslam yaklaşımı benimser. Siyasi aktivizm ve sosyal hizmet ön plandadır. Eş'arî akideyi benimser. Filistin'de Hamas, Türkiye'de Milli Görüş hareketi İhvan'dan etkilenmiştir.",
+    "characteristics": [
+      "Modernist İslam",
+      "Siyasi aktivizm",
+      "Sosyal hizmet",
+      "Eş'arî akide",
+      "Örgütlü yapı",
+      "Eğitim vurgusu"
+    ],
+    "regions": ["Mısır", "Suriye", "Filistin", "Türkiye"],
+    "modernRepresentatives": ["Hasan el-Benna", "Seyyid Kutub"],
+    "relationships": {
+      "ikhwan_muslim": 1.0,
+      "esari": 0.7,
+      "sufi": 0.5,
+      "modernist": 0.8,
+      "quietist_salafi": 0.3,
+      "athari": 0.2
+    }
+  },
+  {
+    "id": "modernist",
+    "name": "Modernist İslam",
+    "era": "19-20. yüzyıl",
+    "founder": "Cemaleddin Afgani, Muhammed Abduh",
+    "description": "Akıl ve nakil dengesi, modernleşme, İslam'ın yeniden yorumlanması",
+    "detailedProfile": "Modernist İslam, 19-20. yüzyılda ortaya çıkmış ve İslam'ın modern dünya ile uyumlu hale getirilmesini amaçlamıştır. Akıl ve nakil arasında denge kurar. Cemaleddin Afgani ve Muhammed Abduh tarafından temsil edilir. Eş'arî akideyi benimser.",
+    "characteristics": [
+      "Akıl ve nakil dengesi",
+      "Modernleşme",
+      "İslam'ın yeniden yorumlanması",
+      "Eş'arî akide",
+      "Eğitim vurgusu",
+      "Sosyal reform"
+    ],
+    "regions": ["Mısır", "Osmanlı", "Hindistan"],
+    "modernRepresentatives": ["Cemaleddin Afgani", "Muhammed Abduh"],
+    "relationships": {
+      "modernist": 1.0,
+      "esari": 0.8,
+      "maturidi": 0.75,
+      "ikhwan_muslim": 0.8,
+      "athari": 0.2,
+      "selefi": 0.3
+    }
+  },
+  {
+    "id": "deobandi",
+    "name": "Deobandî",
+    "era": "19. yüzyıl",
+    "founder": "Muhammed Kasım Nanautvi",
+    "description": "Hindistan'da kurulmuş, Hanefî-Mâtürîdî, Tablighi Cemaat",
+    "detailedProfile": "Deobandî hareketi, Hindistan'da kurulmuş ve Pakistan, Afganistan'da yaygın olmuştur. Hanefî fıkhı ve Mâtürîdî akideyi benimser. Tablighi Cemaat Deobandî geleneğinden ortaya çıkmıştır. Taliban hareketi Deobandî etkisindedir.",
+    "characteristics": [
+      "Hanefî fıkhı",
+      "Mâtürîdî akide",
+      "Tablighi Cemaat",
+      "Hindistan kökenli",
+      "Hadis otoritesi",
+      "Siyasi aktivizm"
+    ],
+    "regions": ["Hindistan", "Pakistan", "Afganistan"],
+    "modernRepresentatives": ["Muhammed Kasım Nanautvi", "Tablighi Cemaat"],
+    "relationships": {
+      "deobandi": 1.0,
+      "maturidi": 0.85,
+      "hanafi": 0.9,
+      "quietist_salafi": 0.4,
+      "athari": 0.15,
+      "sufi": 0.3
+    }
+  },
+  {
+    "id": "barelvi",
+    "name": "Barelvi",
+    "era": "19. yüzyıl",
+    "founder": "Ahmed Riza Khan Barelvi",
+    "description": "Hindistan'da kurulmuş, Hanefî-Mâtürîdî, tasavvuf vurgusu",
+    "detailedProfile": "Barelvi hareketi, Hindistan'da kurulmuş ve Pakistan'da yaygın olmuştur. Hanefî fıkhı ve Mâtürîdî akideyi benimser. Tasavvuf ve Hz. Peygamber'e sevgi vurgusu yapılır. Deobandî hareketi ile farklılıklar gösterir.",
+    "characteristics": [
+      "Hanefî fıkhı",
+      "Mâtürîdî akide",
+      "Tasavvuf vurgusu",
+      "Hz. Peygamber sevgisi",
+      "Hindistan kökenli",
+      "Sosyal hizmet"
+    ],
+    "regions": ["Hindistan", "Pakistan"],
+    "modernRepresentatives": ["Ahmed Riza Khan Barelvi"],
+    "relationships": {
+      "barelvi": 1.0,
+      "maturidi": 0.85,
+      "hanafi": 0.9,
+      "sufi": 0.7,
+      "deobandi": 0.5,
+      "athari": 0.1
+    }
+  },
+  {
+    "id": "suleymanci",
+    "name": "Süleymancılar",
+    "era": "20. yüzyıl",
+    "founder": "Süleyman Hilmi Tunahan",
+    "description": "Türkiye'de kurulmuş, Nakşibendî-Mâtürîdî, Kur'an eğitimi vurgusu",
+    "detailedProfile": "Süleymancılar, Türkiye'de Süleyman Hilmi Tunahan tarafından kurulmuş bir cemaat olarak ortaya çıkmıştır. Nakşibendî geleneğini benimser. Mâtürîdî akideyi kabul eder. Kur'an eğitimi ve hafızlık vurgusu yapılır.",
+    "characteristics": [
+      "Nakşibendî geleneği",
+      "Mâtürîdî akide",
+      "Kur'an eğitimi",
+      "Hafızlık vurgusu",
+      "Türkiye kökenli",
+      "Sosyal hizmet"
+    ],
+    "regions": ["Türkiye", "Avrupa"],
+    "modernRepresentatives": ["Süleyman Hilmi Tunahan"],
+    "relationships": {
+      "suleymanci": 1.0,
+      "naqshbandi": 0.9,
+      "maturidi": 0.85,
+      "sufi": 0.7,
+      "deobandi": 0.5,
+      "athari": 0.15
+    }
+  },
+  {
+    "id": "nurcu",
+    "name": "Nurculuk",
+    "era": "20. yüzyıl",
+    "founder": "Bediuzzaman Said Nursi",
+    "description": "Türkiye'de kurulmuş, Kur'an'ın modern yorumu, Risale-i Nur",
+    "detailedProfile": "Nurculuk, Bediuzzaman Said Nursi tarafından Türkiye'de kurulmuş ve Kur'an'ın modern dünya ile uyumlu bir şekilde yorumlanmasını amaçlamıştır. Risale-i Nur adlı eseri temel alır. Eş'arî akideyi benimser. Milli Görüş hareketi Nurcu geleneğinden etkilenmiştir.",
+    "characteristics": [
+      "Kur'an'ın modern yorumu",
+      "Risale-i Nur",
+      "Eş'arî akide",
+      "Türkiye kökenli",
+      "Eğitim vurgusu",
+      "Sosyal aktivizm"
+    ],
+    "regions": ["Türkiye", "Balkanlar"],
+    "modernRepresentatives": ["Bediuzzaman Said Nursi"],
+    "relationships": {
+      "nurcu": 1.0,
+      "esari": 0.8,
+      "modernist": 0.8,
+      "ikhwan_muslim": 0.6,
+      "sufi": 0.5,
+      "athari": 0.2
+    }
   }
 ]
 

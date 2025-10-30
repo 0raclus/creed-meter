@@ -245,17 +245,79 @@ src/
    - ✅ Staggered animations
    - ✅ Gradient backgrounds (purple, pink, blue, green, orange, cyan)
 
-### Teknik Detaylar
-- Tailwind CSS v4 uyumluluğu sağlandı
-- Framer Motion patterns uygulandı
-- TypeScript type safety korundu
-- Gerçek implementasyon (mock data yok)
-- Sistem bütünlüğü korundu
-
 ### Sonuç
 ✅ **Modern UI Geliştirme Tamamlandı**
 - Build: ✅ Başarılı
 - Dev Server: ✅ Çalışıyor (http://localhost:5173)
 - Tüm komponentler modern ve kusursuz
 - Animasyonlar smooth ve profesyonel
+
+## AŞAMA 10-14: MEZHEP VE SORU DETAYLANDIRMASI ✅ TAMAMLANDI
+
+### AŞAMA 10: Mezhep Listesini Genişletme ✅
+- ✅ Athariler (Ehl-i Hadis Klasik) eklendi
+- ✅ Eş'arîler (Eş'arî Akidesi) eklendi
+- ✅ Mâtürîdîler (Mâtürîdî Akidesi) eklendi
+- ✅ Selefî Kolları (Sessiz Selefilik, Cihadi Selefilik) eklendi
+- ✅ Selefi Sufizm (Sentezci) eklendi
+- ✅ Mu'tezile eklendi
+- ✅ Zâhirî eklendi
+- ✅ Tasavvuf Tarikatları (Nakşibendî, Kâdirî, Mevlevî, Bektâşî) eklendi
+- ✅ Alevi (Anadolu-Balkan) eklendi
+- ✅ Şia Mezhepleri (On İki İmamcı, Zeydî) eklendi
+- ✅ Modern Hareketler (İhvan-ı Müslimîn, Modernist İslam, Deobandî, Barelvi, Nurculuk, Süleymancılar) eklendi
+- **Sonuç: 43 → 60+ mezhebe çıkarıldı**
+
+### AŞAMA 11: Akide Sorularını Detaylandırma ✅
+- ✅ Allah'ın isim ve sıfatları (Semî, Basîr) - Atharî vs Eş'arî vs Mu'tezile
+- ✅ Kur'an'ın yaratılmışlığı meselesinde detaylı soru
+- ✅ Allah'ın 'Vech' (Yüz) sıfatı hakkında detaylı soru
+- ✅ Kaza ve kader meselesinde 'Kesb' (seçim) teorisi
+- ✅ Rüya ve ilham konusunda detaylı soru
+- ✅ Bid'at (yeni icat) konusunda detaylı soru
+- ✅ Veliler ve evliyalar konusunda şefaat meselesinde detaylı soru
+- ✅ Zühd (dünyadan uzaklaşma) ve tasavvuf konusunda detaylı soru
+- ✅ Takdir ve insan sorumluluğu konusunda detaylı soru
+- ✅ Akıl ve nakil ilişkisinde detaylı soru
+- **Sonuç: 60+ → 75+ soruya çıkarıldı**
+
+### AŞAMA 12: Cevap Şıklarını Detaylandırma ✅
+- ✅ Her mezhep/fırkanın spesifik görüşleri cevap şıklarında yer aldı
+- ✅ Atharî, Eş'arî, Mâtürîdî, Mu'tezile, Selefî, Sufi görüşleri ayırt edici şekilde sunuldu
+- ✅ Cevap şıkları çok profesyonel ve detaylı hale getirildi
+
+### AŞAMA 13: Puanlama Sistemini Güncelleme ✅
+- ✅ SCHOOL_RELATIONSHIPS objesi genişletildi
+- ✅ Yeni mezheplerin ilişkileri tanımlandı:
+  - Atharî ↔ Hanbeli, Quietist Salafi, Selefi
+  - Eş'arî ↔ Mâtürîdî, Shafii, Hanafi
+  - Mâtürîdî ↔ Hanafi, Deobandi, Barelvi
+  - Tasavvuf Tarikatları ↔ Sufi, Qadiri, Mevlevi, Naqshbandi
+  - Modern Hareketler ↔ Ikhwan Muslim, Modernist, Nurcu
+- ✅ Relationship bonus çarpanı 0.15 olarak korundu
+
+### AŞAMA 14: Tasavvuf Konusunda Bilgi Ekleme ✅
+- ✅ Selefiler tasavvufu tamamen reddeder mi sorusu
+- ✅ İbn Kayyim el-Cevziyye'nin zühd ve takva vurgusu
+- ✅ Şeyh-mürid (öğretmen-öğrenci) ilişkisinin dini statüsü
+- ✅ Zikir (Allah'ı anma) uygulamasının dini statüsü
+- ✅ Tasavvufi pratiklerin dini statüsü
+- **Sonuç: 75+ → 80+ soruya çıkarıldı**
+
+### Teknik Detaylar
+- ✅ Tüm yeni mezheplerle ilişkiler tanımlandı
+- ✅ Scoring algoritması yeni mezhepleri destekliyor
+- ✅ Sorular çok detaylı ve ayırt edici
+- ✅ Cevap şıkları her mezhep/fırkanın spesifik görüşlerini yansıtıyor
+- ✅ Tasavvuf konusunda Selefiler ve zühd gibi kavramlar eklendi
+
+### Sonuç
+✅ **Mezhep ve Soru Detaylandırması Tamamlandı**
+- Build: ✅ Başarılı
+- Dev Server: ✅ Çalışıyor (http://localhost:5173)
+- Mezhep sayısı: 43 → 60+
+- Soru sayısı: 60+ → 80+
+- Soru kalitesi: Çok detaylı ve ayırt edici
+- Cevap şıkları: Her mezhep/fırkanın spesifik görüşlerini yansıtıyor
+- Puanlama sistemi: Yeni mezhepleri destekliyor
 
