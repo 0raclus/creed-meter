@@ -1,0 +1,153 @@
+[
+  {
+    "title": "İhya Ulumiddin",
+    "author": "İmam Gazali",
+    "school": "shafii",
+    "description": "Eş'arî akidesi ve tasavvufun sentezi, İslami ilimler"
+  },
+  {
+    "title": "Muqaddimah",
+    "author": "İbn Haldun",
+    "school": "maliki",
+    "description": "Tarih felsefesi, sosyal bilimler, medeniyetler"
+  },
+  {
+    "title": "Minhaj et-Talibin",
+    "author": "Nevevi",
+    "school": "shafii",
+    "description": "Şâfiî fıkıh, pratik hukuk uygulamaları"
+  },
+  {
+    "title": "Bidayat el-Mujtahid",
+    "author": "İbn Rüşd",
+    "school": "maliki",
+    "description": "Mezheplerin karşılaştırması, fıkıh usulü"
+  },
+  {
+    "title": "Usul es-Sunnah",
+    "author": "Ahmed bin Hanbel",
+    "school": "hanbeli",
+    "description": "Hanbeli akidesi, hadis merkezli yaklaşım"
+  },
+  {
+    "title": "Minhaj es-Sunnah en-Nabeviyye",
+    "author": "İbn Teymiyye",
+    "school": "hanbeli",
+    "description": "Selefi akidesi, Şia eleştirisi, hadis merkezli"
+  },
+  {
+    "title": "I'lam el-Muvakki'in",
+    "author": "İbn Kayyim el-Cevziyye",
+    "school": "hanbeli",
+    "description": "Fıkıh usulü, kıyas ve istislah, pratik hukuk"
+  },
+  {
+    "title": "Risale-i Nur",
+    "author": "Bediuzzaman Said Nursi",
+    "school": "reformcu",
+    "description": "Modern İslam, akıl ve iman sentezi, çağdaş meseleler"
+  },
+  {
+    "title": "Fikr-i İslami",
+    "author": "Muhammed Abduh",
+    "school": "modernist",
+    "description": "Modernist İslam, çağdaş yorum, reform"
+  },
+  {
+    "title": "Islam and Modernity",
+    "author": "Fazlur Rahman",
+    "school": "modernist",
+    "description": "Tarihselci okuma, çağdaş İslam, metodoloji"
+  },
+  {
+    "title": "Kur'an'ın Anlamı",
+    "author": "Abdülkerim Suruş",
+    "school": "modernist",
+    "description": "Dinamik dini bilgi, tarihselci yorum"
+  },
+  {
+    "title": "Silsilat el-Ahadis es-Sahiha",
+    "author": "Muhammed Albani",
+    "school": "selefi",
+    "description": "Hadis kritiği, selefi metodoloji"
+  },
+  {
+    "title": "Şerh Usul es-Sunnah",
+    "author": "İbn Baz",
+    "school": "selefi",
+    "description": "Selefi akidesi, hadis merkezli, pratik fetva"
+  },
+  {
+    "title": "Şerh Riyad es-Salihin",
+    "author": "Muhammed Uteymin",
+    "school": "selefi",
+    "description": "Hadis şerhi, pratik İslam, selefi ilkeler"
+  },
+  {
+    "title": "Mektubat",
+    "author": "İmam Rabbani",
+    "school": "sufi",
+    "description": "Tasavvuf, mektep, maneviyat, İslami eğitim"
+  },
+  {
+    "title": "Fusus el-Hikam",
+    "author": "İbn Arabi",
+    "school": "sufi",
+    "description": "Tasavvufi felsefe, vahdet-i vücud, maneviyat"
+  },
+  {
+    "title": "Mesnevî",
+    "author": "Mevlana Celaleddin Rumi",
+    "school": "sufi",
+    "description": "Tasavvufi şiir, maneviyat, aşk ve ilahi bilgi"
+  },
+  {
+    "title": "Piri Reis Kitabı",
+    "author": "Piri Reis",
+    "school": "hanafi",
+    "description": "Osmanlı fıkıh, coğrafya, pratik bilgiler"
+  },
+  {
+    "title": "Şerh Muvatta",
+    "author": "Malik bin Enes",
+    "school": "maliki",
+    "description": "Mâlikî fıkıh, hadis, maslahat merkezli"
+  },
+  {
+    "title": "Şerh Sahih el-Buhari",
+    "author": "İbn Hacer el-Askalani",
+    "school": "shafii",
+    "description": "Hadis şerhi, fıkıh, akide, pratik hukuk"
+  },
+  {
+    "title": "Kur'an'ın Çağdaş Okuması",
+    "author": "Nasr Hamid Ebu Zeyd",
+    "school": "modernist",
+    "description": "Metin merkezli yorum, hermenötik, çağdaş yorum"
+  },
+  {
+    "title": "Cinsiyet ve İslam",
+    "author": "Fatima Mernissi",
+    "school": "feminist_islam",
+    "description": "Feminist İslam, cinsiyet eşitliği, patriarki eleştirisi"
+  },
+  {
+    "title": "Kur'an'da Kadın",
+    "author": "Riffat Hassan",
+    "school": "feminist_islam",
+    "description": "Kadın merkezli Kur'an okuma, cinsiyet eşitliği"
+  },
+  {
+    "title": "Şii Fıkhı Usulü",
+    "author": "Şeyh Tusi",
+    "school": "imamiyye",
+    "description": "Şii fıkıh usulü, usûlî geleneği, İmamiyye"
+  },
+  {
+    "title": "Hikmet-i İlahi",
+    "author": "Molla Sadra",
+    "school": "imamiyye",
+    "description": "Şii felsefesi, hikmet, metafizik, İslami felsefe"
+  }
+]
+

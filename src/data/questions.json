@@ -1,0 +1,828 @@
+[
+  {
+    "id": "AKD_001",
+    "category": "akide",
+    "weight": 1.5,
+    "text": "Kur'an'da geçen 'Allah'ın eli' ifadesini nasıl yorumlarsınız?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zahir manasına, teşbih olmadan inanırım",
+        "scores": { "hanbeli": 5, "selefi": 5, "ehlihadis": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Kudret ve güç manasına mecaz olarak anlarım",
+        "scores": { "esari": 5, "maturidi": 4, "shafii": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Bu hususta te'vil yapmadan teslim olurum (tefviz)",
+        "scores": { "esari": 4, "maturidi": 3, "maliki": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Antropomorfik yorumları reddeder, akılla çözümlerim",
+        "scores": { "mutazila": 5, "imamiyye": 3, "modernist": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Kesin bir görüşüm yok, farklı yorumları meşru görüyorum",
+        "scores": { "reformcu": 3, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "AKD_002",
+    "category": "akide",
+    "weight": 1.5,
+    "text": "Kader ve insan iradesi konusunda ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Her şey Allah'ın takdiridir, insan özgür değildir (Cebrî)",
+        "scores": { "hanbeli": 2, "selefi": 1 }
+      },
+      {
+        "id": "B",
+        "text": "İnsan tamamen özgürdür, Allah'ın takdiri yoktur (Kaderî)",
+        "scores": { "mutazila": 5, "liberal_islam": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Allah takdir eder, insan da kesb (seçim) yapar (Eş'arî)",
+        "scores": { "esari": 5, "shafii": 4, "maliki": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Allah bilir, insan seçer; ikisi de gerçektir (Maturidî)",
+        "scores": { "maturidi": 5, "hanafi": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Bu konuda kesin bir görüş yoktur, her iki taraf da haklı olabilir",
+        "scores": { "reformcu": 3, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "AKD_003",
+    "category": "akide",
+    "weight": 1.3,
+    "text": "Büyük günah işleyen Müslüman'ın durumu nedir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hala Müslümandır, cezalandırılabilir ama cehennemde kalıcı değildir",
+        "scores": { "esari": 5, "maturidi": 4, "shafii": 4, "hanafi": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Amel imandan değildir, imanı sağlamsa Müslümandır",
+        "scores": { "murcie": 5 }
+      },
+      {
+        "id": "C",
+        "text": "Tekfir edilir, İslam'dan çıkar (Harici görüş)",
+        "scores": { "jihadist_salafi": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Menzile beyne'l-menzileteyn (iki menzile arasında) (Mutezilî)",
+        "scores": { "mutazila": 5, "imamiyye": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Günah kavramı modern bağlamda yeniden değerlendirilmeli",
+        "scores": { "modernist": 4, "liberal_islam": 5 }
+      }
+    ]
+  },
+  {
+    "id": "AKD_004",
+    "category": "akide",
+    "weight": 1.4,
+    "text": "Peygamberlik sonrası dini liderlik (imamlik/hilafet) nasıl belirlenmeli?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Müslümanlar tarafından seçilmeli (Sünni halifelik)",
+        "scores": { "esari": 4, "maturidi": 4, "hanafi": 4, "shafii": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Allah tarafından tayin edilmeli, Hz. Ali'nin soyundan (Şii imameti)",
+        "scores": { "imamiyye": 5, "zeydi": 4, "ismaili": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Seçimle belirlenir, ancak Ehl-i Beyt'ten olmalı (Zeydi)",
+        "scores": { "zeydi": 5, "imamiyye": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Şûra (danışma) ile belirlenmeli, en nitelikli kişi seçilmeli",
+        "scores": { "reformcu": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Modern demokrasi sistemi uygun, dini lider gerekmez",
+        "scores": { "secular_muslim": 5, "liberal_islam": 3 }
+      }
+    ]
+  },
+  {
+    "id": "AKD_005",
+    "category": "akide",
+    "weight": 1.2,
+    "text": "Kur'an'ın yaratılmışlığı hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kur'an yaratılmıştır, Allah'ın sözü değildir (Mutezilî)",
+        "scores": { "mutazila": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Kur'an Allah'ın sözüdür, yaratılmamıştır (Hanbeli-Selefi)",
+        "scores": { "hanbeli": 5, "selefi": 5 }
+      },
+      {
+        "id": "C",
+        "text": "Bu konuda kesin bir görüş yoktur, her iki taraf da haklı olabilir",
+        "scores": { "esari": 3, "maturidi": 3, "reformcu": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Kur'an'ın lafzı yaratılmış, manası yaratılmamıştır",
+        "scores": { "esari": 4, "shafii": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Bu tartışma günümüzde anlamsızdır, pratik İslam'a odaklanmalı",
+        "scores": { "modernist": 4, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "AKD_006",
+    "category": "akide",
+    "weight": 1.1,
+    "text": "Kabir azabı ve şefaat inancı hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kabir azabı ve şefaat vardır, Kur'an ve Sünnet'te açıktır",
+        "scores": { "hanbeli": 5, "selefi": 4, "esari": 4, "maturidi": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Kabir azabı vardır ama şefaat yoktur",
+        "scores": { "mutazila": 3, "modernist": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Şefaat vardır, peygamberler ve evliyalar şefaat edebilir",
+        "scores": { "sufi": 5, "imamiyye": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Bu konular sembolik olarak anlaşılmalı, harfi anlamı yoktur",
+        "scores": { "modernist": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Kesin bir görüş yoktur, her iki ihtimal de mümkündür",
+        "scores": { "reformcu": 3 }
+      }
+    ]
+  },
+  {
+    "id": "FIQ_001",
+    "category": "fiqh_usul",
+    "weight": 1.4,
+    "text": "Fıkıh metodolojisinde rey (akıl) ve rivayet (hadis) arasında hangisi öncelikli?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rivayet (hadis) kesinlikle önceliklidir (Hanbeli-Selefi)",
+        "scores": { "hanbeli": 5, "selefi": 5, "ehlihadis": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Rey (akıl) önemlidir, hadis olmadığında kullanılır (Hanefî)",
+        "scores": { "hanafi": 5, "maturidi": 4 }
+      },
+      {
+        "id": "C",
+        "text": "İkisi dengeli kullanılmalı, duruma göre değişir (Şâfiî)",
+        "scores": { "shafii": 5, "maliki": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Akıl ve mantık temel alınmalı, hadis ikincildir (Mutezilî)",
+        "scores": { "mutazila": 4, "modernist": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Maslahat (kamu yararı) temel alınmalı (Mâlikî)",
+        "scores": { "maliki": 5, "reformcu": 3 }
+      }
+    ]
+  },
+  {
+    "id": "FIQ_002",
+    "category": "fiqh_usul",
+    "weight": 1.3,
+    "text": "İctihad kapısı açık mı kapalı mı? Günümüzde içtihat yapılabilir mi?",
+    "options": [
+      {
+        "id": "A",
+        "text": "İctihad kapısı kapalıdır, taklid yapmalıyız",
+        "scores": { "hanafi": 3, "shafii": 3, "maliki": 3 }
+      },
+      {
+        "id": "B",
+        "text": "İctihad kapısı açıktır, her dönem içtihat yapılabilir",
+        "scores": { "selefi": 5, "hanbeli": 4, "modernist": 5 }
+      },
+      {
+        "id": "C",
+        "text": "Mezhep içinde içtihat yapılabilir, mezhep dışında değil",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Doğrudan Kur'an ve Sünnet'e dönülmeli, mezheplere bağlı kalınmamalı",
+        "scores": { "selefi": 4, "kuranci": 5, "modernist": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Çağdaş ihtiyaçlara göre yeni içtihat yapılmalı",
+        "scores": { "reformcu": 5, "liberal_islam": 5 }
+      }
+    ]
+  },
+  {
+    "id": "FIQ_003",
+    "category": "fiqh_usul",
+    "weight": 1.2,
+    "text": "Hadis otoritesi konusunda ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sahih hadisler Kur'an kadar bağlayıcıdır",
+        "scores": { "hanbeli": 5, "selefi": 5, "ehlihadis": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Hadisler önemlidir ama Kur'an'dan sonra gelir",
+        "scores": { "esari": 4, "maturidi": 4, "shafii": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Hadisler tarihsel bağlamda anlaşılmalı, her zaman uygulanmaz",
+        "scores": { "modernist": 5, "reformcu": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Kur'an yeterlidir, hadislere ihtiyaç yoktur (Kurancı)",
+        "scores": { "kuranci": 5, "liberal_islam": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Şii hadis anlayışı doğru, Ehl-i Beyt hadisleri önemlidir",
+        "scores": { "imamiyye": 5, "zeydi": 3 }
+      }
+    ]
+  },
+  {
+    "id": "FIQ_004",
+    "category": "fiqh_usul",
+    "weight": 1.1,
+    "text": "Sahabe adaleti hakkında ne düşünüyorsünüz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tüm sahabeler adaletlidir, hiçbiri eleştirilemez",
+        "scores": { "esari": 5, "maturidi": 4, "hanafi": 4, "shafii": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Sahabeler insandır, bazıları hata yapabilir",
+        "scores": { "modernist": 4, "reformcu": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Bazı sahabeler eleştirilebilir, özellikle Ebu Bekir ve Ömer (Şii)",
+        "scores": { "imamiyye": 5, "zeydi": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Sahabeler hakkında tartışmak uygun değildir",
+        "scores": { "sufi": 3, "quietist_salafi": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Sahabeler tarihsel figürlerdir, modern bağlamda değerlendirilmeli",
+        "scores": { "secular_muslim": 4, "liberal_islam": 3 }
+      }
+    ]
+  },
+  {
+    "id": "AME_001",
+    "category": "fiqh_amel",
+    "weight": 1.2,
+    "text": "Namaz kılarken Fatiha'yı imam arkada okunur mu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Evet, imam arkada da okunur (Hanefî)",
+        "scores": { "hanafi": 5, "maturidi": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Hayır, imam arkada okunmaz (Şâfiî-Hanbeli)",
+        "scores": { "shafii": 5, "hanbeli": 5, "selefi": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Her iki görüş de meşrudur, tercih meselesidir",
+        "scores": { "maliki": 4, "reformcu": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Kur'an'da açık olmadığından, her iki şekilde de caizdir",
+        "scores": { "modernist": 3, "liberal_islam": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Bu detaylar önemli değildir, niyetin doğru olması yeterlidir",
+        "scores": { "sufi": 2, "reformcu": 2 }
+      }
+    ]
+  },
+  {
+    "id": "AME_002",
+    "category": "fiqh_amel",
+    "weight": 1.1,
+    "text": "Faiz (riba) konusunda ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Faiz kesinlikle haramdır, hiçbir şekilde caiz değildir",
+        "scores": { "hanbeli": 5, "selefi": 5, "esari": 4, "maturidi": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Faiz haramdır ama modern bankacılık sisteminde zorunludur",
+        "scores": { "hanafi": 3, "shafii": 3, "maliki": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Faiz illeti (sebebi) anlaşılmalı, modern bağlamda değerlendirilmeli",
+        "scores": { "modernist": 4, "reformcu": 4 }
+      },
+      {
+        "id": "D",
+        "text": "İslami finans çözümleri vardır, bunlar kullanılmalı",
+        "scores": { "reformcu": 5, "liberal_islam": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Faiz kavramı günümüzde yeniden tanımlanmalı",
+        "scores": { "modernist": 5, "secular_muslim": 3 }
+      }
+    ]
+  },
+  {
+    "id": "AME_003",
+    "category": "fiqh_amel",
+    "weight": 1.2,
+    "text": "Kadının örtünmesi (hicap) konusunda ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yüz ve eller hariç tüm vücut örtülmeli, zorunludur",
+        "scores": { "hanbeli": 5, "selefi": 5, "imamiyye": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Başı ve göğsü örtmeli, yüz ve eller açık olabilir",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Tesettür tavsiye edilir ama zorunlu değildir",
+        "scores": { "modernist": 4, "reformcu": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Örtünme kültürel bir meseledir, dini değildir",
+        "scores": { "secular_muslim": 5, "liberal_islam": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Kadın kendi tercihine göre karar vermelidir",
+        "scores": { "feminist_islam": 5, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "AME_004",
+    "category": "fiqh_amel",
+    "weight": 1.1,
+    "text": "Cihad konusunda ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cihad sadece defansif (savunmacı) olabilir",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Cihad hem defansif hem ofansif olabilir",
+        "scores": { "hanbeli": 3, "selefi": 3, "jihadist_salafi": 5 }
+      },
+      {
+        "id": "C",
+        "text": "Cihad sadece nefsi cihaddır (iç mücadele)",
+        "scores": { "sufi": 5, "quietist_salafi": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Modern devletlerde cihad uygulanmaz",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Cihad kavramı tamamen yeniden tanımlanmalı",
+        "scores": { "secular_muslim": 5, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "TAS_001",
+    "category": "tasavvuf",
+    "weight": 1.3,
+    "text": "Tasavvuf ve tarikat hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tasavvuf şeriata aykırıdır, reddedilmelidir (Selefi)",
+        "scores": { "selefi": 5, "hanbeli": 3, "jihadist_salafi": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Tasavvuf şeriata tamamlayıcıdır, meşrudur",
+        "scores": { "sufi": 5, "esari": 4, "maturidi": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Tasavvuf zorunlu değildir ama meşrudur",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Tasavvuf modern bağlamda yeniden değerlendirilmeli",
+        "scores": { "modernist": 4, "reformcu": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Tasavvuf kişisel seçimdir, her bireyin kendi yolu vardır",
+        "scores": { "liberal_islam": 5, "secular_muslim": 3 }
+      }
+    ]
+  },
+  {
+    "id": "TAS_002",
+    "category": "tasavvuf",
+    "weight": 1.2,
+    "text": "Evliyalara tevessül (aracılık) ve türbelere ziyaret hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tevessül caizdir, evliyalar şefaat edebilir",
+        "scores": { "sufi": 5, "imamiyye": 4, "maliki": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Tevessül haramdır, şirk sayılır (Selefi)",
+        "scores": { "selefi": 5, "hanbeli": 4, "jihadist_salafi": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Tevessül caizdir ama şirk olmamak için dikkatli olunmalı",
+        "scores": { "esari": 4, "maturidi": 4, "shafii": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Türbelere ziyaret kültürel bir meseledir, dini değildir",
+        "scores": { "modernist": 4, "secular_muslim": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Bu konuda kesin bir görüş yoktur, her bireyin tercihine bırakılmalı",
+        "scores": { "reformcu": 3, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "TAS_003",
+    "category": "tasavvuf",
+    "weight": 1.1,
+    "text": "Vahdet-i vücud (varlığın birliği) doktrini hakkında ne düşünüyorsünüz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vahdet-i vücud doğru bir doktrindir, İbn Arabi haklıdır",
+        "scores": { "sufi": 5, "imamiyye": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Vahdet-i vücud panteizme yol açar, reddedilmelidir",
+        "scores": { "selefi": 5, "hanbeli": 4, "jihadist_salafi": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Vahdet-i vücud sembolik olarak anlaşılmalı",
+        "scores": { "esari": 3, "maturidi": 3, "modernist": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Bu tür metafizik tartışmalar günümüzde anlamsızdır",
+        "scores": { "modernist": 4, "secular_muslim": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Her bireyin kendi tasavvufi yolunu seçmesi doğru",
+        "scores": { "liberal_islam": 4, "reformcu": 3 }
+      }
+    ]
+  },
+  {
+    "id": "SIY_001",
+    "category": "siyaset",
+    "weight": 1.4,
+    "text": "Devlet-din ilişkisi nasıl olmalı?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Şeriat devleti kurulmalı, İslam hukuku uygulanmalı",
+        "scores": { "hanbeli": 5, "selefi": 4, "jihadist_salafi": 5, "imamiyye": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Din ve devlet ayrı olmalı, laiklik benimsenmelidir",
+        "scores": { "secular_muslim": 5, "liberal_islam": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Devlet İslami değerler üzerine kurulmalı ama laiklik de saygı görmeli",
+        "scores": { "reformcu": 4, "hanafi": 3, "shafii": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Şûra (danışma) ve demokrasi uyumludur",
+        "scores": { "reformcu": 5, "liberal_islam": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Devlet yapısı kültürel ve tarihsel bağlama göre değişebilir",
+        "scores": { "modernist": 4, "reformcu": 3 }
+      }
+    ]
+  },
+  {
+    "id": "SIY_002",
+    "category": "siyaset",
+    "weight": 1.3,
+    "text": "Hilafet (İslam devleti) restorasyonu hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hilafet mutlaka kurulmalı, bu dini bir görevdir",
+        "scores": { "jihadist_salafi": 5, "hanbeli": 3, "selefi": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Hilafet ideal bir sistemdir ama günümüzde pratik değildir",
+        "scores": { "reformcu": 3, "hanafi": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Modern ulus devleti meşrudur, hilafete ihtiyaç yoktur",
+        "scores": { "modernist": 5, "secular_muslim": 5, "liberal_islam": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Hilafet yerine bölgesel İslami birlikler kurulabilir",
+        "scores": { "reformcu": 4, "hanafi": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Devlet yapısı dini değil, pratik ihtiyaçlara göre belirlenmeli",
+        "scores": { "secular_muslim": 5, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "SIY_003",
+    "category": "siyaset",
+    "weight": 1.2,
+    "text": "Tekfir (İslam'dan çıkarma) sınırları nedir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tekfir çok kolay yapılır, birçok kişi tekfir edilebilir",
+        "scores": { "jihadist_salafi": 5, "harici": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Tekfir çok zordur, sadece açık küfür durumunda yapılır",
+        "scores": { "esari": 5, "maturidi": 4, "hanafi": 4, "shafii": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Tekfir yapılmamalı, her bireyin imanı Allah'a aittir",
+        "scores": { "murcie": 5, "sufi": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Tekfir sadece belirli durumlarda yapılabilir",
+        "scores": { "hanbeli": 3, "selefi": 3, "modernist": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Tekfir kavramı günümüzde geçersizdir",
+        "scores": { "secular_muslim": 5, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "SIY_004",
+    "category": "siyaset",
+    "weight": 1.1,
+    "text": "Kadının siyasette ve liderlik pozisyonlarında rolü nedir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kadın lider olamaz, erkek liderlik zorunludur",
+        "scores": { "hanbeli": 3, "selefi": 3, "jihadist_salafi": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Kadın lider olabilir, hiçbir engel yoktur",
+        "scores": { "feminist_islam": 5, "liberal_islam": 5, "modernist": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Kadın lider olabilir ama bazı şartlar vardır",
+        "scores": { "reformcu": 4, "hanafi": 3, "shafii": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Kadın siyasette aktif olabilir ama devlet başkanı olamaz",
+        "scores": { "esari": 3, "maturidi": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Cinsiyet siyasette rol oynamamalı, yeterlilik önemlidir",
+        "scores": { "secular_muslim": 5, "liberal_islam": 5 }
+      }
+    ]
+  },
+  {
+    "id": "MOD_001",
+    "category": "modernite",
+    "weight": 1.4,
+    "text": "Kur'an ve Sünnet'in tarihsel bağlamda okunması hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kur'an ve Sünnet evrensel, tarihsel bağlam önemsizdir",
+        "scores": { "selefi": 5, "hanbeli": 4, "jihadist_salafi": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Tarihsel bağlam önemlidir, bazı hükümler tarihseldir",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Evrensel prensipler vardır, teferruat tarihseldir",
+        "scores": { "esari": 4, "maturidi": 4, "hanafi": 3, "shafii": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Mukasıd (amaçlar) merkezli okuma yapılmalı",
+        "scores": { "reformcu": 5, "modernist": 4, "maliki": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Metin her dönemde yeniden yorumlanabilir",
+        "scores": { "liberal_islam": 5, "secular_muslim": 4 }
+      }
+    ]
+  },
+  {
+    "id": "MOD_002",
+    "category": "modernite",
+    "weight": 1.3,
+    "text": "Bilim ve din ilişkisi hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Din ve bilim çatışmaz, bilim dini doğrular",
+        "scores": { "esari": 4, "maturidi": 4, "hanafi": 3, "shafii": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Bilim dini yorumu değiştirebilir",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Din ve bilim tamamen ayrı alanlardır",
+        "scores": { "secular_muslim": 5, "liberal_islam": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Bilim dini doğrulamazsa, din doğru olur",
+        "scores": { "selefi": 3, "hanbeli": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Evrim teorisi kabul edilebilir, Kur'an'la uyumludur",
+        "scores": { "modernist": 5, "liberal_islam": 5, "reformcu": 3 }
+      }
+    ]
+  },
+  {
+    "id": "MOD_003",
+    "category": "modernite",
+    "weight": 1.2,
+    "text": "Feminizm ve cinsiyet eşitliği hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Geleneksel cinsiyet rolleri İslam'ın temelini oluşturur",
+        "scores": { "hanbeli": 3, "selefi": 3, "jihadist_salafi": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Cinsiyet eşitliği İslam'la uyumludur",
+        "scores": { "feminist_islam": 5, "liberal_islam": 5, "modernist": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Bazı alanlarda eşitlik, bazılarında farklılık vardır",
+        "scores": { "reformcu": 4, "hanafi": 3, "shafii": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Kadın ve erkek eşittir, hiçbir farklılık yoktur",
+        "scores": { "secular_muslim": 5, "liberal_islam": 5 }
+      },
+      {
+        "id": "E",
+        "text": "Cinsiyet meselesi kültürel, dini değildir",
+        "scores": { "secular_muslim": 5, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "MOD_004",
+    "category": "modernite",
+    "weight": 1.1,
+    "text": "Batı medeniyeti ve modernleşme hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Batı medeniyeti reddedilmeli, İslami sistem kurulmalı",
+        "scores": { "jihadist_salafi": 5, "hanbeli": 2, "selefi": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Batı'dan seçici olarak faydalanılabilir",
+        "scores": { "reformcu": 5, "modernist": 4, "hanafi": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Batı medeniyeti entegre edilebilir",
+        "scores": { "liberal_islam": 5, "modernist": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Modernleşme kaçınılmazdır, İslam'la uyumludur",
+        "scores": { "modernist": 5, "secular_muslim": 4 }
+      },
+      {
+        "id": "E",
+        "text": "Batı ve İslam sentezi yapılabilir",
+        "scores": { "liberal_islam": 5, "reformcu": 4 }
+      }
+    ]
+  }
+]
+

@@ -1,0 +1,318 @@
+[
+  {
+    "id": "hanbeli",
+    "name": "Hanbeli",
+    "era": "9. yüzyıl",
+    "founder": "İmam Ahmed bin Hanbel",
+    "description": "Nassalara sıkı bağlılık, rey'e karşı tutumlu, hadis merkezli fıkıh",
+    "characteristics": [
+      "Hadis otoritesi yüksek",
+      "Kıyas sınırlı kullanım",
+      "Selef'e bağlılık",
+      "Sıfatlarda zahiri anlayış"
+    ],
+    "regions": ["Suudi Arabistan", "Suriye", "Filistin", "Necid"],
+    "modernRepresentatives": ["İbn Baz", "İbn Usemin", "Albani"]
+  },
+  {
+    "id": "selefi",
+    "name": "Selefî (Ehl-i Hadis)",
+    "era": "Klasik: 8-10. yüzyıl, Modern: 18. yüzyıldan",
+    "founder": "Selef (ilk üç nesil)",
+    "description": "Kur'an ve Sünnet'e doğrudan dönüş, mezheplere bağlı kalmama",
+    "characteristics": [
+      "Doğrudan Kur'an ve Sünnet",
+      "Mezhep üstü yaklaşım",
+      "Hadis merkezli",
+      "Sıfatlarda zahiri anlayış"
+    ],
+    "regions": ["Suudi Arabistan", "Mısır", "Körfez", "Kuzey Afrika"],
+    "modernRepresentatives": ["Albani", "İbn Baz", "Uteymin"]
+  },
+  {
+    "id": "esari",
+    "name": "Eş'arî",
+    "era": "10. yüzyıl",
+    "founder": "Ebu'l-Hasan el-Eş'arî",
+    "description": "Akıl ve nakil dengesi, sıfatlarda te'vil, Ehl-i Sünnet'in ana akımı",
+    "characteristics": [
+      "Akıl ve nakil dengesi",
+      "Sıfatlarda te'vil",
+      "Kesb teorisi",
+      "Geniş fıkıh anlayışı"
+    ],
+    "regions": ["Mısır", "Suriye", "Mağrib", "Endülüs", "Ezher"],
+    "modernRepresentatives": ["Gazali", "Razi", "Cüveynî"]
+  },
+  {
+    "id": "maturidi",
+    "name": "Maturidî",
+    "era": "10. yüzyıl",
+    "founder": "Ebu Mansur el-Maturidî",
+    "description": "Akıl ve nakil dengesi, Hanefî fıkhıyla ilişkili, Orta Asya'da yaygın",
+    "characteristics": [
+      "Akıl ve nakil dengesi",
+      "Sıfatlarda tefviz",
+      "Kesb teorisi",
+      "Hanefî fıkhıyla uyum"
+    ],
+    "regions": ["Orta Asya", "Osmanlı", "Hindistan", "Anadolu"],
+    "modernRepresentatives": ["Osmanlı uleması", "Diyanet"]
+  },
+  {
+    "id": "hanafi",
+    "name": "Hanefî",
+    "era": "8. yüzyıl",
+    "founder": "Ebu Hanife",
+    "description": "Rey'e geniş yer, esneklik, Osmanlı'da resmi mezhep",
+    "characteristics": [
+      "Rey'e geniş yer",
+      "Kıyas sık kullanım",
+      "Esneklik",
+      "Maturidî akidesi"
+    ],
+    "regions": ["Osmanlı", "Hindistan", "Orta Asya", "Balkanlar"],
+    "modernRepresentatives": ["Osmanlı uleması", "Diyanet"]
+  },
+  {
+    "id": "shafii",
+    "name": "Şâfiî",
+    "era": "9. yüzyıl",
+    "founder": "Muhammed bin İdris eş-Şâfiî",
+    "description": "Metodolojik kesinlik, hadis ve rey dengesi, Doğu'da yaygın",
+    "characteristics": [
+      "Hadis ve rey dengesi",
+      "Metodolojik kesinlik",
+      "Kıyas önemli",
+      "Eş'arî akidesi"
+    ],
+    "regions": ["Mısır", "Yemen", "Doğu Afrika", "Güneydoğu Asya"],
+    "modernRepresentatives": ["Nevevi", "Suyuti", "Nawawi"]
+  },
+  {
+    "id": "maliki",
+    "name": "Mâlikî",
+    "era": "8. yüzyıl",
+    "founder": "Malik bin Enes",
+    "description": "Maslahat (kamu yararı) merkezli, Mağrib'de yaygın",
+    "characteristics": [
+      "Maslahat merkezli",
+      "Medine uygulaması",
+      "İstislah",
+      "Esneklik"
+    ],
+    "regions": ["Mağrib", "Kuzey Afrika", "Batı Afrika", "Endülüs"],
+    "modernRepresentatives": ["Mağrib uleması", "Kuzey Afrika"]
+  },
+  {
+    "id": "mutazila",
+    "name": "Mu'tezile",
+    "era": "8. yüzyıl",
+    "founder": "Vasıl bin Ata",
+    "description": "Akıl merkezli, Kur'an yaratılmış, adalet vurgusu",
+    "characteristics": [
+      "Akıl merkezli",
+      "Kur'an yaratılmış",
+      "Adalet vurgusu",
+      "Menzile beyne'l-menzileteyn"
+    ],
+    "regions": ["Bağdat", "Basra", "Mısır"],
+    "modernRepresentatives": ["Modernist İslam", "Neo-Mutezile"]
+  },
+  {
+    "id": "imamiyye",
+    "name": "İmâmiyye (On İki İmam Şiası)",
+    "era": "8. yüzyıl",
+    "founder": "Şia geleneği",
+    "description": "İmameti ilahi, Ehl-i Beyt merkezli, İran'da yaygın",
+    "characteristics": [
+      "İmameti ilahi",
+      "Ehl-i Beyt merkezli",
+      "Takiyye",
+      "Usûlî fıkıh"
+    ],
+    "regions": ["İran", "Irak", "Lübnan", "Bahreyn"],
+    "modernRepresentatives": ["Sistani", "Hamanei", "Şirazi"]
+  },
+  {
+    "id": "zeydi",
+    "name": "Zeydî",
+    "era": "8. yüzyıl",
+    "founder": "Zeyd bin Ali",
+    "description": "Seçimli imamlik, Sünni fıkıh, Yemen'de yaygın",
+    "characteristics": [
+      "Seçimli imamlik",
+      "Sünni fıkıh",
+      "Adalet vurgusu",
+      "Cihad vurgusu"
+    ],
+    "regions": ["Yemen", "Kuzey Yemen"],
+    "modernRepresentatives": ["Hûsîler", "Yemen Zeydîliği"]
+  },
+  {
+    "id": "ismaili",
+    "name": "İsmâilî",
+    "era": "8. yüzyıl",
+    "founder": "İsmail bin Cafer",
+    "description": "Bâtın yorumu, Ağa Han Cemaati, Hindistan'da yaygın",
+    "characteristics": [
+      "Bâtın yorumu",
+      "Hiyerarşik yapı",
+      "Ağa Han liderliği",
+      "Modernleşme açık"
+    ],
+    "regions": ["Hindistan", "Pakistan", "Doğu Afrika", "Orta Asya"],
+    "modernRepresentatives": ["Ağa Han", "Bohra Cemaati"]
+  },
+  {
+    "id": "zahiri",
+    "name": "Zâhirî",
+    "era": "9. yüzyıl",
+    "founder": "Davud ez-Zahiri",
+    "description": "Zahir merkezli, kıyas reddi, İbn Hazm",
+    "characteristics": [
+      "Zahir merkezli",
+      "Kıyas reddi",
+      "Literalist",
+      "Tarihsel"
+    ],
+    "regions": ["Endülüs", "Mısır"],
+    "modernRepresentatives": ["İbn Hazm", "Tarihsel"]
+  },
+  {
+    "id": "modernist",
+    "name": "Modernist İslam",
+    "era": "19-20. yüzyıl",
+    "founder": "Muhammed Abduh, Fazlur Rahman",
+    "description": "Tarihselci okuma, çağdaş yorumlar, akıl merkezli",
+    "characteristics": [
+      "Tarihselci okuma",
+      "Çağdaş yorumlar",
+      "Akıl merkezli",
+      "Bilim dostu"
+    ],
+    "regions": ["Mısır", "Hindistan", "İran", "Batı"],
+    "modernRepresentatives": ["Fazlur Rahman", "Nasr Hamid", "Suruş"]
+  },
+  {
+    "id": "reformcu",
+    "name": "Reformcu İslam",
+    "era": "20-21. yüzyıl",
+    "founder": "İhvan-ı Müslimin, Milli Görüş",
+    "description": "Gelenekle moderniteyi sentezleme, siyasi katılım",
+    "characteristics": [
+      "Gelenekle modernite sentezi",
+      "Siyasi katılım",
+      "Sosyal adalet",
+      "Mezhep üstü"
+    ],
+    "regions": ["Mısır", "Türkiye", "Arap dünyası", "Batı"],
+    "modernRepresentatives": ["Milli Görüş", "İhvan", "Ennahda"]
+  },
+  {
+    "id": "kuranci",
+    "name": "Kurancı (Kur'an'a Yeter)",
+    "era": "20-21. yüzyıl",
+    "founder": "Ahmed Subhi Mansur",
+    "description": "Kur'an yeterli, hadis reddi, modern yorum",
+    "characteristics": [
+      "Kur'an yeterli",
+      "Hadis reddi",
+      "Modern yorum",
+      "Mezhep reddi"
+    ],
+    "regions": ["Mısır", "Türkiye", "Hindistan"],
+    "modernRepresentatives": ["Ahmed Subhi Mansur", "Kurancı hareketler"]
+  },
+  {
+    "id": "sufi",
+    "name": "Sufi (Tasavvuf)",
+    "era": "10-21. yüzyıl",
+    "founder": "Tarikat kurucuları",
+    "description": "Maneviyat merkezli, tarikat sistemi, zikir ve seyr",
+    "characteristics": [
+      "Maneviyat merkezli",
+      "Tarikat sistemi",
+      "Zikir ve seyr",
+      "Şeyh-mürid ilişkisi"
+    ],
+    "regions": ["Tüm İslam dünyası"],
+    "modernRepresentatives": ["Nakşibendi", "Kadiri", "Mevlevi"]
+  },
+  {
+    "id": "quietist_salafi",
+    "name": "Quietist Salafi",
+    "era": "20-21. yüzyıl",
+    "founder": "Albani, Uteymin",
+    "description": "Selefi ilkeler, apolitik, devlete itaat",
+    "characteristics": [
+      "Selefi ilkeler",
+      "Apolitik",
+      "Devlete itaat",
+      "İlmi çalışma"
+    ],
+    "regions": ["Suudi Arabistan", "Körfez", "Mısır"],
+    "modernRepresentatives": ["Albani", "Uteymin", "Ferkus"]
+  },
+  {
+    "id": "jihadist_salafi",
+    "name": "Cihadist Salafi",
+    "era": "20-21. yüzyıl",
+    "founder": "Azzam, Bin Laden",
+    "description": "Selefi ilkeler, cihad vurgusu, radikal siyaset",
+    "characteristics": [
+      "Selefi ilkeler",
+      "Cihad vurgusu",
+      "Radikal siyaset",
+      "Tekfir geniş"
+    ],
+    "regions": ["Afganistan", "Suriye", "Irak", "Somali"],
+    "modernRepresentatives": ["El-Kaide", "IŞİD", "Nusra"]
+  },
+  {
+    "id": "liberal_islam",
+    "name": "Liberal İslam",
+    "era": "20-21. yüzyıl",
+    "founder": "Jaringan İslam Liberal",
+    "description": "Bireysel özgürlük, çoğulculuk, sekülerleşme açık",
+    "characteristics": [
+      "Bireysel özgürlük",
+      "Çoğulculuk",
+      "Sekülerleşme açık",
+      "İnsan hakları"
+    ],
+    "regions": ["Endonezya", "Malezya", "Batı"],
+    "modernRepresentatives": ["JIL", "Sisters in Islam", "Progresif Müslümanlar"]
+  },
+  {
+    "id": "feminist_islam",
+    "name": "Feminist İslam",
+    "era": "20-21. yüzyıl",
+    "founder": "Fatima Mernissi, Riffat Hassan",
+    "description": "Cinsiyet eşitliği, patriarki reddi, feminist yorum",
+    "characteristics": [
+      "Cinsiyet eşitliği",
+      "Patriarki reddi",
+      "Feminist yorum",
+      "Kadın merkezli"
+    ],
+    "regions": ["Batı", "Mısır", "Hindistan", "Endonezya"],
+    "modernRepresentatives": ["Musawah", "Fatima Mernissi", "Riffat Hassan"]
+  },
+  {
+    "id": "secular_muslim",
+    "name": "Seküler Müslüman",
+    "era": "20-21. yüzyıl",
+    "founder": "Laiklik savunucuları",
+    "description": "Din kişisel, devlet laik, seküler hukuk",
+    "characteristics": [
+      "Din kişisel",
+      "Devlet laik",
+      "Seküler hukuk",
+      "Kültürel kimlik"
+    ],
+    "regions": ["Türkiye", "Tunus", "Batı", "Mısır"],
+    "modernRepresentatives": ["Laiklik savunucuları", "Ateist Müslümanlar"]
+  }
+]
+

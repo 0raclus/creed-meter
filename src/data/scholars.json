@@ -1,0 +1,159 @@
+[
+  {
+    "name": "İmam Şâfiî",
+    "era": "8-9. yüzyıl",
+    "school": "shafii",
+    "description": "Fıkıh usulünün kurucusu, hadis ve rey dengesi"
+  },
+  {
+    "name": "İmam Gazali",
+    "era": "11-12. yüzyıl",
+    "school": "shafii",
+    "description": "Eş'arî akidesi, tasavvuf ve fıkıh sentezi"
+  },
+  {
+    "name": "Fahreddin er-Razi",
+    "era": "12-13. yüzyıl",
+    "school": "shafii",
+    "description": "Eş'arî kelam, felsefe ve İslam sentezi"
+  },
+  {
+    "name": "İbn Teymiyye",
+    "era": "13-14. yüzyıl",
+    "school": "hanbeli",
+    "description": "Selefi akidesi, hadis merkezli, cihad vurgusu"
+  },
+  {
+    "name": "İbn Kayyim el-Cevziyye",
+    "era": "14. yüzyıl",
+    "school": "hanbeli",
+    "description": "İbn Teymiyye'nin öğrencisi, fıkıh ve tasavvuf"
+  },
+  {
+    "name": "Ebu Hanife",
+    "era": "8. yüzyıl",
+    "school": "hanafi",
+    "description": "Hanefî mezhebinin kurucusu, rey merkezli"
+  },
+  {
+    "name": "Malik bin Enes",
+    "era": "8. yüzyıl",
+    "school": "maliki",
+    "description": "Mâlikî mezhebinin kurucusu, maslahat merkezli"
+  },
+  {
+    "name": "Ahmed bin Hanbel",
+    "era": "9. yüzyıl",
+    "school": "hanbeli",
+    "description": "Hanbeli mezhebinin kurucusu, hadis merkezli"
+  },
+  {
+    "name": "Ebu'l-Hasan el-Eş'arî",
+    "era": "10. yüzyıl",
+    "school": "esari",
+    "description": "Eş'arî akidesinin kurucusu, akıl ve nakil dengesi"
+  },
+  {
+    "name": "Ebu Mansur el-Maturidî",
+    "era": "10. yüzyıl",
+    "school": "maturidi",
+    "description": "Maturidî akidesinin kurucusu, Hanefî ile ilişkili"
+  },
+  {
+    "name": "Muhammed Abduh",
+    "era": "19-20. yüzyıl",
+    "school": "modernist",
+    "description": "Modernist İslam'ın kurucusu, Mısır'da reform"
+  },
+  {
+    "name": "Fazlur Rahman",
+    "era": "20. yüzyıl",
+    "school": "modernist",
+    "description": "Tarihselci Kur'an okuma, çağdaş yorum"
+  },
+  {
+    "name": "Nasr Hamid Ebu Zeyd",
+    "era": "20-21. yüzyıl",
+    "school": "modernist",
+    "description": "Metin merkezli yorum, hermenötik yaklaşım"
+  },
+  {
+    "name": "Abdülkerim Suruş",
+    "era": "20-21. yüzyıl",
+    "school": "modernist",
+    "description": "İran'da reform, dini bilgi dinamik"
+  },
+  {
+    "name": "Muhammed Albani",
+    "era": "20. yüzyıl",
+    "school": "selefi",
+    "description": "Hadis uzmanı, Selefi hareketi öncüsü"
+  },
+  {
+    "name": "İbn Baz",
+    "era": "20. yüzyıl",
+    "school": "selefi",
+    "description": "Suudi Arabistan'ın başmüftüsü, Selefi ilkeler"
+  },
+  {
+    "name": "Muhammed Uteymin",
+    "era": "20. yüzyıl",
+    "school": "selefi",
+    "description": "Hadis ve fıkıh uzmanı, Selefi eğitim"
+  },
+  {
+    "name": "Hasan el-Benna",
+    "era": "20. yüzyıl",
+    "school": "reformcu",
+    "description": "İhvan-ı Müslimin kurucusu, siyasi İslam"
+  },
+  {
+    "name": "Seyyid Kutub",
+    "era": "20. yüzyıl",
+    "school": "reformcu",
+    "description": "İhvan ideoloji, cihad vurgusu"
+  },
+  {
+    "name": "Yusuf Kardavi",
+    "era": "20-21. yüzyıl",
+    "school": "reformcu",
+    "description": "Mukasıd merkezli fıkıh, çağdaş meseleler"
+  },
+  {
+    "name": "Tarık Ramazan",
+    "era": "20-21. yüzyıl",
+    "school": "reformcu",
+    "description": "Batı'da İslam, entegrasyon"
+  },
+  {
+    "name": "Fatima Mernissi",
+    "era": "20-21. yüzyıl",
+    "school": "feminist_islam",
+    "description": "Feminist İslam, cinsiyet eşitliği"
+  },
+  {
+    "name": "Riffat Hassan",
+    "era": "20-21. yüzyıl",
+    "school": "feminist_islam",
+    "description": "Kadın merkezli Kur'an okuma"
+  },
+  {
+    "name": "Molla Sadra",
+    "era": "17. yüzyıl",
+    "school": "imamiyye",
+    "description": "Şii felsefesi, hikmet-i ilahi"
+  },
+  {
+    "name": "Şeyh Tusi",
+    "era": "10-11. yüzyıl",
+    "school": "imamiyye",
+    "description": "Şii fıkıh usulü, usûlî geleneği"
+  },
+  {
+    "name": "Allame Hilli",
+    "era": "13-14. yüzyıl",
+    "school": "imamiyye",
+    "description": "Şii fıkıh ve usulü, usûlî okulu"
+  }
+]
+
