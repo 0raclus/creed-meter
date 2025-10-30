@@ -53,7 +53,7 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
     const option = question.options.find(opt => opt.id === selectedOptionId);
     if (!option) return;
 
-    const categoryWeight = CATEGORY_WEIGHTS[question.category];
+    const categoryWeight = CATEGORY_WEIGHTS[question.category as Category];
     const questionWeight = question.weight * categoryWeight;
 
     Object.entries(option.scores).forEach(([schoolId, score]) => {
