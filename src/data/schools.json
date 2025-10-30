@@ -313,6 +313,351 @@
     ],
     "regions": ["Türkiye", "Tunus", "Batı", "Mısır"],
     "modernRepresentatives": ["Laiklik savunucuları", "Ateist Müslümanlar"]
+  },
+  {
+    "id": "ehlihadis",
+    "name": "Ehl-i Hadis",
+    "era": "9-10. yüzyıl",
+    "founder": "Hadis merkezli uleması",
+    "description": "Hadis otoritesi maksimum, rey minimal, Selefi öncüsü",
+    "characteristics": [
+      "Hadis otoritesi maksimum",
+      "Rey minimal",
+      "Selefi öncüsü",
+      "Zahiri sıfat anlayışı"
+    ],
+    "regions": ["Bağdat", "Horasan", "Mısır"],
+    "modernRepresentatives": ["Darimi", "Tirmizi", "Nesai"]
+  },
+  {
+    "id": "murcie",
+    "name": "Mürcie",
+    "era": "8. yüzyıl",
+    "founder": "Murcie hareketi",
+    "description": "Amel imandan değildir, tekfir etmeme, tolerans",
+    "characteristics": [
+      "Amel imandan değildir",
+      "Tekfir etmeme",
+      "Tolerans",
+      "Siyasi tarafsızlık"
+    ],
+    "regions": ["Bağdat", "Basra", "Kufa"],
+    "modernRepresentatives": ["Tarihsel"]
+  },
+  {
+    "id": "harici",
+    "name": "Harici (Hariciler)",
+    "era": "7. yüzyıl",
+    "founder": "Hariciler hareketi",
+    "description": "Tekfir geniş, demokrasi, liyakat merkezli",
+    "characteristics": [
+      "Tekfir geniş",
+      "Demokrasi",
+      "Liyakat merkezli",
+      "Radikal"
+    ],
+    "regions": ["Arabistan", "Kuzey Afrika", "Oman"],
+    "modernRepresentatives": ["İbazi", "Oman İbaziliği"]
+  },
+  {
+    "id": "ibazi",
+    "name": "İbazi",
+    "era": "8. yüzyıl",
+    "founder": "Abdullah bin İbaz",
+    "description": "Harici'nin ılımlı kolu, Oman'da yaygın",
+    "characteristics": [
+      "Harici'nin ılımlı kolu",
+      "Tekfir sınırlı",
+      "Demokrasi",
+      "Oman'da yaygın"
+    ],
+    "regions": ["Oman", "Cezayir", "Tunus"],
+    "modernRepresentatives": ["Oman İbaziliği", "Cezayir İbaziliği"]
+  },
+  {
+    "id": "qadariyya",
+    "name": "Kaderiyye",
+    "era": "8. yüzyıl",
+    "founder": "Vasıl bin Ata",
+    "description": "İnsan özgürlüğü vurgusu, Mu'tezile öncüsü",
+    "characteristics": [
+      "İnsan özgürlüğü",
+      "Mu'tezile öncüsü",
+      "Akıl merkezli",
+      "Adalet vurgusu"
+    ],
+    "regions": ["Bağdat", "Basra"],
+    "modernRepresentatives": ["Mu'tezile"]
+  },
+  {
+    "id": "jabriyya",
+    "name": "Cebriyye",
+    "era": "8. yüzyıl",
+    "founder": "Cebriyye hareketi",
+    "description": "Kader mutlak, insan özgürlüğü yok, determinizm",
+    "characteristics": [
+      "Kader mutlak",
+      "İnsan özgürlüğü yok",
+      "Determinizm",
+      "Devlete itaat"
+    ],
+    "regions": ["Bağdat", "Suriye"],
+    "modernRepresentatives": ["Tarihsel"]
+  },
+  {
+    "id": "qadiriyya",
+    "name": "Kadiriyye",
+    "era": "12. yüzyıl",
+    "founder": "Abdulkadir Geylani",
+    "description": "En eski ve en yaygın tarikat, Sünni uyumlu",
+    "characteristics": [
+      "En eski tarikat",
+      "Sünni uyumlu",
+      "Geniş ağ",
+      "Sosyal hizmet"
+    ],
+    "regions": ["Irak", "Mısır", "Kuzey Afrika", "Hindistan"],
+    "modernRepresentatives": ["Abdulkadir Geylani", "Tarikat şubesi"]
+  },
+  {
+    "id": "naqshbandi",
+    "name": "Nakşibendi",
+    "era": "14. yüzyıl",
+    "founder": "Baha'uddin Nakşibend",
+    "description": "Sessiz zikir, siyasi katılım, Osmanlı'da yaygın",
+    "characteristics": [
+      "Sessiz zikir",
+      "Siyasi katılım",
+      "Osmanlı'da yaygın",
+      "Entelektüel"
+    ],
+    "regions": ["Orta Asya", "Osmanlı", "Hindistan", "Kafkasya"],
+    "modernRepresentatives": ["Osmanlı Nakşibendiliği", "Nurculuk"]
+  },
+  {
+    "id": "mevlevi",
+    "name": "Mevlevi",
+    "era": "13. yüzyıl",
+    "founder": "Mevlana Celaleddin Rumi",
+    "description": "Aşk merkezli, sema ritüeli, kültürel etki",
+    "characteristics": [
+      "Aşk merkezli",
+      "Sema ritüeli",
+      "Kültürel etki",
+      "Sanat dostu"
+    ],
+    "regions": ["Osmanlı", "Anadolu", "Batı"],
+    "modernRepresentatives": ["Mevlana", "Mevlevi tarikatı"]
+  },
+  {
+    "id": "rifaiyya",
+    "name": "Rifaiyye",
+    "era": "12. yüzyıl",
+    "founder": "Ahmed er-Rifai",
+    "description": "Ekstazi merkezli, mucize vurgusu, Mısır'da yaygın",
+    "characteristics": [
+      "Ekstazi merkezli",
+      "Mucize vurgusu",
+      "Mısır'da yaygın",
+      "Halk tarafından sevilen"
+    ],
+    "regions": ["Mısır", "Irak", "Suriye"],
+    "modernRepresentatives": ["Ahmed er-Rifai", "Rifaiyye tarikatı"]
+  },
+  {
+    "id": "shadhili",
+    "name": "Şadhili",
+    "era": "13. yüzyıl",
+    "founder": "Ali el-Şadhili",
+    "description": "Günlük hayatta tasavvuf, Mağrib'de yaygın",
+    "characteristics": [
+      "Günlük hayatta tasavvuf",
+      "Mağrib'de yaygın",
+      "Pratik",
+      "Sosyal katılım"
+    ],
+    "regions": ["Mağrib", "Kuzey Afrika", "Mısır"],
+    "modernRepresentatives": ["Şadhili tarikatı", "Mağrib Şadhililiği"]
+  },
+  {
+    "id": "tijaniyya",
+    "name": "Ticaniyye",
+    "era": "18. yüzyıl",
+    "founder": "Ahmed et-Tijani",
+    "description": "Batı Afrika'da yaygın, sosyal hizmet merkezli",
+    "characteristics": [
+      "Batı Afrika'da yaygın",
+      "Sosyal hizmet",
+      "Eğitim merkezli",
+      "Geniş ağ"
+    ],
+    "regions": ["Batı Afrika", "Senegal", "Mali", "Mauritanya"],
+    "modernRepresentatives": ["Ahmed et-Tijani", "Ticaniyye tarikatı"]
+  },
+  {
+    "id": "deobandi",
+    "name": "Deobandi",
+    "era": "19. yüzyıl",
+    "founder": "Darul Uloom Deoband",
+    "description": "Hindistan'da kurulan, hadis merkezli, selefi eğilimli",
+    "characteristics": [
+      "Hadis merkezli",
+      "Selefi eğilimli",
+      "Eğitim merkezli",
+      "Hindistan'da yaygın"
+    ],
+    "regions": ["Hindistan", "Pakistan", "Bangladeş", "Batı"],
+    "modernRepresentatives": ["Darul Uloom Deoband", "Deobandi uleması"]
+  },
+  {
+    "id": "barelvi",
+    "name": "Barelvi",
+    "era": "19. yüzyıl",
+    "founder": "Ahmed Riza Khan Barelvi",
+    "description": "Hindistan'da kurulan, tasavvuf merkezli, Peygamber aşkı",
+    "characteristics": [
+      "Tasavvuf merkezli",
+      "Peygamber aşkı",
+      "Halk tarafından sevilen",
+      "Hindistan'da yaygın"
+    ],
+    "regions": ["Hindistan", "Pakistan", "Bangladeş"],
+    "modernRepresentatives": ["Ahmed Riza Khan", "Barelvi tarikatı"]
+  },
+  {
+    "id": "ikhwan",
+    "name": "İhvan-ı Müslimin",
+    "era": "20. yüzyıl",
+    "founder": "Hasan el-Benna",
+    "description": "Siyasi İslam, sosyal hizmet, mezhep üstü",
+    "characteristics": [
+      "Siyasi İslam",
+      "Sosyal hizmet",
+      "Mezhep üstü",
+      "Geniş ağ"
+    ],
+    "regions": ["Mısır", "Arap dünyası", "Batı", "Türkiye"],
+    "modernRepresentatives": ["Hasan el-Benna", "İhvan örgütü"]
+  },
+  {
+    "id": "nurculuk",
+    "name": "Nurculuk",
+    "era": "20. yüzyıl",
+    "founder": "Bediuzzaman Said Nursi",
+    "description": "Türkiye'de kurulan, Kur'an merkezli, modernite uyumlu",
+    "characteristics": [
+      "Kur'an merkezli",
+      "Modernite uyumlu",
+      "Eğitim merkezli",
+      "Türkiye'de yaygın"
+    ],
+    "regions": ["Türkiye", "Balkanlar", "Orta Asya"],
+    "modernRepresentatives": ["Bediuzzaman Said Nursi", "Nur cemaati"]
+  },
+  {
+    "id": "salafi_jihadist",
+    "name": "Selefi Cihadist",
+    "era": "20-21. yüzyıl",
+    "founder": "Abdullah Azzam, Osama bin Laden",
+    "description": "Selefi ilkeler, cihad vurgusu, radikal eylem",
+    "characteristics": [
+      "Selefi ilkeler",
+      "Cihad vurgusu",
+      "Radikal eylem",
+      "Tekfir geniş"
+    ],
+    "regions": ["Afganistan", "Suriye", "Irak", "Somali"],
+    "modernRepresentatives": ["El-Kaide", "IŞİD", "Nusra Cephesi"]
+  },
+  {
+    "id": "quietist_salafi_2",
+    "name": "Sessiz Selefi",
+    "era": "20-21. yüzyıl",
+    "founder": "Albani, Uteymin",
+    "description": "Selefi ilkeler, apolitik, devlete itaat, ilmi çalışma",
+    "characteristics": [
+      "Selefi ilkeler",
+      "Apolitik",
+      "Devlete itaat",
+      "İlmi çalışma"
+    ],
+    "regions": ["Suudi Arabistan", "Körfez", "Mısır"],
+    "modernRepresentatives": ["Albani", "Uteymin", "Ferkus"]
+  },
+  {
+    "id": "progressive_islam",
+    "name": "Progresif İslam",
+    "era": "20-21. yüzyıl",
+    "founder": "Progresif Müslümanlar",
+    "description": "Sosyal adalet, LGBTQ+ hakları, feminist yorum",
+    "characteristics": [
+      "Sosyal adalet",
+      "LGBTQ+ hakları",
+      "Feminist yorum",
+      "Batı dostu"
+    ],
+    "regions": ["Batı", "Endonezya", "Malezya"],
+    "modernRepresentatives": ["Progresif Müslümanlar", "Sisters in Islam"]
+  },
+  {
+    "id": "ahmadiyya",
+    "name": "Ahmadiyya",
+    "era": "19. yüzyıl",
+    "founder": "Mirza Gulam Ahmad",
+    "description": "Hindistan'da kurulan, Mesih inancı, modernleşme açık",
+    "characteristics": [
+      "Mesih inancı",
+      "Modernleşme açık",
+      "Eğitim merkezli",
+      "Hindistan'da yaygın"
+    ],
+    "regions": ["Hindistan", "Pakistan", "Batı", "Afrika"],
+    "modernRepresentatives": ["Mirza Gulam Ahmad", "Ahmadiyya cemaati"]
+  },
+  {
+    "id": "twelver_shia",
+    "name": "On İki İmam Şiası",
+    "era": "8. yüzyıl",
+    "founder": "Şia geleneği",
+    "description": "İmameti ilahi, Ehl-i Beyt merkezli, İran'da yaygın",
+    "characteristics": [
+      "İmameti ilahi",
+      "Ehl-i Beyt merkezli",
+      "Takiyye",
+      "Usûlî fıkıh"
+    ],
+    "regions": ["İran", "Irak", "Lübnan", "Bahreyn"],
+    "modernRepresentatives": ["Sistani", "Hamanei", "Şirazi"]
+  },
+  {
+    "id": "zaydi_shia",
+    "name": "Zeydî Şia",
+    "era": "8. yüzyıl",
+    "founder": "Zeyd bin Ali",
+    "description": "Seçimli imamlik, Sünni fıkıh, Yemen'de yaygın",
+    "characteristics": [
+      "Seçimli imamlik",
+      "Sünni fıkıh",
+      "Adalet vurgusu",
+      "Cihad vurgusu"
+    ],
+    "regions": ["Yemen", "Kuzey Yemen"],
+    "modernRepresentatives": ["Hûsîler", "Yemen Zeydîliği"]
+  },
+  {
+    "id": "ismaili_shia",
+    "name": "İsmâilî Şia",
+    "era": "8. yüzyıl",
+    "founder": "İsmail bin Cafer",
+    "description": "Bâtın yorumu, Ağa Han Cemaati, Hindistan'da yaygın",
+    "characteristics": [
+      "Bâtın yorumu",
+      "Hiyerarşik yapı",
+      "Ağa Han liderliği",
+      "Modernleşme açık"
+    ],
+    "regions": ["Hindistan", "Pakistan", "Doğu Afrika", "Orta Asya"],
+    "modernRepresentatives": ["Ağa Han", "Bohra Cemaati"]
   }
 ]
 

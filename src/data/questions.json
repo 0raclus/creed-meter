@@ -823,6 +823,538 @@
         "scores": { "liberal_islam": 5, "reformcu": 4 }
       }
     ]
+  },
+  {
+    "id": "AKD_006",
+    "category": "akide",
+    "weight": 1.3,
+    "text": "Peygamber Efendimiz'in ismet (günahsızlığı) hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peygamberler tamamen günahsızdır, hiçbir hata yapamazlar",
+        "scores": { "imamiyye": 5, "esari": 4, "shafii": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Peygamberler büyük günah işlemezler ama küçük günah işleyebilirler",
+        "scores": { "hanafi": 4, "maliki": 4, "maturidi": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Peygamberler de insan, hata yapabilirler",
+        "scores": { "modernist": 4, "liberal_islam": 3 }
+      },
+      {
+        "id": "D",
+        "text": "İsmet kavramı modern bağlamda yeniden değerlendirilmeli",
+        "scores": { "modernist": 5, "secular_muslim": 4 }
+      }
+    ]
+  },
+  {
+    "id": "AKD_007",
+    "category": "akide",
+    "weight": 1.2,
+    "text": "Şia'nın İmam kavramı hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "İmamlar masum ve ilahi rehberlik alırlar",
+        "scores": { "imamiyye": 5, "zeydi": 3 }
+      },
+      {
+        "id": "B",
+        "text": "İmamlar sadece siyasi liderlerdir, masum değillerdir",
+        "scores": { "esari": 4, "maturidi": 4, "hanafi": 3 }
+      },
+      {
+        "id": "C",
+        "text": "İmam kavramı İslam'ın temel doktrinini oluşturmaz",
+        "scores": { "selefi": 5, "hanbeli": 4, "modernist": 3 }
+      },
+      {
+        "id": "D",
+        "text": "İmam ve Halife aynı şeydir",
+        "scores": { "hanafi": 3, "shafii": 3, "maliki": 3 }
+      }
+    ]
+  },
+  {
+    "id": "FIQ_003",
+    "category": "fiqh_usul",
+    "weight": 1.3,
+    "text": "Kıyas (analoji) yöntemi hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kıyas meşrudur ve sıkça kullanılmalı",
+        "scores": { "hanafi": 5, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Kıyas sınırlı durumlarda kullanılmalı",
+        "scores": { "hanbeli": 4, "selefi": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Kıyas haramdır, sadece Kur'an ve Sünnet yeterlidir",
+        "scores": { "zahiri": 5, "kuranci": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Kıyas yerine istislah (maslahat) kullanılmalı",
+        "scores": { "maliki": 5, "reformcu": 4 }
+      }
+    ]
+  },
+  {
+    "id": "FIQ_004",
+    "category": "fiqh_usul",
+    "weight": 1.2,
+    "text": "Maslahat (kamu yararı) ilkesi fıkıhta ne kadar önemlidir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maslahat temel ilkedir, hükümleri değiştirebilir",
+        "scores": { "maliki": 5, "reformcu": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Maslahat önemlidir ama Kur'an ve Sünnet'e aykırı olamaz",
+        "scores": { "hanafi": 4, "shafii": 4, "esari": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Maslahat ikincildir, Kur'an ve Sünnet önceliklidir",
+        "scores": { "hanbeli": 4, "selefi": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Maslahat kavramı modern bağlamda yeniden tanımlanmalı",
+        "scores": { "modernist": 5, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "AME_004",
+    "category": "fiqh_amel",
+    "weight": 1.1,
+    "text": "Müzik ve sanat hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Müzik kesinlikle haramdır",
+        "scores": { "hanbeli": 4, "selefi": 4, "jihadist_salafi": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Müzik meşrudur, İslam'ın bir parçasıdır",
+        "scores": { "sufi": 5, "maliki": 3, "shafii": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Bazı müzikler caiz, bazıları haramdır",
+        "scores": { "hanafi": 4, "esari": 3, "maturidi": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Müzik kültürel bir meseledir, dini değildir",
+        "scores": { "modernist": 4, "secular_muslim": 5, "liberal_islam": 4 }
+      }
+    ]
+  },
+  {
+    "id": "AME_005",
+    "category": "fiqh_amel",
+    "weight": 1.2,
+    "text": "Alkol ve uyuşturucu maddelerin hükmü nedir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kesinlikle haramdır, hiçbir şekilde caiz değildir",
+        "scores": { "hanbeli": 5, "selefi": 5, "esari": 4, "maturidi": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Haramdır ama tıbbi amaçla kullanılabilir",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Alkol haramdır ama uyuşturucu maddelerin hükmü farklıdır",
+        "scores": { "modernist": 3, "reformcu": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Bu konular modern bağlamda yeniden değerlendirilmeli",
+        "scores": { "modernist": 4, "liberal_islam": 3 }
+      }
+    ]
+  },
+  {
+    "id": "TAS_003",
+    "category": "tasavvuf",
+    "weight": 1.2,
+    "text": "Zikir ve meditasyon uygulamaları hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zikir meşrudur ve ruhani gelişim için önemlidir",
+        "scores": { "sufi": 5, "esari": 3, "maturidi": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Zikir caizdir ama tarikat şekilleri şeriata aykırıdır",
+        "scores": { "selefi": 3, "hanbeli": 3, "hanafi": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Zikir ve meditasyon kültürel uygulamadır",
+        "scores": { "modernist": 4, "secular_muslim": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Zikir Kur'an'da emredilmiştir, meşrudur",
+        "scores": { "sufi": 5, "reformcu": 3, "maliki": 2 }
+      }
+    ]
+  },
+  {
+    "id": "TAS_004",
+    "category": "tasavvuf",
+    "weight": 1.1,
+    "text": "Mürşid (rehber) ve talip (mürid) ilişkisi hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mürşid mutlak itaat edilmesi gereken rehberdir",
+        "scores": { "sufi": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Mürşid rehberdir ama Kur'an ve Sünnet'e aykırı olamaz",
+        "scores": { "sufi": 4, "esari": 3, "maturidi": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Mürşid kavramı İslam'ın temel doktrinini oluşturmaz",
+        "scores": { "selefi": 5, "hanbeli": 4, "modernist": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Mürşid-mürid ilişkisi kültürel bir meseledir",
+        "scores": { "modernist": 4, "secular_muslim": 4 }
+      }
+    ]
+  },
+  {
+    "id": "SIY_004",
+    "category": "siyaset",
+    "weight": 1.3,
+    "text": "Demokrasi ve İslam uyumlu mudur?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Demokrasi haramdır, İslami sistem kurulmalı",
+        "scores": { "jihadist_salafi": 5, "hanbeli": 2, "selefi": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Demokrasi meşrudur, İslam'la uyumludur",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 5 }
+      },
+      {
+        "id": "C",
+        "text": "Şûra (danışma) demokrasiye benzer",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Demokrasi araçtır, İslami değerler korunmalı",
+        "scores": { "reformcu": 5, "esari": 3 }
+      }
+    ]
+  },
+  {
+    "id": "SIY_005",
+    "category": "siyaset",
+    "weight": 1.2,
+    "text": "Cihad kavramı nasıl anlaşılmalı?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cihad silahla savaştır, dini bir görevdir",
+        "scores": { "jihadist_salafi": 5, "hanbeli": 3, "selefi": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Cihad iç mücadeledir, silahla savaş son çaredir",
+        "scores": { "sufi": 4, "esari": 3, "maturidi": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Cihad sadece savunmadır, saldırı değildir",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Cihad kavramı modern bağlamda yeniden tanımlanmalı",
+        "scores": { "modernist": 5, "secular_muslim": 4 }
+      }
+    ]
+  },
+  {
+    "id": "MOD_005",
+    "category": "modernite",
+    "weight": 1.2,
+    "text": "İnsan hakları ve İslam ilişkisi hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "İnsan hakları Batı'nın icadıdır, İslam'la uyumsuzdur",
+        "scores": { "jihadist_salafi": 4, "selefi": 2 }
+      },
+      {
+        "id": "B",
+        "text": "İnsan hakları İslam'ın temelini oluşturur",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 5 }
+      },
+      {
+        "id": "C",
+        "text": "İnsan hakları İslam'la uyumludur ama bazı farklılıklar vardır",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "D",
+        "text": "İslami haklar insan haklarından farklıdır",
+        "scores": { "esari": 3, "maturidi": 3, "hanbeli": 2 }
+      }
+    ]
+  },
+  {
+    "id": "MOD_006",
+    "category": "modernite",
+    "weight": 1.1,
+    "text": "Sosyal medya ve internet kullanımı hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sosyal medya haramdır, kaçınılmalı",
+        "scores": { "selefi": 3, "hanbeli": 2, "jihadist_salafi": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Sosyal medya meşrudur, dikkatli kullanılmalı",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Sosyal medya araçtır, kullanımı önemlidir",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Sosyal medya kültürel bir meseledir",
+        "scores": { "modernist": 4, "secular_muslim": 4 }
+      }
+    ]
+  },
+  {
+    "id": "AKD_008",
+    "category": "akide",
+    "weight": 1.2,
+    "text": "Ehl-i Kitap (Hristiyan ve Yahudiler) hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ehl-i Kitap kâfirdir, İslam'a davet edilmeli",
+        "scores": { "jihadist_salafi": 4, "selefi": 2, "hanbeli": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Ehl-i Kitap mümin sayılır, cennete girebilir",
+        "scores": { "imamiyye": 4, "esari": 3, "maturidi": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Ehl-i Kitap ile barış içinde yaşanabilir",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 5 }
+      },
+      {
+        "id": "D",
+        "text": "Ehl-i Kitap kavramı modern bağlamda yeniden değerlendirilmeli",
+        "scores": { "modernist": 5, "secular_muslim": 4 }
+      }
+    ]
+  },
+  {
+    "id": "FIQ_005",
+    "category": "fiqh_usul",
+    "weight": 1.1,
+    "text": "Hadis kritiği ve sahih hadis belirleme hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hadis kritiği çok katıdır, sadece sahih hadisler kabul edilir",
+        "scores": { "selefi": 5, "hanbeli": 4, "ehlihadis": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Hadis kritiği esnek olabilir, zayıf hadisler de kullanılabilir",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Hadis kritiği modern yöntemlerle yapılmalı",
+        "scores": { "modernist": 5, "reformcu": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Hadis kritiği Kur'an'a göre yapılmalı",
+        "scores": { "kuranci": 5, "modernist": 3 }
+      }
+    ]
+  },
+  {
+    "id": "AME_006",
+    "category": "fiqh_amel",
+    "weight": 1.2,
+    "text": "Nikah (evlilik) akdi hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nikah dini bir akittir, devlet müdahalesi olmamalı",
+        "scores": { "hanbeli": 4, "selefi": 3, "imamiyye": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Nikah devlet tarafından tescil edilmeli",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Nikah dini ve hukuki bir akittir",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Nikah şekli önemli değildir, niyetin doğru olması yeterlidir",
+        "scores": { "sufi": 3, "reformcu": 2 }
+      }
+    ]
+  },
+  {
+    "id": "AME_007",
+    "category": "fiqh_amel",
+    "weight": 1.1,
+    "text": "Boşanma (talak) hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Talak kolay yapılabilir, erkek istediği zaman boşayabilir",
+        "scores": { "hanbeli": 3, "selefi": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Talak zordur, belirli şartlar altında yapılmalı",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Talak kadın ve erkek için eşit olmalı",
+        "scores": { "feminist_islam": 5, "liberal_islam": 5, "modernist": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Talak yerine arabuluculuk yapılmalı",
+        "scores": { "reformcu": 5, "modernist": 4 }
+      }
+    ]
+  },
+  {
+    "id": "TAS_005",
+    "category": "tasavvuf",
+    "weight": 1.1,
+    "text": "Vahdet-i Vücud (varlığın birliği) felsefesi hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vahdet-i Vücud doğru bir tasavvufi doktrindir",
+        "scores": { "sufi": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Vahdet-i Vücud panteizme yakındır, şüpheli",
+        "scores": { "selefi": 4, "hanbeli": 3, "esari": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Vahdet-i Şühud daha doğru bir doktrindir",
+        "scores": { "sufi": 4, "esari": 3, "maturidi": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Bu tür felsefeler İslam'ın temel doktrinini oluşturmaz",
+        "scores": { "modernist": 4, "secular_muslim": 4 }
+      }
+    ]
+  },
+  {
+    "id": "SIY_006",
+    "category": "siyaset",
+    "weight": 1.2,
+    "text": "Azınlık hakları ve İslami devlet hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azınlıklar İslami devlette tam haklara sahip olmalı",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Azınlıklar cizye ödeyerek yaşayabilir",
+        "scores": { "hanbeli": 3, "selefi": 2, "jihadist_salafi": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Azınlıklar korunmalı ama bazı sınırlamalar vardır",
+        "scores": { "hanafi": 4, "shafii": 4, "maliki": 4 }
+      },
+      {
+        "id": "D",
+        "text": "Azınlık kavramı modern bağlamda yeniden tanımlanmalı",
+        "scores": { "modernist": 5, "secular_muslim": 4 }
+      }
+    ]
+  },
+  {
+    "id": "MOD_007",
+    "category": "modernite",
+    "weight": 1.1,
+    "text": "Çevre ve ekoloji hakkında İslami bakış açısı nedir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Çevre korunması İslam'ın temel ilkesidir",
+        "scores": { "modernist": 5, "reformcu": 4, "liberal_islam": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Çevre önemlidir ama ekonomik gelişim önceliklidir",
+        "scores": { "hanafi": 3, "shafii": 3, "maliki": 3 }
+      },
+      {
+        "id": "C",
+        "text": "Çevre meselesi dini değildir, bilimsel bir meseledir",
+        "scores": { "secular_muslim": 4, "modernist": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Çevre korunması Kur'an'da emredilmiştir",
+        "scores": { "modernist": 5, "reformcu": 4, "sufi": 3 }
+      }
+    ]
   }
 ]
 
