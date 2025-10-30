@@ -1,6 +1,6 @@
 export type Category = 'akide' | 'fiqh_usul' | 'fiqh_amel' | 'tasavvuf' | 'siyaset' | 'modernite';
 
-export type School = 
+export type School =
   | 'hanbeli'
   | 'selefi'
   | 'esari'
@@ -21,7 +21,30 @@ export type School =
   | 'jihadist_salafi'
   | 'liberal_islam'
   | 'feminist_islam'
-  | 'secular_muslim';
+  | 'secular_muslim'
+  | 'ehlihadis'
+  | 'murcie'
+  | 'harici'
+  | 'ibazi'
+  | 'qadariyya'
+  | 'jabriyya'
+  | 'qadiriyya'
+  | 'naqshbandi'
+  | 'mevlevi'
+  | 'rifaiyya'
+  | 'shadhili'
+  | 'tijaniyya'
+  | 'deobandi'
+  | 'barelvi'
+  | 'ikhwan'
+  | 'nurculuk'
+  | 'salafi_jihadist'
+  | 'quietist_salafi_2'
+  | 'progressive_islam'
+  | 'ahmadiyya'
+  | 'twelver_shia'
+  | 'zaydi_shia'
+  | 'ismaili_shia';
 
 export interface QuestionOption {
   id: string;
