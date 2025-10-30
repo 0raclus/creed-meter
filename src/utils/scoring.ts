@@ -73,7 +73,7 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
   });
 
   // Apply relationship bonuses
-  Object.entries(schoolScores).forEach(([schoolId, score]) => {
+  Object.entries(schoolScores).forEach(([schoolId]) => {
     const relationships = SCHOOL_RELATIONSHIPS[schoolId] || {};
     Object.entries(relationships).forEach(([relatedSchool, bonus]) => {
       if (schoolScores[relatedSchool] && schoolScores[relatedSchool] > 0) {
