@@ -5,14 +5,25 @@
     "era": "9. yüzyıl",
     "founder": "İmam Ahmed bin Hanbel",
     "description": "Nassalara sıkı bağlılık, rey'e karşı tutumlu, hadis merkezli fıkıh",
+    "detailedProfile": "Hanbeli mezhebinin takipçileri, Kur'an ve Sünnet'e doğrudan bağlılığı ön planda tutarlar. Hadis otoritesine yüksek değer verirler ve kıyasa karşı tutumludurlar. Selef'in yolunu takip etme konusunda katı bir tutum sergilerler. Sıfatlar meselesinde zahiri anlayışı benimserler. Modern dönemde Suudi Arabistan'da güçlü bir temele sahiptir.",
     "characteristics": [
       "Hadis otoritesi yüksek",
       "Kıyas sınırlı kullanım",
       "Selef'e bağlılık",
-      "Sıfatlarda zahiri anlayış"
+      "Sıfatlarda zahiri anlayış",
+      "Nassalara katı bağlılık",
+      "Fıkhi meselelerde muhafazakar"
     ],
     "regions": ["Suudi Arabistan", "Suriye", "Filistin", "Necid"],
-    "modernRepresentatives": ["İbn Baz", "İbn Usemin", "Albani"]
+    "modernRepresentatives": ["İbn Baz", "İbn Usemin", "Albani"],
+    "relationships": {
+      "selefi": 0.85,
+      "hanbeli": 1.0,
+      "zahiri": 0.6,
+      "quietist_salafi": 0.75,
+      "esari": 0.25,
+      "maturidi": 0.2
+    }
   },
   {
     "id": "selefi",
@@ -20,14 +31,26 @@
     "era": "Klasik: 8-10. yüzyıl, Modern: 18. yüzyıldan",
     "founder": "Selef (ilk üç nesil)",
     "description": "Kur'an ve Sünnet'e doğrudan dönüş, mezheplere bağlı kalmama",
+    "detailedProfile": "Selefî hareketi, İslami düşüncede mezhep sınırlarını aşan bir yaklaşım benimser. Kur'an ve Sünnet'e doğrudan dönüş yaparak, ilk üç neslin (Selef) yolunu takip etmeyi amaçlar. Hadis otoritesine yüksek değer verirler ve kıyası sınırlı kullanırlar. Sıfatlar meselesinde zahiri anlayışı tercih ederler. Modern dönemde Suudi Arabistan ve Mısır'da güçlü bir hareket haline gelmiştir.",
     "characteristics": [
       "Doğrudan Kur'an ve Sünnet",
       "Mezhep üstü yaklaşım",
       "Hadis merkezli",
-      "Sıfatlarda zahiri anlayış"
+      "Sıfatlarda zahiri anlayış",
+      "Selef'in yolunu takip",
+      "Bid'at karşıtlığı"
     ],
     "regions": ["Suudi Arabistan", "Mısır", "Körfez", "Kuzey Afrika"],
-    "modernRepresentatives": ["Albani", "İbn Baz", "Uteymin"]
+    "modernRepresentatives": ["Albani", "İbn Baz", "Uteymin"],
+    "relationships": {
+      "hanbeli": 0.85,
+      "selefi": 1.0,
+      "zahiri": 0.7,
+      "quietist_salafi": 0.8,
+      "jihadist_salafi": 0.65,
+      "esari": 0.2,
+      "maturidi": 0.15
+    }
   },
   {
     "id": "esari",
@@ -35,14 +58,27 @@
     "era": "10. yüzyıl",
     "founder": "Ebu'l-Hasan el-Eş'arî",
     "description": "Akıl ve nakil dengesi, sıfatlarda te'vil, Ehl-i Sünnet'in ana akımı",
+    "detailedProfile": "Eş'arî mezhebinin takipçileri, akıl ve nakil arasında bir denge kurmaya çalışırlar. Sıfatlar meselesinde te'vil yolunu tercih ederler ve Kur'an'ın yaratılmış olduğu görüşünü reddederler. Kesb teorisini benimseyerek insan özgürlüğü ve ilahi takdir arasında bir uzlaşma sağlarlar. Geniş bir fıkıh anlayışı sergilerler ve farklı mezheplerin görüşlerine açıktırlar. Ehl-i Sünnet'in ana akımını oluştururlar.",
     "characteristics": [
       "Akıl ve nakil dengesi",
       "Sıfatlarda te'vil",
       "Kesb teorisi",
-      "Geniş fıkıh anlayışı"
+      "Geniş fıkıh anlayışı",
+      "Ehl-i Sünnet'in ana akımı",
+      "Rasyonel teoloji"
     ],
     "regions": ["Mısır", "Suriye", "Mağrib", "Endülüs", "Ezher"],
-    "modernRepresentatives": ["Gazali", "Razi", "Cüveynî"]
+    "modernRepresentatives": ["Gazali", "Razi", "Cüveynî"],
+    "relationships": {
+      "maturidi": 0.8,
+      "esari": 1.0,
+      "shafii": 0.85,
+      "hanafi": 0.5,
+      "maliki": 0.6,
+      "sufi": 0.75,
+      "selefi": 0.2,
+      "hanbeli": 0.25
+    }
   },
   {
     "id": "maturidi",
@@ -50,14 +86,26 @@
     "era": "10. yüzyıl",
     "founder": "Ebu Mansur el-Maturidî",
     "description": "Akıl ve nakil dengesi, Hanefî fıkhıyla ilişkili, Orta Asya'da yaygın",
+    "detailedProfile": "Maturidî mezhebinin takipçileri, Eş'arî gibi akıl ve nakil arasında bir denge kurmaya çalışırlar. Sıfatlar meselesinde tefviz yolunu tercih ederler, yani sıfatların gerçek anlamını Allah'a havale ederler. Kesb teorisini benimseyerek insan özgürlüğü ve ilahi takdir arasında bir uzlaşma sağlarlar. Hanefî fıkhıyla yakın ilişkili olup, Orta Asya'da ve Osmanlı İmparatorluğu'nda yaygın olmuştur. Günümüzde Türkiye'nin Diyanet İşleri Başkanlığı tarafından benimsenmiştir.",
     "characteristics": [
       "Akıl ve nakil dengesi",
       "Sıfatlarda tefviz",
       "Kesb teorisi",
-      "Hanefî fıkhıyla uyum"
+      "Hanefî fıkhıyla uyum",
+      "Orta Asya'da yaygın",
+      "Osmanlı teolojisi"
     ],
     "regions": ["Orta Asya", "Osmanlı", "Hindistan", "Anadolu"],
-    "modernRepresentatives": ["Osmanlı uleması", "Diyanet"]
+    "modernRepresentatives": ["Osmanlı uleması", "Diyanet"],
+    "relationships": {
+      "esari": 0.8,
+      "maturidi": 1.0,
+      "hanafi": 0.95,
+      "shafii": 0.6,
+      "sufi": 0.7,
+      "selefi": 0.15,
+      "hanbeli": 0.2
+    }
   },
   {
     "id": "hanafi",
@@ -65,14 +113,26 @@
     "era": "8. yüzyıl",
     "founder": "Ebu Hanife",
     "description": "Rey'e geniş yer, esneklik, Osmanlı'da resmi mezhep",
+    "detailedProfile": "Hanefî mezhebinin takipçileri, fıkıh metodolojisinde rey'e (akılsal çıkarıma) geniş yer verirler. Kıyas ve istihsan gibi yöntemleri sık kullanarak, değişen şartlara uyum sağlayan esnek bir fıkıh anlayışı geliştirmişlerdir. Akide alanında Maturidî mezhebini benimserler. Osmanlı İmparatorluğu'nda resmi mezhep olmuş ve günümüzde Müslüman nüfusun büyük bir kısmı tarafından takip edilmektedir.",
     "characteristics": [
       "Rey'e geniş yer",
       "Kıyas sık kullanım",
       "Esneklik",
-      "Maturidî akidesi"
+      "Maturidî akidesi",
+      "Pratik fıkıh",
+      "Osmanlı mezhebı"
     ],
     "regions": ["Osmanlı", "Hindistan", "Orta Asya", "Balkanlar"],
-    "modernRepresentatives": ["Osmanlı uleması", "Diyanet"]
+    "modernRepresentatives": ["Osmanlı uleması", "Diyanet"],
+    "relationships": {
+      "maturidi": 0.95,
+      "hanafi": 1.0,
+      "esari": 0.5,
+      "shafii": 0.4,
+      "maliki": 0.35,
+      "sufi": 0.6,
+      "selefi": 0.15
+    }
   },
   {
     "id": "shafii",
@@ -80,14 +140,26 @@
     "era": "9. yüzyıl",
     "founder": "Muhammed bin İdris eş-Şâfiî",
     "description": "Metodolojik kesinlik, hadis ve rey dengesi, Doğu'da yaygın",
+    "detailedProfile": "Şâfiî mezhebinin takipçileri, fıkıh metodolojisinde kesinlik ve sistematiklik arayışı ile bilinirler. Hadis ve rey arasında dengeli bir yaklaşım sergilerler. Kıyas yöntemini önemli bir araç olarak kullanırlar. Akide alanında Eş'arî mezhebini benimserler. Mısır, Yemen ve Güneydoğu Asya'da yaygın olmuş ve günümüzde milyonlarca takipçisi bulunmaktadır.",
     "characteristics": [
       "Hadis ve rey dengesi",
       "Metodolojik kesinlik",
       "Kıyas önemli",
-      "Eş'arî akidesi"
+      "Eş'arî akidesi",
+      "Sistematik fıkıh",
+      "Doğu'da yaygın"
     ],
     "regions": ["Mısır", "Yemen", "Doğu Afrika", "Güneydoğu Asya"],
-    "modernRepresentatives": ["Nevevi", "Suyuti", "Nawawi"]
+    "modernRepresentatives": ["Nevevi", "Suyuti", "Nawawi"],
+    "relationships": {
+      "esari": 0.85,
+      "shafii": 1.0,
+      "maliki": 0.65,
+      "hanafi": 0.4,
+      "sufi": 0.7,
+      "selefi": 0.25,
+      "hanbeli": 0.3
+    }
   },
   {
     "id": "maliki",
@@ -95,14 +167,26 @@
     "era": "8. yüzyıl",
     "founder": "Malik bin Enes",
     "description": "Maslahat (kamu yararı) merkezli, Mağrib'de yaygın",
+    "detailedProfile": "Mâlikî mezhebinin takipçileri, maslahat (kamu yararı) kavramını fıkıh metodolojisinin merkezine yerleştirirler. Medine'nin uygulamalarına önem verirler ve istislah yöntemini sık kullanırlar. Akide alanında Eş'arî mezhebini benimserler. Mağrib ve Kuzey Afrika'da yaygın olmuş ve günümüzde bu bölgelerde güçlü bir temele sahiptir.",
     "characteristics": [
       "Maslahat merkezli",
       "Medine uygulaması",
       "İstislah",
-      "Esneklik"
+      "Esneklik",
+      "Sosyal fıkıh",
+      "Mağrib mezhebı"
     ],
     "regions": ["Mağrib", "Kuzey Afrika", "Batı Afrika", "Endülüs"],
-    "modernRepresentatives": ["Mağrib uleması", "Kuzey Afrika"]
+    "modernRepresentatives": ["Mağrib uleması", "Kuzey Afrika"],
+    "relationships": {
+      "esari": 0.6,
+      "maliki": 1.0,
+      "shafii": 0.65,
+      "hanafi": 0.35,
+      "sufi": 0.65,
+      "selefi": 0.2,
+      "hanbeli": 0.25
+    }
   },
   {
     "id": "mutazila",
@@ -110,14 +194,25 @@
     "era": "8. yüzyıl",
     "founder": "Vasıl bin Ata",
     "description": "Akıl merkezli, Kur'an yaratılmış, adalet vurgusu",
+    "detailedProfile": "Mu'tezile mezhebinin takipçileri, akılı İslami düşüncenin merkezine yerleştirirler. Kur'an'ın yaratılmış olduğunu savunurlar ve ilahi adaletin insan özgürlüğü ile uyumlu olması gerektiğini vurgularlar. Menzile beyne'l-menzileteyn (iki durum arasında bir durum) teorisini geliştirmişlerdir. Klasik dönemde Bağdat'ta güçlü olmuş, ancak zamanla Eş'arî mezhebinin yükselişiyle etkinliğini kaybetmiştir. Günümüzde modernist İslam hareketleri tarafından yeniden değerlendirilmektedir.",
     "characteristics": [
       "Akıl merkezli",
       "Kur'an yaratılmış",
       "Adalet vurgusu",
-      "Menzile beyne'l-menzileteyn"
+      "Menzile beyne'l-menzileteyn",
+      "Rasyonel teoloji",
+      "Klasik İslam felsefesi"
     ],
     "regions": ["Bağdat", "Basra", "Mısır"],
-    "modernRepresentatives": ["Modernist İslam", "Neo-Mutezile"]
+    "modernRepresentatives": ["Modernist İslam", "Neo-Mutezile"],
+    "relationships": {
+      "mutazila": 1.0,
+      "modernist": 0.8,
+      "liberal_islam": 0.75,
+      "reformcu": 0.7,
+      "esari": 0.3,
+      "maturidi": 0.25
+    }
   },
   {
     "id": "imamiyye",
@@ -125,14 +220,25 @@
     "era": "8. yüzyıl",
     "founder": "Şia geleneği",
     "description": "İmameti ilahi, Ehl-i Beyt merkezli, İran'da yaygın",
+    "detailedProfile": "İmâmiyye mezhebinin takipçileri, Hz. Ali ve Ehl-i Beyt'in ilahi rehberlik konusunda özel bir konuma sahip olduğuna inanırlar. İmameti ilahi bir görev olarak görürler ve on iki İmam'ın masumiyetine inanırlar. Takiyye (zorunlu durumlarda inancını gizleme) ve usûlî fıkıh metodolojisini benimserler. İran'da resmi mezhep olmuş ve günümüzde İran, Irak ve Lübnan'da güçlü bir temele sahiptir.",
     "characteristics": [
       "İmameti ilahi",
       "Ehl-i Beyt merkezli",
       "Takiyye",
-      "Usûlî fıkıh"
+      "Usûlî fıkıh",
+      "On iki İmam inancı",
+      "Şia teolojisi"
     ],
     "regions": ["İran", "Irak", "Lübnan", "Bahreyn"],
-    "modernRepresentatives": ["Sistani", "Hamanei", "Şirazi"]
+    "modernRepresentatives": ["Sistani", "Hamanei", "Şirazi"],
+    "relationships": {
+      "imamiyye": 1.0,
+      "zeydi": 0.65,
+      "ismaili": 0.55,
+      "liberal_islam": 0.4,
+      "esari": 0.3,
+      "sufi": 0.5
+    }
   },
   {
     "id": "zeydi",

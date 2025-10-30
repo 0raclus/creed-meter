@@ -11,23 +11,25 @@ export default function ReadingRecommendations({ recommendations }: ReadingRecom
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
-      <h2 className="text-2xl font-bold text-slate-900 mb-4">
-        Önerilen Okumalar
+    <div className="bg-white rounded-2xl shadow-lg p-8 border-2 border-black">
+      <h2 className="text-2xl font-bold text-black mb-6" style={{ fontFamily: 'Space Grotesk' }}>
+        📚 Önerilen Okumalar
       </h2>
       <div className="space-y-4">
         {recommendations.slice(0, 6).map((rec, index) => (
-          <div key={index} className="border border-slate-200 rounded-lg p-4 hover:border-blue-400 transition">
-            <h3 className="font-semibold text-slate-900">
-              {rec.title}
-            </h3>
-            <p className="text-sm text-slate-600 mt-1">
-              Yazar: {rec.author}
+          <div key={index} className="border-2 border-black rounded-lg p-5 hover:shadow-lg transition bg-gray-100">
+            <div className="flex items-start justify-between mb-2">
+              <h3 className="font-bold text-black text-base flex-1" style={{ fontFamily: 'Space Grotesk' }}>
+                {rec.title}
+              </h3>
+              <span className="text-xs font-semibold bg-black text-white px-3 py-1 rounded-full ml-2 shrink-0">
+                {getSchoolName(rec.school)}
+              </span>
+            </div>
+            <p className="text-sm text-black mb-2 font-medium">
+              ✍️ {rec.author}
             </p>
-            <p className="text-xs text-slate-500 mt-1">
-              {getSchoolName(rec.school)}
-            </p>
-            <p className="text-sm text-slate-700 mt-2">
+            <p className="text-sm text-black leading-relaxed font-medium">
               {rec.description}
             </p>
           </div>

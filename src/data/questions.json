@@ -40,22 +40,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Her şey Allah'ın takdiridir, insan özgür değildir (Cebrî)",
+        "text": "Her şey Allah'ın takdiridir, insan özgür değildir",
         "scores": { "hanbeli": 2, "selefi": 1 }
       },
       {
         "id": "B",
-        "text": "İnsan tamamen özgürdür, Allah'ın takdiri yoktur (Kaderî)",
+        "text": "İnsan tamamen özgürdür, Allah'ın takdiri yoktur",
         "scores": { "mutazila": 5, "liberal_islam": 3 }
       },
       {
         "id": "C",
-        "text": "Allah takdir eder, insan da kesb (seçim) yapar (Eş'arî)",
+        "text": "Allah takdir eder, insan da kesb (seçim) yapar",
         "scores": { "esari": 5, "shafii": 4, "maliki": 3 }
       },
       {
         "id": "D",
-        "text": "Allah bilir, insan seçer; ikisi de gerçektir (Maturidî)",
+        "text": "Allah bilir, insan seçer; ikisi de gerçektir",
         "scores": { "maturidi": 5, "hanafi": 4 }
       },
       {
@@ -83,12 +83,12 @@
       },
       {
         "id": "C",
-        "text": "Tekfir edilir, İslam'dan çıkar (Harici görüş)",
+        "text": "Tekfir edilir, İslam'dan çıkar",
         "scores": { "jihadist_salafi": 3 }
       },
       {
         "id": "D",
-        "text": "Menzile beyne'l-menzileteyn (iki menzile arasında) (Mutezilî)",
+        "text": "Menzile beyne'l-menzileteyn (iki menzile arasında)",
         "scores": { "mutazila": 5, "imamiyye": 2 }
       },
       {
@@ -106,17 +106,17 @@
     "options": [
       {
         "id": "A",
-        "text": "Müslümanlar tarafından seçilmeli (Sünni halifelik)",
+        "text": "Müslümanlar tarafından seçilmeli",
         "scores": { "esari": 4, "maturidi": 4, "hanafi": 4, "shafii": 4 }
       },
       {
         "id": "B",
-        "text": "Allah tarafından tayin edilmeli, Hz. Ali'nin soyundan (Şii imameti)",
+        "text": "Allah tarafından tayin edilmeli, Hz. Ali'nin soyundan",
         "scores": { "imamiyye": 5, "zeydi": 4, "ismaili": 4 }
       },
       {
         "id": "C",
-        "text": "Seçimle belirlenir, ancak Ehl-i Beyt'ten olmalı (Zeydi)",
+        "text": "Seçimle belirlenir, ancak Ehl-i Beyt'ten olmalı",
         "scores": { "zeydi": 5, "imamiyye": 2 }
       },
       {
@@ -139,12 +139,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Kur'an yaratılmıştır, Allah'ın sözü değildir (Mutezilî)",
+        "text": "Kur'an yaratılmıştır, Allah'ın sözü değildir",
         "scores": { "mutazila": 5 }
       },
       {
         "id": "B",
-        "text": "Kur'an Allah'ın sözüdür, yaratılmamıştır (Hanbeli-Selefi)",
+        "text": "Kur'an Allah'ın sözüdür, yaratılmamıştır",
         "scores": { "hanbeli": 5, "selefi": 5 }
       },
       {
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Rivayet (hadis) kesinlikle önceliklidir (Hanbeli-Selefi)",
+        "text": "Rivayet (hadis) kesinlikle önceliklidir",
         "scores": { "hanbeli": 5, "selefi": 5, "ehlihadis": 5 }
       },
       {
         "id": "B",
-        "text": "Rey (akıl) önemlidir, hadis olmadığında kullanılır (Hanefî)",
+        "text": "Rey (akıl) önemlidir, hadis olmadığında kullanılır",
         "scores": { "hanafi": 5, "maturidi": 4 }
       },
       {
         "id": "C",
-        "text": "İkisi dengeli kullanılmalı, duruma göre değişir (Şâfiî)",
+        "text": "İkisi dengeli kullanılmalı, duruma göre değişir",
         "scores": { "shafii": 5, "maliki": 4 }
       },
       {
         "id": "D",
-        "text": "Akıl ve mantık temel alınmalı, hadis ikincildir (Mutezilî)",
+        "text": "Akıl ve mantık temel alınmalı, hadis ikincildir",
         "scores": { "mutazila": 4, "modernist": 3 }
       },
       {
         "id": "E",
-        "text": "Maslahat (kamu yararı) temel alınmalı (Mâlikî)",
+        "text": "Maslahat (kamu yararı) temel alınmalı",
         "scores": { "maliki": 5, "reformcu": 3 }
       }
     ]
@@ -286,7 +286,7 @@
       },
       {
         "id": "D",
-        "text": "Kur'an yeterlidir, hadislere ihtiyaç yoktur (Kurancı)",
+        "text": "Kur'an yeterlidir, hadislere ihtiyaç yoktur",
         "scores": { "kuranci": 5, "liberal_islam": 2 }
       },
       {
@@ -314,7 +314,7 @@
       },
       {
         "id": "C",
-        "text": "Bazı sahabeler eleştirilebilir, özellikle Ebu Bekir ve Ömer (Şii)",
+        "text": "Bazı sahabeler eleştirilebilir, özellikle Ebu Bekir ve Ömer",
         "scores": { "imamiyye": 5, "zeydi": 3 }
       },
       {
@@ -337,12 +337,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Evet, imam arkada da okunur (Hanefî)",
+        "text": "Evet, imam arkada da okunur",
         "scores": { "hanafi": 5, "maturidi": 4 }
       },
       {
         "id": "B",
-        "text": "Hayır, imam arkada okunmaz (Şâfiî-Hanbeli)",
+        "text": "Hayır, imam arkada okunmaz",
         "scores": { "shafii": 5, "hanbeli": 5, "selefi": 4 }
       },
       {
@@ -469,7 +469,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Tasavvuf şeriata aykırıdır, reddedilmelidir (Selefi)",
+        "text": "Tasavvuf şeriata aykırıdır, reddedilmelidir",
         "scores": { "selefi": 5, "hanbeli": 3, "jihadist_salafi": 4 }
       },
       {
@@ -507,7 +507,7 @@
       },
       {
         "id": "B",
-        "text": "Tevessül haramdır, şirk sayılır (Selefi)",
+        "text": "Tevessül haramdır, şirk sayılır",
         "scores": { "selefi": 5, "hanbeli": 4, "jihadist_salafi": 4 }
       },
       {

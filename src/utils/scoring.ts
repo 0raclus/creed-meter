@@ -3,27 +3,35 @@ import questions from '../data/questions.json';
 import schools from '../data/schools.json';
 
 const SCHOOL_RELATIONSHIPS: Record<string, Record<string, number>> = {
-  hanbeli: { selefi: 0.8, esari: 0.3, maturidi: 0.2 },
-  selefi: { hanbeli: 0.8, jihadist_salafi: 0.6, quietist_salafi: 0.7 },
-  esari: { maturidi: 0.7, shafii: 0.8, hanafi: 0.4 },
-  maturidi: { esari: 0.7, hanafi: 0.9, shafii: 0.5 },
-  hanafi: { maturidi: 0.9, esari: 0.4, maliki: 0.3 },
-  shafii: { esari: 0.8, maliki: 0.6, hanafi: 0.3 },
-  maliki: { shafii: 0.6, esari: 0.5, hanafi: 0.3 },
-  mutazila: { modernist: 0.7, liberal_islam: 0.6 },
-  imamiyye: { zeydi: 0.6, ismaili: 0.5 },
-  zeydi: { imamiyye: 0.6, reformcu: 0.4 },
-  ismaili: { imamiyye: 0.5, liberal_islam: 0.4 },
-  zahiri: { selefi: 0.5, hanbeli: 0.3 },
-  modernist: { reformcu: 0.8, liberal_islam: 0.7, mutazila: 0.7 },
-  reformcu: { modernist: 0.8, liberal_islam: 0.6, hanafi: 0.3 },
-  kuranci: { selefi: 0.5, modernist: 0.6 },
-  sufi: { esari: 0.7, maturidi: 0.6, shafii: 0.6 },
-  quietist_salafi: { selefi: 0.7, hanbeli: 0.5 },
-  jihadist_salafi: { selefi: 0.6, hanbeli: 0.3 },
-  liberal_islam: { modernist: 0.7, reformcu: 0.6, feminist_islam: 0.8 },
-  feminist_islam: { liberal_islam: 0.8, modernist: 0.7 },
-  secular_muslim: { liberal_islam: 0.8, modernist: 0.6 }
+  hanbeli: { selefi: 0.85, zahiri: 0.6, quietist_salafi: 0.75, esari: 0.25, maturidi: 0.2 },
+  selefi: { hanbeli: 0.85, zahiri: 0.7, quietist_salafi: 0.8, jihadist_salafi: 0.65, esari: 0.2, maturidi: 0.15 },
+  esari: { maturidi: 0.8, shafii: 0.85, hanafi: 0.5, maliki: 0.6, sufi: 0.75, selefi: 0.2, hanbeli: 0.25 },
+  maturidi: { esari: 0.8, hanafi: 0.95, shafii: 0.6, sufi: 0.7, selefi: 0.15, hanbeli: 0.2 },
+  hanafi: { maturidi: 0.95, esari: 0.5, shafii: 0.4, maliki: 0.35, sufi: 0.6, selefi: 0.15 },
+  shafii: { esari: 0.85, maliki: 0.65, hanafi: 0.4, sufi: 0.7, selefi: 0.25, hanbeli: 0.3 },
+  maliki: { esari: 0.6, shafii: 0.65, hanafi: 0.35, sufi: 0.65, selefi: 0.2, hanbeli: 0.25 },
+  mutazila: { modernist: 0.8, liberal_islam: 0.75, reformcu: 0.7 },
+  imamiyye: { zeydi: 0.65, ismaili: 0.55, liberal_islam: 0.4, esari: 0.3, sufi: 0.5 },
+  zeydi: { imamiyye: 0.65, reformcu: 0.4, liberal_islam: 0.35 },
+  ismaili: { imamiyye: 0.55, liberal_islam: 0.4, modernist: 0.35 },
+  zahiri: { selefi: 0.7, hanbeli: 0.6 },
+  modernist: { reformcu: 0.8, liberal_islam: 0.7, mutazila: 0.8, feminist_islam: 0.6 },
+  reformcu: { modernist: 0.8, liberal_islam: 0.6, mutazila: 0.7, hanafi: 0.3, zeydi: 0.4 },
+  kuranci: { selefi: 0.5, modernist: 0.6, reformcu: 0.5 },
+  sufi: { esari: 0.75, maturidi: 0.7, shafii: 0.7, maliki: 0.65, hanafi: 0.6 },
+  quietist_salafi: { selefi: 0.8, hanbeli: 0.75 },
+  jihadist_salafi: { selefi: 0.65, hanbeli: 0.3 },
+  liberal_islam: { modernist: 0.7, reformcu: 0.6, feminist_islam: 0.8, mutazila: 0.75, imamiyye: 0.4 },
+  feminist_islam: { liberal_islam: 0.8, modernist: 0.7, reformcu: 0.6 },
+  secular_muslim: { liberal_islam: 0.8, modernist: 0.6, reformcu: 0.5 },
+  deobandi: { hanbeli: 0.6, selefi: 0.5, quietist_salafi: 0.7 },
+  barelvi: { sufi: 0.8, esari: 0.6, shafii: 0.5 },
+  ikhwan: { selefi: 0.7, jihadist_salafi: 0.6, modernist: 0.4 },
+  nurculuk: { modernist: 0.7, reformcu: 0.6, sufi: 0.5 },
+  ahmadiyya: { liberal_islam: 0.7, modernist: 0.6, reformcu: 0.5 },
+  progressive_islam: { liberal_islam: 0.85, modernist: 0.8, feminist_islam: 0.75, reformcu: 0.7 },
+  quietist_salafi_2: { quietist_salafi: 0.9, selefi: 0.7, hanbeli: 0.6 },
+  salafi_jihadist: { jihadist_salafi: 0.9, selefi: 0.6, ikhwan: 0.5 }
 };
 
 const CATEGORY_WEIGHTS: Record<Category, number> = {
@@ -72,12 +80,15 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
     });
   });
 
-  // Apply relationship bonuses
+  // Apply relationship bonuses with improved algorithm
   Object.entries(schoolScores).forEach(([schoolId]) => {
     const relationships = SCHOOL_RELATIONSHIPS[schoolId] || {};
-    Object.entries(relationships).forEach(([relatedSchool, bonus]) => {
+    Object.entries(relationships).forEach(([relatedSchool, relationshipStrength]) => {
       if (schoolScores[relatedSchool] && schoolScores[relatedSchool] > 0) {
-        schoolScores[schoolId] += schoolScores[relatedSchool] * bonus * 0.1;
+        // Bonus = related school score * relationship strength * 0.15
+        // Higher relationship strength = higher bonus
+        const bonus = schoolScores[relatedSchool] * relationshipStrength * 0.15;
+        schoolScores[schoolId] += bonus;
       }
     });
   });
@@ -136,19 +147,34 @@ export function generateTestResult(profiles: SchoolProfile[]): TestResult {
 
 function generateProfileDescription(topSchools: SchoolProfile[]): string {
   if (topSchools.length === 0) {
-    return 'Sonuçlarınız belirgin bir mezhep eğilimi göstermemektedir.';
+    return 'Sonuçlarınız belirgin bir mezhep eğilimi göstermemektedir. Bu, İslami düşüncenin çeşitliliğine açık bir yaklaşım sergilediğinizi gösterir.';
   }
 
   const primary = topSchools[0];
   const secondary = topSchools[1];
+  const tertiary = topSchools[2];
 
-  let description = `Düşünce haritanız ağırlıklı olarak %${primary.percentage} ${getSchoolName(primary.school)} eğilimini göstermektedir.`;
+  const primarySchool = schools.find(s => s.id === primary.school);
+  const _secondarySchool = secondary ? schools.find(s => s.id === secondary.school) : null;
 
-  if (secondary) {
-    description += ` İkincil olarak %${secondary.percentage} ${getSchoolName(secondary.school)} eğilimi de gözlenmektedir.`;
+  let description = `Düşünce haritanız ağırlıklı olarak %${primary.percentage} ${getSchoolName(primary.school)} eğilimini göstermektedir. `;
+
+  if (primarySchool?.detailedProfile) {
+    description += `${primarySchool.detailedProfile} `;
   }
 
-  description += ' Bu profil, geleneksel İslami düşüncenin zenginliğini ve çeşitliliğini yansıtmaktadır.';
+  if (secondary && secondary.percentage > 20) {
+    description += `\n\nİkincil olarak %${secondary.percentage} ${getSchoolName(secondary.school)} eğilimi de gözlenmektedir. `;
+    if (_secondarySchool?.detailedProfile) {
+      description += `${_secondarySchool.detailedProfile} `;
+    }
+  }
+
+  if (tertiary && tertiary.percentage > 15) {
+    description += `\n\nÜçüncü olarak %${tertiary.percentage} ${getSchoolName(tertiary.school)} eğilimi de belirgindir.`;
+  }
+
+  description += '\n\nBu profil, geleneksel İslami düşüncenin zenginliğini ve çeşitliliğini yansıtmaktadır. Farklı mezheplerin görüşlerini anlamak, İslami düşüncenin derinliğini kavramanıza yardımcı olacaktır.';
 
   return description;
 }
@@ -157,14 +183,21 @@ function generateRecommendations(topSchools: SchoolProfile[]): string[] {
   const recommendations: string[] = [];
 
   if (topSchools.length > 0) {
-    recommendations.push(`${getSchoolName(topSchools[0].school)} geleneğinin klasik eserlerini inceleyebilirsiniz.`);
+    const primarySchool = schools.find(s => s.id === topSchools[0].school);
+    recommendations.push(`${getSchoolName(topSchools[0].school)} geleneğinin klasik eserlerini inceleyebilirsiniz. ${primarySchool?.modernRepresentatives?.join(', ') || ''} gibi alimler bu geleneğin önemli temsilcileridir.`);
   }
 
   if (topSchools.length > 1) {
-    recommendations.push(`${getSchoolName(topSchools[1].school)} ile ${getSchoolName(topSchools[0].school)} arasındaki farkları anlamak faydalı olabilir.`);
+    recommendations.push(`${getSchoolName(topSchools[1].school)} ile ${getSchoolName(topSchools[0].school)} arasındaki farkları anlamak faydalı olabilir. Her iki mezhep de İslami düşüncenin önemli kollarıdır ve birbirlerini tamamlarlar.`);
   }
 
-  recommendations.push('Farklı mezheplerin görüşlerini karşılaştırmalı olarak incelemek, İslami düşüncenin zenginliğini anlamanıza yardımcı olacaktır.');
+  if (topSchools.length > 2) {
+    recommendations.push(`${getSchoolName(topSchools[2].school)} mezhebinin görüşlerini de incelemek, daha bütünsel bir anlayış geliştirmenize yardımcı olacaktır.`);
+  }
+
+  recommendations.push('Farklı mezheplerin görüşlerini karşılaştırmalı olarak incelemek, İslami düşüncenin zenginliğini ve çeşitliliğini anlamanıza yardımcı olacaktır. Her mezhep, belirli tarihsel ve sosyal koşullar içinde gelişmiş ve kendi içinde tutarlı bir sistem oluşturmuştur.');
+
+  recommendations.push('Mezhep farklılıklarını anlamak, İslam\'ın evrenselliğini ve esnekliğini gösterir. Farklı görüşleri saygıyla karşılamak ve öğrenmek, İslami bilgeliğin temel ilkelerindendir.');
 
   return recommendations;
 }
