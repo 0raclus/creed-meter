@@ -52,15 +52,20 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
     return schools.find(s => s.id === schoolId)?.name || schoolId;
   };
 
-  const barChartData = result.topSchools.map(school => ({
-    name: getSchoolName(school.school),
-    percentage: school.percentage
-  }));
+  // TÜM MEZHEPLERİ GÖSTER (60+ mezhep)
+  const barChartData = result.allSchools
+    .filter(school => school.percentage > 0) // Sadece puan alanlar
+    .map(school => ({
+      name: getSchoolName(school.school),
+      percentage: school.percentage
+    }));
 
-  const radarData = result.allSchools.slice(0, 8).map(school => ({
-    name: getSchoolName(school.school),
-    value: school.percentage
-  }));
+  const radarData = result.allSchools
+    .slice(0, 12) // İlk 12 mezhep radar grafiğinde
+    .map(school => ({
+      name: getSchoolName(school.school),
+      value: school.percentage
+    }));
 
   const exportToPDF = async () => {
     const element = document.getElementById('results-content');
@@ -362,10 +367,10 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
                 Mezhep Karşılaştırması
               </h2>
             </div>
-            <ResponsiveContainer width="100%" height={300} className="sm:h-[350px]">
-              <BarChart data={barChartData}>
+            <ResponsiveContainer width="100%" height={600} className="sm:h-[700px] lg:h-[800px]">
+              <BarChart data={barChartData} layout="horizontal">
                 <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                <XAxis dataKey="name" angle={-45} textAnchor="end" height={100} style={{ fill: 'rgb(66 43 33)' }} />
+                <XAxis dataKey="name" angle={-45} textAnchor="end" height={120} style={{ fill: 'rgb(66 43 33)', fontSize: '11px' }} />
                 <YAxis style={{ fill: 'rgb(66 43 33)' }} />
                 <Tooltip contentStyle={{ backgroundColor: '#ffffff', border: '2px solid #000', borderRadius: '8px', color: 'rgb(66 43 33)' }} />
                 <Bar dataKey="percentage" fill="rgb(168 185 119)" radius={[8, 8, 0, 0]} />
@@ -471,25 +476,43 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
             </h2>
           </div>
           <div className="space-y-3">
-            {result.recommendations.map((rec, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.9 + index * 0.05, duration: 0.3 }}
-                className="flex items-start gap-4 p-4 bg-linear-to-r from-purple-50 to-pink-50 rounded-lg border border-purple-200 hover:shadow-modern"
-              >
-                <motion.span
-                  className="text-white font-bold text-lg mt-0.5 shrink-0 bg-linear-to-r from-purple-500 to-pink-500 px-3 py-1 rounded-full"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
+            {result.recommendations.map((rec, index) => {
+              // Soft Contrast renk paleti
+              const colors = [
+                { bg: 'rgb(170 198 173)', badge: 'rgb(168 185 119)', border: 'rgb(66 43 33)' }, // Mint + Cucumber
+                { bg: 'rgb(235 153 119)', badge: 'rgb(220 49 47)', border: 'rgb(66 43 33)' },   // Grapefruit + Strawberry
+                { bg: 'rgb(228 208 133)', badge: 'rgb(168 185 119)', border: 'rgb(66 43 33)' }, // Lemon + Cucumber
+                { bg: 'rgb(168 185 119)', badge: 'rgb(170 198 173)', border: 'rgb(66 43 33)' }, // Cucumber + Mint
+                { bg: 'rgb(170 198 173)', badge: 'rgb(235 153 119)', border: 'rgb(66 43 33)' }  // Mint + Grapefruit
+              ];
+              const color = colors[index % colors.length];
+
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.9 + index * 0.05, duration: 0.3 }}
+                  className="flex items-start gap-4 p-4 rounded-lg border-2 hover:shadow-modern"
+                  style={{ backgroundColor: color.bg, borderColor: color.border }}
                 >
-                  {index + 1}
-                </motion.span>
-                <span className="text-gray-800 leading-relaxed font-medium">{rec}</span>
-              </motion.div>
-            ))}
+                  <motion.span
+                    className="font-bold text-lg mt-0.5 shrink-0 px-3 py-1 rounded-full border-2"
+                    style={{
+                      backgroundColor: color.badge,
+                      color: 'rgb(66 43 33)',
+                      borderColor: 'rgb(66 43 33)'
+                    }}
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: 0.9 + index * 0.05, duration: 0.3 }}
+                  >
+                    {index + 1}
+                  </motion.span>
+                  <span className="leading-relaxed font-medium" style={{ color: 'rgb(66 43 33)' }}>{rec}</span>
+                </motion.div>
+              );
+            })}
           </div>
         </motion.div>
 

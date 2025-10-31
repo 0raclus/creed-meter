@@ -115,25 +115,43 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
     });
   });
 
-  // Normalize scores - İYİLEŞTİRİLMİŞ ALGORİTMA
-  const profiles: SchoolProfile[] = schools.map(school => {
+  // Normalize scores - GÖRECELI PUANLAMA SİSTEMİ
+  // Önce tüm skorları hesapla
+  const tempProfiles = schools.map(school => {
     const weight = schoolWeights[school.id] || 1;
     const rawScore = schoolScores[school.id];
 
     // Normalize: raw score / weight
     const normalizedScore = weight > 0 ? rawScore / weight : 0;
 
-    // Yüzdeye çevir: (normalized / max_possible) * 100
-    // Max possible = 5 (en yüksek puan) * 1.0 (ortalama ağırlık faktörü)
-    // Ancak negatif puanlar da olduğu için -5 ile +5 arasında normalize et
-    // -5 = 0%, 0 = 50%, +5 = 100%
-    const percentage = Math.max(0, Math.min(100, ((normalizedScore + 5) / 10) * 100));
-
     return {
       school: school.id as any,
       score: normalizedScore,
-      percentage: Math.round(percentage * 10) / 10, // 1 ondalık basamak
+      percentage: 0, // Henüz hesaplanmadı
       categoryScores: categoryScores[school.id] || {}
+    };
+  });
+
+  // En yüksek ve en düşük skorları bul
+  const scores = tempProfiles.map(p => p.score);
+  const maxScore = Math.max(...scores);
+  const minScore = Math.min(...scores);
+
+  // Göreceli yüzdeleri hesapla: en yüksek skor = 100%, en düşük skor = 0%
+  const profiles: SchoolProfile[] = tempProfiles.map(profile => {
+    let percentage = 0;
+
+    if (maxScore !== minScore) {
+      // Göreceli ölçekleme: (score - min) / (max - min) * 100
+      percentage = ((profile.score - minScore) / (maxScore - minScore)) * 100;
+    } else if (maxScore > 0) {
+      // Tüm skorlar aynı ve pozitif
+      percentage = 100;
+    }
+
+    return {
+      ...profile,
+      percentage: Math.round(percentage * 10) / 10 // 1 ondalık basamak
     };
   });
 
@@ -247,6 +265,30 @@ function generateRecommendations(topSchools: SchoolProfile[]): string[] {
 
   if (topSchools.length > 2) {
     recommendations.push(`${getSchoolName(topSchools[2].school)} mezhebinin görüşlerini de incelemek, daha bütünsel bir anlayış geliştirmenize yardımcı olacaktır.`);
+  }
+
+  // KATEGORİ BAZLI ÖNERİLER - Kategori analizine göre
+  if (topSchools.length > 0 && topSchools[0].categoryScores) {
+    const categoryScores = topSchools[0].categoryScores;
+    const sortedCategories = Object.entries(categoryScores)
+      .sort(([, a], [, b]) => (b as number) - (a as number))
+      .slice(0, 2); // En yüksek 2 kategori
+
+    if (sortedCategories.length > 0) {
+      const [topCategory] = sortedCategories[0];
+      const categoryRecommendations: Record<string, string> = {
+        akide: `Akide konusunda ${getSchoolName(topSchools[0].school)} ekolünün görüşlerini derinleştirmeniz önerilir. Allah'ın sıfatları, kader ve irade gibi konularda bu ekolün yaklaşımını anlamak önemlidir.`,
+        fiqh_usul: `Fıkıh usulü konusunda ${getSchoolName(topSchools[0].school)} metodolojisini incelemeniz faydalı olacaktır. Nas yorumlama, kıyas ve içtihat gibi konularda bu ekolün yaklaşımını öğrenebilirsiniz.`,
+        fiqh_amel: `Amelî fıkıh konusunda ${getSchoolName(topSchools[0].school)} mezhebinin pratik uygulamalarını öğrenmeniz önerilir. İbadet ve muamelat konularında bu mezhebin görüşlerini inceleyebilirsiniz.`,
+        tasavvuf: `Tasavvuf konusunda ${getSchoolName(topSchools[0].school)} ekolünün maneviyat anlayışını keşfetmeniz faydalı olacaktır. Zühd, takva ve kalp temizliği gibi konularda bu ekolün yaklaşımını öğrenebilirsiniz.`,
+        siyaset: `Siyaset konusunda ${getSchoolName(topSchools[0].school)} ekolünün devlet-din ilişkisi ve toplumsal düzen anlayışını incelemeniz önerilir. İslam devleti ve hilafet gibi konularda bu ekolün görüşlerini öğrenebilirsiniz.`,
+        modernite: `Modernite konusunda ${getSchoolName(topSchools[0].school)} ekolünün çağdaş meselelere yaklaşımını incelemeniz faydalı olacaktır. Bilim, feminizm ve tarihselcilik gibi konularda bu ekolün görüşlerini öğrenebilirsiniz.`
+      };
+
+      if (categoryRecommendations[topCategory]) {
+        recommendations.push(categoryRecommendations[topCategory]);
+      }
+    }
   }
 
   recommendations.push('Farklı mezheplerin görüşlerini karşılaştırmalı olarak incelemek, İslami düşüncenin zenginliğini ve çeşitliliğini anlamanıza yardımcı olacaktır. Her mezhep, belirli tarihsel ve sosyal koşullar içinde gelişmiş ve kendi içinde tutarlı bir sistem oluşturmuştur.');
