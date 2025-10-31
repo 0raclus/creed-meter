@@ -270,8 +270,8 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
               onClick={exportToPDF}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-modern hover:shadow-modern-lg transition-all duration-300 font-medium border-2 border-black text-sm sm:text-base"
-              style={{ backgroundColor: 'rgb(170 198 173)', color: 'rgb(66 43 33)' }}
+              className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-modern hover:shadow-modern-lg transition-all duration-300 font-bold border-2 border-black text-sm sm:text-base"
+              style={{ backgroundColor: 'rgb(228 208 133)', color: 'rgb(66 43 33)' }}
             >
               <Download className="w-4 sm:w-5 h-4 sm:h-5" />
               <span>PDF İndir</span>
@@ -558,7 +558,8 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
             onClick={onReset}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-purple-600 to-pink-600 text-white rounded-lg font-semibold text-base sm:text-lg shadow-modern-lg hover:shadow-modern-lg"
+            className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg shadow-modern-lg hover:shadow-modern-lg border-2 border-black"
+            style={{ backgroundColor: 'rgb(168 185 119)', color: 'rgb(66 43 33)' }}
           >
             🔄 Testi Yeniden Başlat
           </motion.button>
@@ -566,7 +567,8 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
             onClick={() => window.print()}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold text-base sm:text-lg shadow-modern-lg hover:shadow-modern-lg"
+            className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg shadow-modern-lg hover:shadow-modern-lg border-2 border-black"
+            style={{ backgroundColor: 'rgb(235 153 119)', color: 'rgb(66 43 33)' }}
           >
             🖨️ Yazdır
           </motion.button>
