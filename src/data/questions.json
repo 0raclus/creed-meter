@@ -1035,7 +1035,7 @@
       },
       {
         "id": "B",
-        "text": "Mecazi manada, ilim ve idrâk anlamında (Eş'arî-Mâtürîdî)",
+        "text": "Mecazi manada, ilim ve idrâk anlamında",
         "scores": {
           "esari": 5,
           "maturidi": 5,
@@ -1167,7 +1167,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Kur'an ezeli ve ezelî, yaratılmamıştır (Eş'arî-Mâtürîdî-Atharî)",
+        "text": "Kur'an ezeli ve ezelî, yaratılmamıştır",
         "scores": {
           "esari": 5,
           "maturidi": 5,
@@ -1193,7 +1193,7 @@
       },
       {
         "id": "C",
-        "text": "Kur'an'ın lafzı yaratılmış, anlamı ezelî (Orta yol)",
+        "text": "Kur'an'ın lafzı yaratılmış, anlamı ezelî",
         "scores": {
           "esari": 3,
           "maturidi": 3,
@@ -1285,7 +1285,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Zahiri manada, Allah'ın yüzü vardır, nasıl olduğu bilinmez (Atharî)",
+        "text": "Zahiri manada, Allah'ın yüzü vardır, nasıl olduğu bilinmez",
         "scores": {
           "athari": 5,
           "quietist_salafi": 5,
@@ -1299,7 +1299,7 @@
       },
       {
         "id": "B",
-        "text": "Zat anlamında, Allah'ın varlığı demektir (Eş'arî-Mâtürîdî)",
+        "text": "Zat anlamında, Allah'ın varlığı demektir",
         "scores": {
           "esari": 5,
           "maturidi": 5,
@@ -1390,7 +1390,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Allah takdir eder, insan kesb (seçim) yapar, ikisi de gerçektir (Eş'arî-Mâtürîdî)",
+        "text": "Allah takdir eder, insan kesb (seçim) yapar, ikisi de gerçektir",
         "scores": {
           "esari": 5,
           "maturidi": 5,
@@ -1416,7 +1416,7 @@
       },
       {
         "id": "C",
-        "text": "Her şey Allah'ın takdiridir, insan özgür değildir (Cebrî)",
+        "text": "Her şey Allah'ın takdiridir, insan özgür değildir",
         "scores": {
           "athari": 2,
           "quietist_salafi": 1,
@@ -1437,7 +1437,7 @@
       },
       {
         "id": "E",
-        "text": "Allah bilir, insan seçer; ikisi de gerçektir (Mâtürîdî vurgusu)",
+        "text": "Allah bilir, insan seçer; ikisi de gerçektir",
         "scores": {
           "maturidi": 5,
           "hanafi": 4,
@@ -1637,7 +1637,7 @@
       },
       {
         "id": "I",
-        "text": "Sadece nas'a (Kur'an ve Hadis) dayanırım",
+        "text": "Sadece nas'a dayanırım",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -1748,7 +1748,7 @@
       },
       {
         "id": "H",
-        "text": "İctihad kapısı kapalı, sadece nas'a (Kur'an ve Hadis) uyulmalı",
+        "text": "İctihad kapısı kapalı, sadece nas'a uyulmalı",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -2124,7 +2124,7 @@
     "options": [
       {
         "id": "A",
-        "text": "İstihsan meşru bir usul yöntemidir (Hanefî)",
+        "text": "İstihsan meşru bir usul yöntemidir",
         "scores": {
           "hanafi": 5,
           "maturidi": 4,
@@ -2150,7 +2150,7 @@
       },
       {
         "id": "C",
-        "text": "İstihsan sınırlı şekilde kullanılabilir (Mâlikî)",
+        "text": "İstihsan sınırlı şekilde kullanılabilir",
         "scores": {
           "maliki": 5,
           "zahiri": -3
@@ -2192,7 +2192,7 @@
       },
       {
         "id": "G",
-        "text": "İstihsan bid'at, sadece nas'a (Kur'an ve Hadis) dayanılmalı",
+        "text": "İstihsan bid'at, sadece nas'a dayanılmalı",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -2222,7 +2222,7 @@
     "options": [
       {
         "id": "A",
-        "text": "İstislah meşru bir usul yöntemidir (Mâlikî)",
+        "text": "İstislah meşru bir usul yöntemidir",
         "scores": {
           "maliki": 5,
           "zahiri": -3
@@ -2230,7 +2230,7 @@
       },
       {
         "id": "B",
-        "text": "İstislah sınırlı şekilde kullanılabilir (Hanefî-Şâfiî)",
+        "text": "İstislah sınırlı şekilde kullanılabilir",
         "scores": {
           "hanafi": 4,
           "shafii": 4,
@@ -2293,7 +2293,7 @@
       },
       {
         "id": "H",
-        "text": "İstislah bid'at, sadece nas'a (Kur'an ve Hadis) dayanılmalı",
+        "text": "İstislah bid'at, sadece nas'a dayanılmalı",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -2312,7 +2312,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Sadd-i Zerâi meşru bir usul yöntemidir (Mâlikî-Hanbelî)",
+        "text": "Sadd-i Zerâi meşru bir usul yöntemidir",
         "scores": {
           "maliki": 5,
           "hanbeli": 5,
@@ -2328,7 +2328,7 @@
       },
       {
         "id": "B",
-        "text": "Sadd-i Zerâi sınırlı şekilde kullanılabilir (Hanefî-Şâfiî)",
+        "text": "Sadd-i Zerâi sınırlı şekilde kullanılabilir",
         "scores": {
           "hanafi": 4,
           "shafii": 4,
@@ -2337,7 +2337,7 @@
       },
       {
         "id": "C",
-        "text": "Sadd-i Zerâi reddedilmelidir (Zâhirî)",
+        "text": "Sadd-i Zerâi reddedilmelidir",
         "scores": {
           "zahiri": 5
         }
@@ -2360,7 +2360,7 @@
       },
       {
         "id": "F",
-        "text": "Sadd-i Zerâi bid'at, sadece nas'a (Kur'an ve Hadis) dayanılmalı",
+        "text": "Sadd-i Zerâi bid'at, sadece nas'a dayanılmalı",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -4172,7 +4172,7 @@
       },
       {
         "id": "B",
-        "text": "İslam devleti ideal ama zorunlu değildir (Orta yol)",
+        "text": "İslam devleti ideal ama zorunlu değildir",
         "scores": {
           "esari": 4,
           "maturidi": 4,
@@ -4185,7 +4185,7 @@
       },
       {
         "id": "C",
-        "text": "İslam devleti modern dönemde uygulanamaz (Modernist)",
+        "text": "İslam devleti modern dönemde uygulanamaz",
         "scores": {
           "modernist": 5,
           "liberal_islam": 4,
@@ -4194,7 +4194,7 @@
       },
       {
         "id": "D",
-        "text": "Din ve devlet ayrı olmalıdır (Seküler)",
+        "text": "Din ve devlet ayrı olmalıdır",
         "scores": {
           "secular_muslim": 5,
           "liberal_islam": 4
@@ -4610,7 +4610,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Kadınlar iş hayatında çalışabilir, İslam'a aykırı değildir (Modernist-Liberal)",
+        "text": "Kadınlar iş hayatında çalışabilir, İslam'a aykırı değildir",
         "scores": {
           "modernist": 5,
           "liberal_islam": 5,
@@ -4620,7 +4620,7 @@
       },
       {
         "id": "B",
-        "text": "Kadınlar sınırlı şekilde çalışabilir (Orta yol)",
+        "text": "Kadınlar sınırlı şekilde çalışabilir",
         "scores": {
           "esari": 4,
           "maturidi": 4,
