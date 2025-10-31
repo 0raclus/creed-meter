@@ -21,10 +21,21 @@ function App() {
     };
     setAnswers(newAnswers);
 
+    // Otomatik olarak bir sonraki soruya geç
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       completeTest(newAnswers);
+    }
+  };
+
+  const handleNext = () => {
+    // Sadece navigasyon, cevap zaten kaydedildi
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      // Son soruda, testi tamamla
+      completeTest(answers);
     }
   };
 
@@ -196,7 +207,7 @@ function App() {
               ← Geri
             </button>
             <button
-              onClick={() => handleAnswer(answers[questions[currentQuestion].id] || '')}
+              onClick={handleNext}
               disabled={!answers[questions[currentQuestion].id]}
               className="flex-1 px-4 py-3 rounded-lg disabled:opacity-30 disabled:cursor-not-allowed transition font-bold border-2 border-black"
               style={{
@@ -214,9 +225,9 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="w-full lg:w-2/3 bg-white p-4 sm:p-6 lg:p-12 overflow-y-auto flex items-center justify-center min-h-screen lg:min-h-0"
+          className="w-full lg:w-2/3 bg-white p-4 sm:p-6 lg:p-8 flex items-start justify-center min-h-screen lg:h-screen overflow-hidden"
         >
-          <div className="w-full max-w-2xl">
+          <div className="w-full max-w-3xl h-full flex flex-col">
             <QuestionCard
               question={questions[currentQuestion] as Question}
               onAnswer={handleAnswer}

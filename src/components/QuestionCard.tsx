@@ -53,38 +53,41 @@ export default function QuestionCard({
       transition={{ duration: 0.4 }}
       className="w-full h-full flex flex-col"
     >
-      {/* Kategori Badge */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.1, duration: 0.3 }}
-        className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 shadow-modern w-fit border-2 border-black"
-        style={{ backgroundColor: categoryColor.bg, color: categoryColor.text }}
-      >
-        {categoryLabels[question.category]}
-      </motion.div>
+      {/* Soru Başlığı Bölümü - Sticky */}
+      <div className="sticky top-0 bg-white z-10 pb-4 sm:pb-6">
+        {/* Kategori Badge */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.1, duration: 0.3 }}
+          className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4 shadow-modern w-fit border-2 border-black"
+          style={{ backgroundColor: categoryColor.bg, color: categoryColor.text }}
+        >
+          {categoryLabels[question.category]}
+        </motion.div>
 
-      {/* Soru Başlığı */}
-      <motion.h2
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.15, duration: 0.4 }}
-        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-black mb-4 sm:mb-6 leading-tight"
-        style={{ fontFamily: 'Space Grotesk' }}
-      >
-        {question.text}
-      </motion.h2>
+        {/* Soru Başlığı */}
+        <motion.h2
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.15, duration: 0.4 }}
+          className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-black mb-3 sm:mb-4 leading-tight"
+          style={{ fontFamily: 'Space Grotesk' }}
+        >
+          {question.text}
+        </motion.h2>
 
-      <motion.div
-        initial={{ width: 0 }}
-        animate={{ width: 80 }}
-        transition={{ delay: 0.2, duration: 0.5 }}
-        className="h-1 rounded-full mb-6 sm:mb-8"
-        style={{ backgroundColor: categoryColor.bg }}
-      />
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: 80 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="h-1 rounded-full"
+          style={{ backgroundColor: categoryColor.bg }}
+        />
+      </div>
 
-      {/* Cevap Seçenekleri */}
-      <div className="space-y-2 sm:space-y-3 flex-1">
+      {/* Cevap Seçenekleri - Scrollable */}
+      <div className="space-y-2 sm:space-y-3 overflow-y-auto flex-1 pr-2">
         {question.options.map((option, index) => {
           const isClicked = clickedOption === option.id;
           const isSelected = selectedAnswer === option.id; // Önceden seçilmiş mi?
@@ -208,17 +211,6 @@ export default function QuestionCard({
           </div>
         </motion.button>
       </div>
-
-      {/* Footer Info */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.3 }}
-        className="mt-8 pt-6 border-t-2 border-black text-sm"
-        style={{ color: 'rgb(66 43 33)' }}
-      >
-        Seçiminizi yaparak devam edin
-      </motion.div>
     </motion.div>
   );
 }
