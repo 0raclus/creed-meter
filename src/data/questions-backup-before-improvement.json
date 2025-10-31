@@ -62,7 +62,7 @@
       },
       {
         "id": "E",
-        "text": "'İstiva malum, keyfiyet meçhul' derim (anlamı bilinen, keyfiyeti bilinmeyen)",
+        "text": "Kesin bir görüşüm yok, farklı yorumları meşru görüyorum",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -70,7 +70,7 @@
       },
       {
         "id": "F",
-        "text": "Önceki nesillerin anladığı gibi zahir manasıyla kabul ederim",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -83,7 +83,7 @@
       },
       {
         "id": "G",
-        "text": "Mecaz olarak 'nimet' veya 'kudret' manasında anlarım",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -97,7 +97,7 @@
       },
       {
         "id": "H",
-        "text": "Tecelli ve zuhur (görünme ve açığa çıkma) manasında anlarım",
+        "text": "Tasavvufi bakışla batıni/gizli mana ararım",
         "scores": {
           "sufi": 5,
           "qadiri": 4,
@@ -110,7 +110,7 @@
       },
       {
         "id": "I",
-        "text": "Allah'ın eli ifadesini imamların te'vili ile anlarım, onlar masumdur",
+        "text": "Ehl-i Beyt'in yorumunu esas alırım",
         "scores": {
           "twelver_shia": 5,
           "zaydi": 4,
@@ -122,7 +122,7 @@
       },
       {
         "id": "J",
-        "text": "Bu ifadeyi literal almak da mecaz almak da meşrudur, kesin hüküm vermem",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -134,7 +134,7 @@
       },
       {
         "id": "K",
-        "text": "Allah'ın eli ifadesini akıl ile te'vil eder, kudret manasına alırım",
+        "text": "Akıl ve nakli dengeli kullanırım",
         "scores": {
           "esari": 4,
           "maturidi": 5,
@@ -205,7 +205,7 @@
       },
       {
         "id": "E",
-        "text": "Kader Allah'ın ilmi, irade insanın tercihi; çelişmez",
+        "text": "Bu konuda kesin bir görüş yoktur, her iki taraf da haklı olabilir",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -213,7 +213,7 @@
       },
       {
         "id": "F",
-        "text": "Kader sadece Allah'ın önceden bilmesidir, insanın iradesini kısıtlamaz",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -227,7 +227,7 @@
       },
       {
         "id": "G",
-        "text": "İnsan fiilini yapar ama gerçek fail Allah'tır (vahdet-i vücud perspektifi)",
+        "text": "Tasavvufi bakışla batıni/gizli mana ararım",
         "scores": {
           "sufi": 5,
           "qadiri": 4,
@@ -240,7 +240,7 @@
       },
       {
         "id": "H",
-        "text": "Kader konusunda imamların beyanı esas, onlar masumdur",
+        "text": "Ehl-i Beyt'in yorumunu esas alırım",
         "scores": {
           "twelver_shia": 5,
           "zaydi": 4,
@@ -252,7 +252,7 @@
       },
       {
         "id": "I",
-        "text": "Kader meselesi müteşabih, kesin hüküm vermek bid'attir",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -264,7 +264,7 @@
       },
       {
         "id": "J",
-        "text": "Kader Allah'ın yaratması, irade insanın kesbidir; ikisi birlikte işler",
+        "text": "Akıl ve nakli dengeli kullanırım",
         "scores": {
           "esari": 4,
           "maturidi": 5,
@@ -275,7 +275,7 @@
       },
       {
         "id": "K",
-        "text": "Kader hadislerde açıktır: Allah yazdı, kul işledi",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -288,7 +288,7 @@
       },
       {
         "id": "L",
-        "text": "Kader tartışması faydasız, amel önemli",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -356,7 +356,7 @@
       },
       {
         "id": "F",
-        "text": "Büyük günah işleyen fasıktır ama kâfir değil, akıl ve nakil bunu gösterir",
+        "text": "Akıl ve nakli dengeli kullanırım",
         "scores": {
           "esari": 4,
           "maturidi": 5,
@@ -367,7 +367,7 @@
       },
       {
         "id": "G",
-        "text": "Büyük günah kavramı kültürel, evrensel ahlak önemli",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -381,7 +381,7 @@
       },
       {
         "id": "H",
-        "text": "Büyük günah işleyen tövbe etmezse cehennemde ebedi kalır",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -426,7 +426,7 @@
       },
       {
         "id": "C",
-        "text": "Seçimle belirlenir, ancak Peygamber ailesinden olmalı",
+        "text": "Seçimle belirlenir, ancak Ehl-i Beyt'ten olmalı",
         "scores": {
           "zeydi": 5,
           "imamiyye": 2
@@ -450,7 +450,7 @@
       },
       {
         "id": "F",
-        "text": "İmamet konusunu çağdaş bağlamda yeniden yorumlarım",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -464,7 +464,7 @@
       },
       {
         "id": "G",
-        "text": "İmameti manevi liderlik olarak anlarım",
+        "text": "Tasavvufi bakışla batıni/gizli mana ararım",
         "scores": {
           "sufi": 5,
           "qadiri": 4,
@@ -477,7 +477,7 @@
       },
       {
         "id": "H",
-        "text": "İmamlar masumdur, onların tayini ilahi emirdir",
+        "text": "Ehl-i Beyt'in yorumunu esas alırım",
         "scores": {
           "twelver_shia": 5,
           "zaydi": 4,
@@ -489,7 +489,7 @@
       },
       {
         "id": "I",
-        "text": "İmamet siyasi bir mesele, herkes kendi yöntemini seçebilir",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -501,7 +501,7 @@
       },
       {
         "id": "J",
-        "text": "İmam seçiminde hem akıl hem de nasslar dikkate alınmalı",
+        "text": "Akıl ve nakli dengeli kullanırım",
         "scores": {
           "esari": 4,
           "maturidi": 5,
@@ -512,7 +512,7 @@
       },
       {
         "id": "K",
-        "text": "Hilafet Kur'an'da yok, Peygamber döneminde şûra ile belirlendi",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -525,7 +525,7 @@
       },
       {
         "id": "L",
-        "text": "Hilafet sistemi tarihsel, günümüzde ulus devlet modeli geçerli",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -571,7 +571,7 @@
       },
       {
         "id": "C",
-        "text": "Kur'an'ın yaratılmışlığı tartışması bid'at, sükût etmek evladır",
+        "text": "Bu konuda kesin bir görüş yoktur, her iki taraf da haklı olabilir",
         "scores": {
           "esari": 3,
           "maturidi": 3,
@@ -584,7 +584,7 @@
       },
       {
         "id": "D",
-        "text": "Kur'an'ın lafzı yaratılmış, manası kadimdir",
+        "text": "Kur'an'ın lafzı yaratılmış, manası yaratılmamıştır",
         "scores": {
           "esari": 4,
           "shafii": 3,
@@ -597,7 +597,7 @@
       },
       {
         "id": "E",
-        "text": "Kur'an'ın yaratılmışlığı kelami tartışma, pratik dine etkisi yok",
+        "text": "Bu tartışma günümüzde anlamsızdır, pratik İslam'a odaklanmalı",
         "scores": {
           "modernist": 4,
           "liberal_islam": 4
@@ -605,7 +605,7 @@
       },
       {
         "id": "F",
-        "text": "Kur'an kadimdir, imamlar bu konuda icma etmiştir",
+        "text": "Ehl-i Beyt'in yorumunu esas alırım",
         "scores": {
           "twelver_shia": 5,
           "zaydi": 4,
@@ -617,7 +617,7 @@
       },
       {
         "id": "G",
-        "text": "Kur'an'ın yaratılmışlığını felsefi bağlamda ele alırım",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -631,7 +631,7 @@
       },
       {
         "id": "H",
-        "text": "Kur'an'ın kadim oluşunu Önceki alimlerin görüşüne göre kabul ederim",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -694,14 +694,14 @@
       },
       {
         "id": "E",
-        "text": "Kabir azabı ve şefaat konusu gaybi, kesin bilgi gerektirmez",
+        "text": "Kesin bir görüş yoktur, her iki ihtimal de mümkündür",
         "scores": {
           "reformcu": 3
         }
       },
       {
         "id": "F",
-        "text": "Kabir azabı fiziksel değil, ruhani bir süreçtir",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -713,7 +713,7 @@
       },
       {
         "id": "G",
-        "text": "Kabir azabı metafor, gerçek azap ahirette başlar",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -727,7 +727,7 @@
       },
       {
         "id": "H",
-        "text": "Şefaat sadece imamlar için geçerli, onlar masumdur",
+        "text": "Ehl-i Beyt'in yorumunu esas alırım",
         "scores": {
           "twelver_shia": 5,
           "zaydi": 4,
@@ -739,7 +739,7 @@
       },
       {
         "id": "I",
-        "text": "Kabir azabı fiziksel, ateş ve yılanlarla gerçekleşir",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -752,7 +752,7 @@
       },
       {
         "id": "J",
-        "text": "Kabir azabı nefsin arınma süreci, berzah aleminde tecelli eder",
+        "text": "Tasavvufi bakışla batıni/gizli mana ararım",
         "scores": {
           "sufi": 5,
           "qadiri": 4,
@@ -769,7 +769,7 @@
     "id": "AKD_007",
     "category": "akide",
     "weight": 1.2,
-    "text": "İmam kavramı (dini liderlik) hakkında ne düşünüyorsunuz?",
+    "text": "Şia'nın İmam kavramı hakkında ne düşünüyorsunuz?",
     "options": [
       {
         "id": "A",
@@ -820,7 +820,7 @@
       },
       {
         "id": "E",
-        "text": "İmam kavramını Kur'an ve Hadis'teki anlamıyla kabul ederim",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -833,7 +833,7 @@
       },
       {
         "id": "F",
-        "text": "İmam kavramında batıni/gizli manalar ararım",
+        "text": "Tasavvufi bakışla batıni/gizli mana ararım",
         "scores": {
           "sufi": 5,
           "qadiri": 4,
@@ -846,7 +846,7 @@
       },
       {
         "id": "G",
-        "text": "İmam kavramını akıl ve nakil dengesinde anlarım",
+        "text": "Akıl ve nakli dengeli kullanırım",
         "scores": {
           "esari": 4,
           "maturidi": 5,
@@ -857,7 +857,7 @@
       },
       {
         "id": "H",
-        "text": "Bu İmam anlayışını farklı bir perspektif olarak görürüm",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -869,7 +869,7 @@
       },
       {
         "id": "I",
-        "text": "İmam kavramını manevi liderlik bağlamında anlarım",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -891,7 +891,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Kitap ehli kâfirdir, İslam'a davet edilmeli",
+        "text": "Ehl-i Kitap kâfirdir, İslam'a davet edilmeli",
         "scores": {
           "jihadist_salafi": 4,
           "selefi": 2,
@@ -906,7 +906,7 @@
       },
       {
         "id": "B",
-        "text": "Kitap ehli mümin sayılır, cennete girebilir",
+        "text": "Ehl-i Kitap mümin sayılır, cennete girebilir",
         "scores": {
           "imamiyye": 4,
           "esari": 3,
@@ -919,7 +919,7 @@
       },
       {
         "id": "C",
-        "text": "Kitap ehli ile barış içinde yaşanabilir",
+        "text": "Ehl-i Kitap ile barış içinde yaşanabilir",
         "scores": {
           "modernist": 5,
           "reformcu": 4,
@@ -928,7 +928,7 @@
       },
       {
         "id": "D",
-        "text": "Kitap ehli kavramı modern bağlamda yeniden değerlendirilmeli",
+        "text": "Ehl-i Kitap kavramı modern bağlamda yeniden değerlendirilmeli",
         "scores": {
           "modernist": 5,
           "secular_muslim": 4
@@ -936,7 +936,7 @@
       },
       {
         "id": "E",
-        "text": "Kitap ehli konusu tartışmalı, kesin hüküm vermek doğru değil",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -948,7 +948,7 @@
       },
       {
         "id": "F",
-        "text": "Kitap ehli ile diyalog ve işbirliği İslam'ın ruhuna uygundur",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -962,7 +962,7 @@
       },
       {
         "id": "G",
-        "text": "Kitap ehli zimmi statüsünde yaşar, cizye öder",
+        "text": "Akıl ve nakli dengeli kullanırım",
         "scores": {
           "esari": 4,
           "maturidi": 5,
@@ -973,7 +973,7 @@
       },
       {
         "id": "H",
-        "text": "Kitap ehli konusunda imamların görüşü esas, onlar masumdur",
+        "text": "Ehl-i Beyt'in yorumunu esas alırım",
         "scores": {
           "twelver_shia": 5,
           "zaydi": 4,
@@ -985,7 +985,7 @@
       },
       {
         "id": "I",
-        "text": "Kitap ehli de tevhid ehlidir, batıni manada kardeşizdir",
+        "text": "Tasavvufi bakışla batıni/gizli mana ararım",
         "scores": {
           "sufi": 5,
           "qadiri": 4,
@@ -998,7 +998,7 @@
       },
       {
         "id": "J",
-        "text": "Kitap ehli hakkında Kur'an ve Hadis'teki hükümlere uyarım",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -1019,7 +1019,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Zahiri manasında, Allah işitir ve görür, nasıl olduğu bilinmez",
+        "text": "Zahiri manasında, Allah işitir ve görür, nasıl olduğu bilinmez (Atharî-Selefî)",
         "scores": {
           "athari": 5,
           "quietist_salafi": 5,
@@ -1050,7 +1050,7 @@
       },
       {
         "id": "C",
-        "text": "Akıl ile çözümlenir, antropomorfizm reddedilir",
+        "text": "Akıl ile çözümlenir, antropomorfizm reddedilir (Mu'tezile)",
         "scores": {
           "mutazila": 5,
           "modernist": 4,
@@ -1062,7 +1062,7 @@
       },
       {
         "id": "D",
-        "text": "Sıfatlar Kur'an'da geçtiği gibi alınır, te'vil yapılmaz",
+        "text": "Sıfatlar Kur'an'da geçtiği gibi alınır, te'vil yapılmaz (Zahirî)",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -1076,7 +1076,7 @@
       },
       {
         "id": "E",
-        "text": "Semî ve Basîr sıfatları müteşabih, te'vil de tefviz de caizdir",
+        "text": "Farklı yorumlar meşrudur, kesin bir görüş yoktur",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -1084,7 +1084,7 @@
       },
       {
         "id": "F",
-        "text": "Semî ve Basîr kulak ve göz değil, ama nasıl olduğu bilinmez",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -1097,7 +1097,7 @@
       },
       {
         "id": "G",
-        "text": "Semî ve Basîr'i te'vil ederim, ilim ve kudret manasına alırım",
+        "text": "Akıl ve nakli dengeli kullanırım",
         "scores": {
           "esari": 4,
           "maturidi": 5,
@@ -1108,7 +1108,7 @@
       },
       {
         "id": "H",
-        "text": "Semî ve Basîr tartışması skolastik, pratik dine odaklanmalı",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -1120,7 +1120,7 @@
       },
       {
         "id": "I",
-        "text": "Semî ve Basîr'i bilimsel bağlamda yorumlarım, evrensel bilinç",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -1134,7 +1134,7 @@
       },
       {
         "id": "J",
-        "text": "Semî ve Basîr konusunda imamların te'vili esas, onlar masumdur",
+        "text": "Ehl-i Beyt'in yorumunu esas alırım",
         "scores": {
           "twelver_shia": 5,
           "zaydi": 4,
@@ -1146,7 +1146,7 @@
       },
       {
         "id": "K",
-        "text": "Semî ve Basîr Allah'ın varlıkta tecellisi, vahdet-i vücud",
+        "text": "Tasavvufi bakışla batıni/gizli mana ararım",
         "scores": {
           "sufi": 5,
           "qadiri": 4,
@@ -1182,7 +1182,7 @@
       },
       {
         "id": "B",
-        "text": "Kur'an yaratılmıştır, Allah'ın sözü değil",
+        "text": "Kur'an yaratılmıştır, Allah'ın sözü değil (Mu'tezile)",
         "scores": {
           "mutazila": 5,
           "modernist": 3,
@@ -1225,7 +1225,7 @@
       },
       {
         "id": "F",
-        "text": "Kur'an'ın ezeli kelam, mushaf'ın yaratılmış olduğunu söylerim",
+        "text": "Tasavvufi bakışla batıni/gizli mana ararım",
         "scores": {
           "sufi": 5,
           "qadiri": 4,
@@ -1238,7 +1238,7 @@
       },
       {
         "id": "G",
-        "text": "Kur'an'ın yaratılmışlığını felsefi bir mesele olarak görürüm",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -1252,7 +1252,7 @@
       },
       {
         "id": "H",
-        "text": "Kur'an'ın yaratılmışlığı tartışmasında farklı görüşleri anlayışla karşılarım",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -1264,7 +1264,7 @@
       },
       {
         "id": "I",
-        "text": "Kur'an kadimdir, hadislerde açıktır, yaratılmış değildir",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -1326,7 +1326,7 @@
       },
       {
         "id": "D",
-        "text": "Antropomorfizm olarak reddedilir, akıl ile çözümlenir",
+        "text": "Antropomorfizm olarak reddedilir, akıl ile çözümlenir (Mu'tezile)",
         "scores": {
           "mutazila": 5,
           "modernist": 4,
@@ -1345,7 +1345,7 @@
       },
       {
         "id": "F",
-        "text": "Vech'i te'vil ederim, zat veya rıza manasına alırım",
+        "text": "Akıl ve nakli dengeli kullanırım",
         "scores": {
           "esari": 4,
           "maturidi": 5,
@@ -1356,7 +1356,7 @@
       },
       {
         "id": "G",
-        "text": "Vech sıfatı konusunda imamların te'vili esas, onlar masumdur",
+        "text": "Ehl-i Beyt'in yorumunu esas alırım",
         "scores": {
           "twelver_shia": 5,
           "zaydi": 4,
@@ -1368,7 +1368,7 @@
       },
       {
         "id": "H",
-        "text": "Vech'i 'zat' veya 'rıza' manasında mecazi olarak anlarım",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -1405,7 +1405,7 @@
       },
       {
         "id": "B",
-        "text": "İnsan tamamen özgürdür, Allah'ın takdiri yoktur",
+        "text": "İnsan tamamen özgürdür, Allah'ın takdiri yoktur (Mu'tezile)",
         "scores": {
           "mutazila": 5,
           "modernist": 4,
@@ -1450,7 +1450,7 @@
       },
       {
         "id": "F",
-        "text": "Kesb teorisini psikolojik bir açıklama olarak görürüm",
+        "text": "Sembolik/mecazi olarak anlarım, literal yorumu reddederim",
         "scores": {
           "modernist": 5,
           "liberal": 4,
@@ -1464,7 +1464,7 @@
       },
       {
         "id": "G",
-        "text": "Kesb teorisi zahiri, gerçekte kul fiilini yapmaz, Allah yapar",
+        "text": "Tasavvufi bakışla batıni/gizli mana ararım",
         "scores": {
           "sufi": 5,
           "qadiri": 4,
@@ -1477,7 +1477,7 @@
       },
       {
         "id": "H",
-        "text": "Kesb teorisi konusunda imamların görüşü esas, onlar masumdur",
+        "text": "Ehl-i Beyt'in yorumunu esas alırım",
         "scores": {
           "twelver_shia": 5,
           "zaydi": 4,
@@ -1489,7 +1489,7 @@
       },
       {
         "id": "I",
-        "text": "Kesb teorisi kelami tartışma, pratik dine etkisi yok",
+        "text": "Farklı yorumları meşru görürüm, çoğulculuğu benimserim",
         "scores": {
           "liberal": 5,
           "modernist": 4,
@@ -1501,7 +1501,7 @@
       },
       {
         "id": "J",
-        "text": "Kesb teorisi doğru, Allah yaratır insan kazanır, te'vil ile anlaşılır",
+        "text": "Akıl ve nakli dengeli kullanırım",
         "scores": {
           "esari": 4,
           "maturidi": 5,
@@ -1512,7 +1512,7 @@
       },
       {
         "id": "K",
-        "text": "Kesb teorisi bid'at, Kur'an'da yok, Allah her şeyi yaratır",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -1525,7 +1525,7 @@
       },
       {
         "id": "L",
-        "text": "Kesb teorisi çelişkili, ya cebir ya da irade olmalı",
+        "text": "Sadece Kur'an ve Sahih Hadis'e göre anlarım",
         "scores": {
           "athari": 5,
           "selefi": 5,
@@ -1574,7 +1574,7 @@
       },
       {
         "id": "C",
-        "text": "Rey ve rivayeti dengeli kullanır, konuya göre öncelik veririm",
+        "text": "İkisi dengeli kullanılmalı, duruma göre değişir",
         "scores": {
           "shafii": 5,
           "maliki": 4,
@@ -1725,7 +1725,7 @@
       },
       {
         "id": "F",
-        "text": "İctihad kapısı her zaman açık, ama usul bilgisi şart",
+        "text": "Çağdaş ihtiyaçlara göre yeniden yorumlarım",
         "scores": {
           "modernist": 5,
           "reformist": 5,
@@ -1737,7 +1737,7 @@
       },
       {
         "id": "G",
-        "text": "İctihad yapılabilir ama maslahat ve örf gözetilmeli",
+        "text": "Maslahat ve örf'ü dikkate alırım",
         "scores": {
           "maliki": 5,
           "hanafi": 4,
@@ -1748,7 +1748,7 @@
       },
       {
         "id": "H",
-        "text": "İctihad kapısı kapalı, sadece nas'a (Kur'an ve Hadis) uyulmalı",
+        "text": "Sadece nas'a (Kur'an ve Hadis) dayanırım",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -1759,7 +1759,7 @@
       },
       {
         "id": "I",
-        "text": "İctihad yapılabilir ama icma'ya (ümmet ittifakı) aykırı olmamalı",
+        "text": "İcma'yı (ümmet ittifakı) önemserim",
         "scores": {
           "shafii": 5,
           "esari": 4,
@@ -1823,7 +1823,7 @@
       },
       {
         "id": "E",
-        "text": "Bu hadis anlayışı doğru, Peygamber ailesi hadisleri önemlidir",
+        "text": "Şii hadis anlayışı doğru, Ehl-i Beyt hadisleri önemlidir",
         "scores": {
           "imamiyye": 5,
           "zeydi": 3
@@ -1831,7 +1831,7 @@
       },
       {
         "id": "F",
-        "text": "Hadisler zahiri manasıyla alınmalı, te'vil yapılmamalı",
+        "text": "Sadece nas'a (Kur'an ve Hadis) dayanırım",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -1842,7 +1842,7 @@
       },
       {
         "id": "G",
-        "text": "Hadisleri çağdaş bilimsel bulgularla uyumlu yorumlarım",
+        "text": "Çağdaş ihtiyaçlara göre yeniden yorumlarım",
         "scores": {
           "modernist": 5,
           "reformist": 5,
@@ -1854,7 +1854,7 @@
       },
       {
         "id": "H",
-        "text": "Hadisleri maslahat ve örf bağlamında yorumlarım",
+        "text": "Maslahat ve örf'ü dikkate alırım",
         "scores": {
           "maliki": 5,
           "hanafi": 4,
@@ -1921,7 +1921,7 @@
       },
       {
         "id": "F",
-        "text": "Sahabeler adil ama kıyas ile değerlendirilebilir",
+        "text": "Kıyas ve içtihadı geniş kullanırım",
         "scores": {
           "hanafi": 5,
           "maliki": 4,
@@ -1932,7 +1932,7 @@
       },
       {
         "id": "G",
-        "text": "Sahabe adaleti Kur'an ve Hadis'te açık, tartışılmaz",
+        "text": "Sadece nas'a (Kur'an ve Hadis) dayanırım",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -1943,7 +1943,7 @@
       },
       {
         "id": "H",
-        "text": "Sahabe adaleti maslahat ve örf bağlamında anlaşılmalı",
+        "text": "Maslahat ve örf'ü dikkate alırım",
         "scores": {
           "maliki": 5,
           "hanafi": 4,
@@ -1954,7 +1954,7 @@
       },
       {
         "id": "I",
-        "text": "Sahabe adaleti icma ile sabittir, eleştirilemez",
+        "text": "İcma'yı (ümmet ittifakı) önemserim",
         "scores": {
           "shafii": 5,
           "esari": 4,
@@ -1965,7 +1965,7 @@
       },
       {
         "id": "J",
-        "text": "Sahabe adaleti tarihsel, çağdaş bağlamda yeniden değerlendirilmeli",
+        "text": "Çağdaş ihtiyaçlara göre yeniden yorumlarım",
         "scores": {
           "modernist": 5,
           "reformist": 5,
@@ -1977,7 +1977,7 @@
       },
       {
         "id": "K",
-        "text": "Sahabeler çoğunlukla adil ama bazıları siyasi hata yaptı",
+        "text": "Maslahat ve örf'ü dikkate alırım",
         "scores": {
           "maliki": 5,
           "hanafi": 4,
@@ -1988,7 +1988,7 @@
       },
       {
         "id": "L",
-        "text": "Sahabe adaleti dogma değil, eleştirel yaklaşım gerekli",
+        "text": "Çağdaş ihtiyaçlara göre yeniden yorumlarım",
         "scores": {
           "modernist": 5,
           "reformist": 5,
@@ -2049,7 +2049,7 @@
       },
       {
         "id": "E",
-        "text": "Hadis kritiğinde kıyas ve içtihat kullanılabilir",
+        "text": "Kıyas ve içtihadı geniş kullanırım",
         "scores": {
           "hanafi": 5,
           "maliki": 4,
@@ -2060,7 +2060,7 @@
       },
       {
         "id": "F",
-        "text": "Hadis kritiği zahiri, sadece sened ve metin incelenir",
+        "text": "Sadece nas'a (Kur'an ve Hadis) dayanırım",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -2071,7 +2071,7 @@
       },
       {
         "id": "G",
-        "text": "Hadis kritiğinde maslahat ve örf gözetilmeli",
+        "text": "Maslahat ve örf'ü dikkate alırım",
         "scores": {
           "maliki": 5,
           "hanafi": 4,
@@ -2082,7 +2082,7 @@
       },
       {
         "id": "H",
-        "text": "Hadis kritiğinde icma (ümmet ittifakı) esas alınmalı",
+        "text": "İcma'yı (ümmet ittifakı) önemserim",
         "scores": {
           "shafii": 5,
           "esari": 4,
@@ -2093,7 +2093,7 @@
       },
       {
         "id": "I",
-        "text": "Hadis kritiği çağdaş bilimsel yöntemlerle yeniden yapılmalı",
+        "text": "Çağdaş ihtiyaçlara göre yeniden yorumlarım",
         "scores": {
           "modernist": 5,
           "reformist": 5,
@@ -2105,7 +2105,7 @@
       },
       {
         "id": "J",
-        "text": "Hadis kritiğinde icma (ümmet ittifakı) belirleyicidir",
+        "text": "İcma'yı (ümmet ittifakı) önemserim",
         "scores": {
           "shafii": 5,
           "esari": 4,
@@ -2158,7 +2158,7 @@
       },
       {
         "id": "D",
-        "text": "İstihsan reddedilmelidir, sadece nass esas alınmalı",
+        "text": "İstihsan reddedilmelidir, sadece nass esas alınmalı (Zâhirî-Selefî)",
         "scores": {
           "zahiri": 5,
           "selefi": 4,
@@ -2181,7 +2181,7 @@
       },
       {
         "id": "F",
-        "text": "İstihsan yerine kıyas ve içtihadı geniş kullanırım",
+        "text": "Kıyas ve içtihadı geniş kullanırım",
         "scores": {
           "hanafi": 5,
           "maliki": 4,
@@ -2192,7 +2192,7 @@
       },
       {
         "id": "G",
-        "text": "İstihsan bid'at, sadece nas'a (Kur'an ve Hadis) dayanılmalı",
+        "text": "Sadece nas'a (Kur'an ve Hadis) dayanırım",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -2203,7 +2203,7 @@
       },
       {
         "id": "H",
-        "text": "İstihsan konusunda icma (ümmet ittifakı) yoktur",
+        "text": "İcma'yı (ümmet ittifakı) önemserim",
         "scores": {
           "shafii": 5,
           "esari": 4,
@@ -2239,7 +2239,7 @@
       },
       {
         "id": "C",
-        "text": "İstislah reddedilmelidir, sadece nass esas alınmalı",
+        "text": "İstislah reddedilmelidir, sadece nass esas alınmalı (Zâhirî-Selefî)",
         "scores": {
           "zahiri": 5,
           "selefi": 4,
@@ -2263,7 +2263,7 @@
       },
       {
         "id": "E",
-        "text": "İstislah konusunda farklı görüşler meşru, kesin hüküm yok",
+        "text": "Bu konuda kesin bir görüş yoktur",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -2271,7 +2271,7 @@
       },
       {
         "id": "F",
-        "text": "İstislah maslahat ve örf'ü dikkate alır, meşrudur",
+        "text": "Maslahat ve örf'ü dikkate alırım",
         "scores": {
           "maliki": 5,
           "hanafi": 4,
@@ -2282,7 +2282,7 @@
       },
       {
         "id": "G",
-        "text": "İstislah icma (ümmet ittifakı) ile sınırlanmalı",
+        "text": "İcma'yı (ümmet ittifakı) önemserim",
         "scores": {
           "shafii": 5,
           "esari": 4,
@@ -2293,7 +2293,7 @@
       },
       {
         "id": "H",
-        "text": "İstislah bid'at, sadece nas'a (Kur'an ve Hadis) dayanılmalı",
+        "text": "Sadece nas'a (Kur'an ve Hadis) dayanırım",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -2352,7 +2352,7 @@
       },
       {
         "id": "E",
-        "text": "Sadd-i Zerâi konusunda farklı görüşler meşru, kesin hüküm yok",
+        "text": "Bu konuda kesin bir görüş yoktur",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -2360,7 +2360,7 @@
       },
       {
         "id": "F",
-        "text": "Sadd-i Zerâi bid'at, sadece nas'a (Kur'an ve Hadis) dayanılmalı",
+        "text": "Sadece nas'a (Kur'an ve Hadis) dayanırım",
         "scores": {
           "zahiri": 5,
           "athari": 4,
@@ -2371,7 +2371,7 @@
       },
       {
         "id": "G",
-        "text": "Sadd-i Zerâi icma (ümmet ittifakı) ile sınırlanmalı",
+        "text": "İcma'yı (ümmet ittifakı) önemserim",
         "scores": {
           "shafii": 5,
           "esari": 4,
@@ -2382,7 +2382,7 @@
       },
       {
         "id": "H",
-        "text": "Sadd-i Zerâi çağdaş bağlamda yeniden yorumlanmalı",
+        "text": "Çağdaş ihtiyaçlara göre yeniden yorumlarım",
         "scores": {
           "modernist": 5,
           "reformist": 5,
@@ -2394,7 +2394,7 @@
       },
       {
         "id": "I",
-        "text": "Sadd-i Zerâi yerine kıyas ve içtihadı geniş kullanırım",
+        "text": "Kıyas ve içtihadı geniş kullanırım",
         "scores": {
           "hanafi": 5,
           "maliki": 4,
@@ -2467,7 +2467,7 @@
       },
       {
         "id": "F",
-        "text": "Fatiha konusunda en ihtiyatlı olanı tercih ederim, mutlaka okurum",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -2478,7 +2478,7 @@
       },
       {
         "id": "G",
-        "text": "Fatiha konusunda Kur'an ve Hadis'ten doğrudan anlarım",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -2489,7 +2489,7 @@
       },
       {
         "id": "H",
-        "text": "Fatiha konusunda mezhep imamımın görüşüne uyarım",
+        "text": "Mezhep imamımın görüşüne uyarım",
         "scores": {
           "traditional_sunni": 5,
           "hanafi": 4,
@@ -2558,7 +2558,7 @@
       },
       {
         "id": "F",
-        "text": "Faiz konusunda Kur'an ve Hadis açık, her türlü faiz haramdır",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -2569,7 +2569,7 @@
       },
       {
         "id": "G",
-        "text": "Faizde en ihtiyatlı olanı tercih ederim, şüpheli işlemlerden kaçınırım",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -2580,7 +2580,7 @@
       },
       {
         "id": "H",
-        "text": "Faiz konusunda mezhep imamımın görüşüne uyarım",
+        "text": "Mezhep imamımın görüşüne uyarım",
         "scores": {
           "traditional_sunni": 5,
           "hanafi": 4,
@@ -2592,7 +2592,7 @@
       },
       {
         "id": "I",
-        "text": "Faizde kolaylık prensibi (yüsr) uygulanabilir, zaruret durumunda",
+        "text": "Kolaylık prensibini (yüsr) esas alırım",
         "scores": {
           "hanafi": 4,
           "maliki": 4,
@@ -2660,7 +2660,7 @@
       },
       {
         "id": "F",
-        "text": "Tesettürde kolaylık prensibi (yüsr) uygulanabilir, zorluk olmamalı",
+        "text": "Kolaylık prensibini (yüsr) esas alırım",
         "scores": {
           "hanafi": 4,
           "maliki": 4,
@@ -2671,7 +2671,7 @@
       },
       {
         "id": "G",
-        "text": "Tesettürde en ihtiyatlı olanı tercih ederim, tüm vücut örtülmeli",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -2682,7 +2682,7 @@
       },
       {
         "id": "H",
-        "text": "Tesettür konusunda mezhep imamımın görüşüne uyarım",
+        "text": "Mezhep imamımın görüşüne uyarım",
         "scores": {
           "traditional_sunni": 5,
           "hanafi": 4,
@@ -2694,7 +2694,7 @@
       },
       {
         "id": "I",
-        "text": "Tesettür konusunda Kur'an ve Hadis'ten doğrudan anlarım",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -2705,7 +2705,7 @@
       },
       {
         "id": "J",
-        "text": "Tesettürde en ihtiyatlı olanı tercih ederim, nikab da dahil",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -2716,7 +2716,7 @@
       },
       {
         "id": "K",
-        "text": "Tesettür ayetlerini Kur'an ve Hadis'ten doğrudan anlarım",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -2785,7 +2785,7 @@
       },
       {
         "id": "F",
-        "text": "Cihad konusunda kolaylık prensibi (yüsr) uygulanabilir",
+        "text": "Kolaylık prensibini (yüsr) esas alırım",
         "scores": {
           "hanafi": 4,
           "maliki": 4,
@@ -2796,7 +2796,7 @@
       },
       {
         "id": "G",
-        "text": "Cihad konusunda en ihtiyatlı olanı tercih ederim, her zaman hazır olmalı",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -2807,7 +2807,7 @@
       },
       {
         "id": "H",
-        "text": "Cihad konusunda mezhep imamımın görüşüne uyarım",
+        "text": "Mezhep imamımın görüşüne uyarım",
         "scores": {
           "traditional_sunni": 5,
           "hanafi": 4,
@@ -2819,7 +2819,7 @@
       },
       {
         "id": "I",
-        "text": "Cihad ayetlerini Kur'an ve Hadis'ten doğrudan anlarım",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -2830,7 +2830,7 @@
       },
       {
         "id": "J",
-        "text": "Cihad konusunda mezhep imamlarının ictihadına güvenirim",
+        "text": "Mezhep imamımın görüşüne uyarım",
         "scores": {
           "traditional_sunni": 5,
           "hanafi": 4,
@@ -2842,7 +2842,7 @@
       },
       {
         "id": "K",
-        "text": "Cihad konusunda kolaylık ve zaruret gözetirim",
+        "text": "Kolaylık prensibini (yüsr) esas alırım",
         "scores": {
           "hanafi": 4,
           "maliki": 4,
@@ -2902,7 +2902,7 @@
       },
       {
         "id": "E",
-        "text": "Alkol ve uyuşturucuda kolaylık prensibi (yüsr) uygulanabilir, zaruret durumunda",
+        "text": "Kolaylık prensibini (yüsr) esas alırım",
         "scores": {
           "hanafi": 4,
           "maliki": 4,
@@ -2913,7 +2913,7 @@
       },
       {
         "id": "F",
-        "text": "Alkol ve uyuşturucuda en ihtiyatlı olanı tercih ederim, kesinlikle haram",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -2924,7 +2924,7 @@
       },
       {
         "id": "G",
-        "text": "Alkol ve uyuşturucu konusunda mezhep imamımın görüşüne uyarım",
+        "text": "Mezhep imamımın görüşüne uyarım",
         "scores": {
           "traditional_sunni": 5,
           "hanafi": 4,
@@ -2936,7 +2936,7 @@
       },
       {
         "id": "H",
-        "text": "Alkol ve uyuşturucu ayetlerini Kur'an ve Hadis'ten doğrudan anlarım",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -2947,7 +2947,7 @@
       },
       {
         "id": "I",
-        "text": "Alkol haramdır, uyuşturucu da kıyas ile haramdır",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -3031,7 +3031,7 @@
       },
       {
         "id": "F",
-        "text": "Namaz şeklinde kolaylık prensibi (yüsr) uygulanabilir",
+        "text": "Kolaylık prensibini (yüsr) esas alırım",
         "scores": {
           "hanafi": 4,
           "maliki": 4,
@@ -3042,7 +3042,7 @@
       },
       {
         "id": "G",
-        "text": "Namaz şeklinde en ihtiyatlı olanı tercih ederim, tüm detaylara uyarım",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -3053,7 +3053,7 @@
       },
       {
         "id": "H",
-        "text": "Namaz şeklinde mezhep imamımın görüşüne uyarım",
+        "text": "Mezhep imamımın görüşüne uyarım",
         "scores": {
           "traditional_sunni": 5,
           "hanafi": 4,
@@ -3065,7 +3065,7 @@
       },
       {
         "id": "I",
-        "text": "Namaz şeklini Kur'an ve Hadis'ten doğrudan anlarım",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -3076,7 +3076,7 @@
       },
       {
         "id": "J",
-        "text": "Namaz şeklinde en sıkı olanı tercih ederim, her detay önemli",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -3087,7 +3087,7 @@
       },
       {
         "id": "K",
-        "text": "Namaz şeklini Peygamber'in uygulamasından doğrudan öğrenirim",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -3106,7 +3106,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Ayaklar yıkanmalıdır",
+        "text": "Ayaklar yıkanmalıdır (Ehl-i Sünnet)",
         "scores": {
           "hanafi": 5,
           "shafii": 5,
@@ -3149,7 +3149,7 @@
       },
       {
         "id": "E",
-        "text": "Ayak yıkama konusunda farklı görüşler meşru, kesin hüküm yok",
+        "text": "Bu konuda kesin bir görüş yoktur",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -3157,7 +3157,7 @@
       },
       {
         "id": "F",
-        "text": "Ayak yıkamada kolaylık prensibi (yüsr) uygulanabilir, mesh de caiz",
+        "text": "Kolaylık prensibini (yüsr) esas alırım",
         "scores": {
           "hanafi": 4,
           "maliki": 4,
@@ -3168,7 +3168,7 @@
       },
       {
         "id": "G",
-        "text": "Ayak yıkamada en ihtiyatlı olanı tercih ederim, mutlaka yıkanmalı",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -3179,7 +3179,7 @@
       },
       {
         "id": "H",
-        "text": "Ayak yıkama konusunda mezhep imamımın görüşüne uyarım",
+        "text": "Mezhep imamımın görüşüne uyarım",
         "scores": {
           "traditional_sunni": 5,
           "hanafi": 4,
@@ -3191,7 +3191,7 @@
       },
       {
         "id": "I",
-        "text": "Ayak yıkama ayetini Kur'an ve Hadis'ten doğrudan anlarım",
+        "text": "Doğrudan Kur'an ve Hadis'ten anlamaya çalışırım",
         "scores": {
           "selefi": 5,
           "athari": 4,
@@ -3202,7 +3202,7 @@
       },
       {
         "id": "J",
-        "text": "Ayak yıkamada en sıkı olanı tercih ederim, topuklara kadar yıkarım",
+        "text": "En sıkı/ihtiyatlı olanı tercih ederim",
         "scores": {
           "hanbeli": 5,
           "selefi": 4,
@@ -3213,7 +3213,7 @@
       },
       {
         "id": "K",
-        "text": "Ayak yıkama konusunda mezhep imamlarının ictihadına güvenirim",
+        "text": "Mezhep imamımın görüşüne uyarım",
         "scores": {
           "traditional_sunni": 5,
           "hanafi": 4,
@@ -3225,7 +3225,7 @@
       },
       {
         "id": "L",
-        "text": "Ayak yıkamada kolaylık ve zaruret gözetirim",
+        "text": "Kolaylık prensibini (yüsr) esas alırım",
         "scores": {
           "hanafi": 4,
           "maliki": 4,
@@ -3396,7 +3396,7 @@
       },
       {
         "id": "F",
-        "text": "Tevessül bid'at, evliyalara dua etmek şirktir",
+        "text": "Tasavvufu bid'at görürüm",
         "scores": {
           "selefi": 5,
           "zahiri": 4,
@@ -3409,7 +3409,7 @@
       },
       {
         "id": "G",
-        "text": "Tevessül konusunda şeyhe danışmak gerekir",
+        "text": "Tarikat ehline bağlanmayı gerekli görürüm",
         "scores": {
           "sufi": 5,
           "qadiri": 5,
@@ -3421,7 +3421,7 @@
       },
       {
         "id": "H",
-        "text": "Tevessül Sünnet çerçevesinde sınırlı şekilde caizdir",
+        "text": "Tasavvufu Sünnet çerçevesinde kabul ederim",
         "scores": {
           "sufi_selefi": 5,
           "traditional_sunni": 4,
@@ -3432,7 +3432,7 @@
       },
       {
         "id": "I",
-        "text": "Türbelere ziyaret maneviyat için faydalı ama zorunlu değil",
+        "text": "Maneviyatı önemserim ama tarikata girmem",
         "scores": {
           "modernist": 4,
           "reformist": 4,
@@ -3442,7 +3442,7 @@
       },
       {
         "id": "J",
-        "text": "Tevessül konusunda sadece Allah'a dua ederim, aracı aramam",
+        "text": "Maneviyatı önemserim ama tarikata girmem",
         "scores": {
           "modernist": 4,
           "reformist": 4,
@@ -3460,7 +3460,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Vahdet-i vücud doğru bir doktrindir, bu görüş doğrudur",
+        "text": "Vahdet-i vücud doğru bir doktrindir, İbn Arabi haklıdır",
         "scores": {
           "sufi": 5,
           "imamiyye": 3
@@ -3512,7 +3512,7 @@
       },
       {
         "id": "F",
-        "text": "Vahdet-i vücud Sünnet çerçevesinde doğru anlaşılmalı",
+        "text": "Tasavvufu Sünnet çerçevesinde kabul ederim",
         "scores": {
           "sufi_selefi": 5,
           "traditional_sunni": 4,
@@ -3523,7 +3523,7 @@
       },
       {
         "id": "G",
-        "text": "Vahdet-i vücud konusunda şeyhe danışmak gerekir",
+        "text": "Tarikat ehline bağlanmayı gerekli görürüm",
         "scores": {
           "sufi": 5,
           "qadiri": 5,
@@ -3535,7 +3535,7 @@
       },
       {
         "id": "H",
-        "text": "Vahdet-i vücud bid'at, Allah'ı yaratıklarla karıştırmaktır",
+        "text": "Tasavvufu bid'at görürüm",
         "scores": {
           "selefi": 5,
           "zahiri": 4,
@@ -3548,7 +3548,7 @@
       },
       {
         "id": "I",
-        "text": "Vahdet-i vücud maneviyat için faydalı ama zorunlu değil",
+        "text": "Maneviyatı önemserim ama tarikata girmem",
         "scores": {
           "modernist": 4,
           "reformist": 4,
@@ -3562,11 +3562,11 @@
     "id": "TAS_DETAIL_001",
     "category": "tasavvuf",
     "weight": 2.0,
-    "text": "Tasavvuf konusunda hangi yaklaşımı benimsiyorsunuz?",
+    "text": "Selefiler tasavvufu tamamen reddeder mi, yoksa zühd ve takva gibi kavramları kabul eder mi?",
     "options": [
       {
         "id": "A",
-        "text": "Tasavvufu tamamen reddederim, bid'at olarak görürüm",
+        "text": "Selefiler tasavvufu tamamen reddeder, bid'at olarak görür",
         "scores": {
           "quietist_salafi": 5,
           "jihadist_salafi": 4,
@@ -3580,7 +3580,7 @@
       },
       {
         "id": "B",
-        "text": "Zühd ve takvayı kabul ederim, ancak bid'at tasavvufi pratikleri reddederim",
+        "text": "Selefiler zühd ve takva kabul eder, ancak bid'at tasavvufi pratikleri reddeder",
         "scores": {
           "sufi_selefi": 5,
           "quietist_salafi": 4,
@@ -3594,7 +3594,7 @@
       },
       {
         "id": "C",
-        "text": "Tasavvufu meşru görürüm, ancak bid'at uygulamalarına karşı çıkarım",
+        "text": "Selefiler tasavvufu meşru görür, ancak bid'at uygulamalarına karşı çıkar",
         "scores": {
           "sufi": 3,
           "sufi_selefi": 4,
@@ -3603,7 +3603,7 @@
       },
       {
         "id": "D",
-        "text": "Tasavvufu tamamen kabul ederim, bu yol doğrudur",
+        "text": "Selefiler tasavvufu tamamen kabul eder, İbn Kayyim el-Cevziyye'nin yolu doğru",
         "scores": {
           "sufi": 4,
           "sufi_selefi": 3
@@ -3611,7 +3611,7 @@
       },
       {
         "id": "E",
-        "text": "Bu konuda farklı görüşler olduğunu düşünürüm",
+        "text": "Bu konuda Selefiler arasında farklı görüşler vardır",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -3619,7 +3619,7 @@
       },
       {
         "id": "F",
-        "text": "Tasavvufi pratiklerin tamamını bid'at olarak görürüm",
+        "text": "Tasavvufu bid'at görürüm",
         "scores": {
           "selefi": 5,
           "zahiri": 4,
@@ -3632,7 +3632,7 @@
       },
       {
         "id": "G",
-        "text": "Tasavvuf yolunda şeyhe bağlanmak şarttır",
+        "text": "Tarikat ehline bağlanmayı gerekli görürüm",
         "scores": {
           "sufi": 5,
           "qadiri": 5,
@@ -3644,7 +3644,7 @@
       },
       {
         "id": "H",
-        "text": "Tasavvufu Sünnet'e uygun şekilde kabul ederim",
+        "text": "Tasavvufu Sünnet çerçevesinde kabul ederim",
         "scores": {
           "sufi_selefi": 5,
           "traditional_sunni": 4,
@@ -3655,7 +3655,7 @@
       },
       {
         "id": "I",
-        "text": "Tasavvuf konusunda maneviyatı önemserim ama tarikata girmem",
+        "text": "Maneviyatı önemserim ama tarikata girmem",
         "scores": {
           "modernist": 4,
           "reformist": 4,
@@ -3665,7 +3665,7 @@
       },
       {
         "id": "J",
-        "text": "Tasavvufi uygulamaları bid'at olarak reddederim",
+        "text": "Tasavvufu bid'at görürüm",
         "scores": {
           "selefi": 5,
           "zahiri": 4,
@@ -3678,7 +3678,7 @@
       },
       {
         "id": "K",
-        "text": "Tasavvufu Sünnet sınırları içinde meşru görürüm",
+        "text": "Tasavvufu Sünnet çerçevesinde kabul ederim",
         "scores": {
           "sufi_selefi": 5,
           "traditional_sunni": 4,
@@ -3693,11 +3693,11 @@
     "id": "TAS_DETAIL_002",
     "category": "tasavvuf",
     "weight": 2.0,
-    "text": "Zühd (dünyadan el çekme) ve takva vurgusu hakkında ne düşünüyorsunuz?",
+    "text": "İbn Kayyim el-Cevziyye'nin zühd ve takva vurgusu hakkında ne düşünüyorsunuz?",
     "options": [
       {
         "id": "A",
-        "text": "Bu yaklaşım doğrudur, zühd ve takva İslam'ın temelini oluşturur",
+        "text": "İbn Kayyim'in yaklaşımı doğru, zühd ve takva İslam'ın temelini oluşturur",
         "scores": {
           "sufi_selefi": 5,
           "quietist_salafi": 4,
@@ -3711,7 +3711,7 @@
       },
       {
         "id": "B",
-        "text": "Bu yaklaşım aşırıdır, dengeli bir yaşam gerekir",
+        "text": "İbn Kayyim'in yaklaşımı aşırıdır, dengeli bir yaşam gerekir",
         "scores": {
           "quietist_salafi": 4,
           "athari": 3,
@@ -3726,7 +3726,7 @@
       },
       {
         "id": "C",
-        "text": "Bu yaklaşım tasavvufi geleneğin devamıdır",
+        "text": "İbn Kayyim'in yaklaşımı tasavvufi geleneğin devamıdır",
         "scores": {
           "sufi": 4,
           "qadiri": 3,
@@ -3735,7 +3735,7 @@
       },
       {
         "id": "D",
-        "text": "Bu yaklaşım modern dönemde uygulanamaz",
+        "text": "İbn Kayyim'in yaklaşımı modern dönemde uygulanamaz",
         "scores": {
           "modernist": 4,
           "liberal_islam": 4
@@ -3743,7 +3743,7 @@
       },
       {
         "id": "E",
-        "text": "Bu yaklaşım kişisel tercih meselesidir",
+        "text": "İbn Kayyim'in yaklaşımı kişisel tercih meselesidir",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -3751,7 +3751,7 @@
       },
       {
         "id": "F",
-        "text": "Zühd ve takva bid'at, dünya hayatı da önemli",
+        "text": "Tasavvufu bid'at görürüm",
         "scores": {
           "selefi": 5,
           "zahiri": 4,
@@ -3764,7 +3764,7 @@
       },
       {
         "id": "G",
-        "text": "Zühd ve takva konusunda şeyhe danışmak gerekir",
+        "text": "Tarikat ehline bağlanmayı gerekli görürüm",
         "scores": {
           "sufi": 5,
           "qadiri": 5,
@@ -3776,7 +3776,7 @@
       },
       {
         "id": "H",
-        "text": "Zühd ve takva Sünnet çerçevesinde meşrudur",
+        "text": "Tasavvufu Sünnet çerçevesinde kabul ederim",
         "scores": {
           "sufi_selefi": 5,
           "traditional_sunni": 4,
@@ -3787,7 +3787,7 @@
       },
       {
         "id": "I",
-        "text": "Zühd ve takva konusunda maneviyatı önemserim ama aşırıya kaçmam",
+        "text": "Maneviyatı önemserim ama tarikata girmem",
         "scores": {
           "modernist": 4,
           "reformist": 4,
@@ -3797,7 +3797,7 @@
       },
       {
         "id": "J",
-        "text": "Zühd ve takva vurgusu aşırı, dengeli yaşam gerekir",
+        "text": "Tasavvufu bid'at görürüm",
         "scores": {
           "selefi": 5,
           "zahiri": 4,
@@ -3810,7 +3810,7 @@
       },
       {
         "id": "K",
-        "text": "Zühd ve takva Sünnet sınırları içinde uygulanmalı",
+        "text": "Tasavvufu Sünnet çerçevesinde kabul ederim",
         "scores": {
           "sufi_selefi": 5,
           "traditional_sunni": 4,
@@ -3982,7 +3982,7 @@
       },
       {
         "id": "F",
-        "text": "Hilafet yerine demokrasiyi İslam'la uyumlu görürüm",
+        "text": "Demokrasiyi İslam'la uyumlu görürüm",
         "scores": {
           "modernist": 5,
           "liberal": 5,
@@ -3993,7 +3993,7 @@
       },
       {
         "id": "G",
-        "text": "Hilafet sistemini savunurum, modern devlet sistemi bid'at",
+        "text": "Hilafet sistemini savunurum",
         "scores": {
           "jihadist_salafi": 5,
           "conservative": 4,
@@ -4005,7 +4005,7 @@
       },
       {
         "id": "H",
-        "text": "Hilafet için aktif siyasi mücadeleyi gerekli görürüm",
+        "text": "Aktif siyasi mücadeleyi gerekli görürüm",
         "scores": {
           "jihadist_salafi": 5,
           "khariji": 4,
@@ -4016,7 +4016,7 @@
       },
       {
         "id": "I",
-        "text": "Hilafet konusunda siyasetten uzak durmayı tercih ederim",
+        "text": "Siyasetten uzak durmayı tercih ederim",
         "scores": {
           "quietist_salafi": 5,
           "sufi": 4,
@@ -4089,7 +4089,7 @@
       },
       {
         "id": "F",
-        "text": "Tekfir konusunda hilafet sistemini savunurum",
+        "text": "Hilafet sistemini savunurum",
         "scores": {
           "jihadist_salafi": 5,
           "conservative": 4,
@@ -4101,7 +4101,7 @@
       },
       {
         "id": "G",
-        "text": "Tekfir konusunda demokrasiyi İslam'la uyumlu görürüm",
+        "text": "Demokrasiyi İslam'la uyumlu görürüm",
         "scores": {
           "modernist": 5,
           "liberal": 5,
@@ -4112,7 +4112,7 @@
       },
       {
         "id": "H",
-        "text": "Tekfir konusunda siyasetten uzak durmayı tercih ederim",
+        "text": "Siyasetten uzak durmayı tercih ederim",
         "scores": {
           "quietist_salafi": 5,
           "sufi": 4,
@@ -4123,7 +4123,7 @@
       },
       {
         "id": "I",
-        "text": "Tekfir konusunda aktif siyasi mücadeleyi gerekli görürüm",
+        "text": "Aktif siyasi mücadeleyi gerekli görürüm",
         "scores": {
           "jihadist_salafi": 5,
           "khariji": 4,
@@ -4134,7 +4134,7 @@
       },
       {
         "id": "J",
-        "text": "Tekfir konusunda ulema'ya danışmak gerekir",
+        "text": "Siyasetten uzak durmayı tercih ederim",
         "scores": {
           "quietist_salafi": 5,
           "sufi": 4,
@@ -4145,7 +4145,7 @@
       },
       {
         "id": "K",
-        "text": "Tekfir yerine hoşgörü ve diyalogu tercih ederim",
+        "text": "Demokrasiyi İslam'la uyumlu görürüm",
         "scores": {
           "modernist": 5,
           "liberal": 5,
@@ -4164,7 +4164,7 @@
     "options": [
       {
         "id": "A",
-        "text": "İslam devleti kurulması gereklidir",
+        "text": "İslam devleti kurulması farzdır (Cihadi Selefî-İhvan)",
         "scores": {
           "jihadist_salafi": 5,
           "ikhwan_muslim": 4
@@ -4202,7 +4202,7 @@
       },
       {
         "id": "E",
-        "text": "İslam devleti konusunda farklı görüşler meşru, kesin hüküm yok",
+        "text": "Bu konuda kesin bir görüş yoktur",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -4210,7 +4210,7 @@
       },
       {
         "id": "F",
-        "text": "İslam devleti yerine demokrasiyi İslam'la uyumlu görürüm",
+        "text": "Demokrasiyi İslam'la uyumlu görürüm",
         "scores": {
           "modernist": 5,
           "liberal": 5,
@@ -4221,7 +4221,7 @@
       },
       {
         "id": "G",
-        "text": "İslam devleti için aktif siyasi mücadeleyi gerekli görürüm",
+        "text": "Aktif siyasi mücadeleyi gerekli görürüm",
         "scores": {
           "jihadist_salafi": 5,
           "khariji": 4,
@@ -4232,7 +4232,7 @@
       },
       {
         "id": "H",
-        "text": "İslam devleti ve hilafet sistemini savunurum",
+        "text": "Hilafet sistemini savunurum",
         "scores": {
           "jihadist_salafi": 5,
           "conservative": 4,
@@ -4344,7 +4344,7 @@
       },
       {
         "id": "I",
-        "text": "Tarihsel bağlam konusunda geleneksel değerleri korumayı öncelik görürüm",
+        "text": "Geleneksel değerleri korumayı öncelik görürüm",
         "scores": {
           "conservative": 5,
           "traditional_sunni": 5,
@@ -4355,7 +4355,7 @@
       },
       {
         "id": "J",
-        "text": "Kur'an ve Sünnet'i tarihsel bağlamdan bağımsız anlarım",
+        "text": "Geleneksel değerleri korumayı öncelik görürüm",
         "scores": {
           "conservative": 5,
           "traditional_sunni": 5,
@@ -4366,7 +4366,7 @@
       },
       {
         "id": "K",
-        "text": "Tarihsel bağlamda seçici davranırım, uygun olanı alırım",
+        "text": "Seçici davranırım, uygun olanı alırım",
         "scores": {
           "reformist": 4,
           "modernist": 3,
@@ -4377,7 +4377,7 @@
       },
       {
         "id": "L",
-        "text": "Kur'an ve Sünnet'i çağdaş değerlerle uyumlu hale getiririm",
+        "text": "İslam'ı çağdaş değerlerle uyumlu hale getiririm",
         "scores": {
           "modernist": 5,
           "liberal": 5,
@@ -4452,7 +4452,7 @@
       },
       {
         "id": "F",
-        "text": "Bilim konusunda modern değerleri tamamen reddederim",
+        "text": "Modern değerleri tamamen reddederim",
         "scores": {
           "selefi": 5,
           "conservative": 5,
@@ -4464,7 +4464,7 @@
       },
       {
         "id": "G",
-        "text": "Bilim ve din konusunda seçici davranırım, uygun olanı alırım",
+        "text": "Seçici davranırım, uygun olanı alırım",
         "scores": {
           "reformist": 4,
           "modernist": 3,
@@ -4475,7 +4475,7 @@
       },
       {
         "id": "H",
-        "text": "Bilim konusunda geleneksel değerleri korumayı öncelik görürüm",
+        "text": "Geleneksel değerleri korumayı öncelik görürüm",
         "scores": {
           "conservative": 5,
           "traditional_sunni": 5,
@@ -4486,7 +4486,7 @@
       },
       {
         "id": "I",
-        "text": "Bilim ve dini çağdaş değerlerle uyumlu hale getiririm",
+        "text": "İslam'ı çağdaş değerlerle uyumlu hale getiririm",
         "scores": {
           "modernist": 5,
           "liberal": 5,
@@ -4556,7 +4556,7 @@
       },
       {
         "id": "F",
-        "text": "Feminizm konusunda geleneksel değerleri korumayı öncelik görürüm",
+        "text": "Geleneksel değerleri korumayı öncelik görürüm",
         "scores": {
           "conservative": 5,
           "traditional_sunni": 5,
@@ -4567,7 +4567,7 @@
       },
       {
         "id": "G",
-        "text": "Feminizm ve cinsiyet eşitliği konusunda modern değerleri tamamen reddederim",
+        "text": "Modern değerleri tamamen reddederim",
         "scores": {
           "selefi": 5,
           "conservative": 5,
@@ -4579,7 +4579,7 @@
       },
       {
         "id": "H",
-        "text": "Feminizm konusunda İslam'ı çağdaş değerlerle uyumlu hale getiririm",
+        "text": "İslam'ı çağdaş değerlerle uyumlu hale getiririm",
         "scores": {
           "modernist": 5,
           "liberal": 5,
@@ -4591,7 +4591,7 @@
       },
       {
         "id": "I",
-        "text": "Cinsiyet eşitliği konusunda seçici davranırım, uygun olanı alırım",
+        "text": "Seçici davranırım, uygun olanı alırım",
         "scores": {
           "reformist": 4,
           "modernist": 3,
@@ -4634,7 +4634,7 @@
       },
       {
         "id": "C",
-        "text": "Kadınlar evde kalmalı, çalışmamalı",
+        "text": "Kadınlar evde kalmalı, çalışmamalı (Gelenekçi-Selefî)",
         "scores": {
           "selefi": 4,
           "quietist_salafi": 3,
@@ -4658,7 +4658,7 @@
       },
       {
         "id": "E",
-        "text": "Kadınların çalışması konusunda farklı görüşler meşru, kesin hüküm yok",
+        "text": "Bu konuda kesin bir görüş yoktur",
         "scores": {
           "reformcu": 3,
           "liberal_islam": 4
@@ -4666,7 +4666,7 @@
       },
       {
         "id": "F",
-        "text": "Kadınların çalışması konusunda seçici davranırım, uygun olanı alırım",
+        "text": "Seçici davranırım, uygun olanı alırım",
         "scores": {
           "reformist": 4,
           "modernist": 3,
@@ -4677,7 +4677,7 @@
       },
       {
         "id": "G",
-        "text": "Kadınların çalışması konusunda modern değerleri tamamen reddederim",
+        "text": "Modern değerleri tamamen reddederim",
         "scores": {
           "selefi": 5,
           "conservative": 5,
@@ -4689,7 +4689,7 @@
       },
       {
         "id": "H",
-        "text": "Kadınların çalışması konusunda İslam'ı çağdaş değerlerle uyumlu hale getiririm",
+        "text": "İslam'ı çağdaş değerlerle uyumlu hale getiririm",
         "scores": {
           "modernist": 5,
           "liberal": 5,
