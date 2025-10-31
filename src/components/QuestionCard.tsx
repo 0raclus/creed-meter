@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { CheckCircle2, Circle } from 'lucide-react';
 import type { Question } from '../types';
+import { useState } from 'react';
 
 interface QuestionCardProps {
   question: Question;
   onAnswer: (optionId: string) => void;
-  selectedAnswer?: string;
+  selectedAnswer?: string; // Önceden seçilmiş cevap
 }
 
 const categoryLabels: Record<string, string> = {
@@ -32,6 +33,17 @@ export default function QuestionCard({
   selectedAnswer
 }: QuestionCardProps) {
   const categoryColor = categoryColors[question.category] || { bg: 'rgb(168 185 119)', text: 'rgb(66 43 33)' };
+  const [clickedOption, setClickedOption] = useState<string | null>(null);
+
+  const handleOptionClick = (optionId: string) => {
+    setClickedOption(optionId);
+
+    // Animasyon göster, sonra geç
+    setTimeout(() => {
+      onAnswer(optionId);
+      setClickedOption(null);
+    }, 600); // 600ms animasyon süresi
+  };
 
   return (
     <motion.div
@@ -46,7 +58,7 @@ export default function QuestionCard({
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.1, duration: 0.3 }}
-        className="inline-block px-4 py-2 rounded-full text-sm font-bold mb-6 shadow-modern w-fit border-2 border-black"
+        className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 shadow-modern w-fit border-2 border-black"
         style={{ backgroundColor: categoryColor.bg, color: categoryColor.text }}
       >
         {categoryLabels[question.category]}
@@ -57,7 +69,7 @@ export default function QuestionCard({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15, duration: 0.4 }}
-        className="text-5xl font-bold text-black mb-6 leading-tight"
+        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-black mb-4 sm:mb-6 leading-tight"
         style={{ fontFamily: 'Space Grotesk' }}
       >
         {question.text}
@@ -67,66 +79,134 @@ export default function QuestionCard({
         initial={{ width: 0 }}
         animate={{ width: 80 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="h-1 rounded-full mb-8"
+        className="h-1 rounded-full mb-6 sm:mb-8"
         style={{ backgroundColor: categoryColor.bg }}
       />
 
       {/* Cevap Seçenekleri */}
-      <div className="space-y-3 flex-1">
-        {question.options.map((option, index) => (
-          <motion.button
-            key={option.id}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 + index * 0.05, duration: 0.3 }}
-            whileHover={{ scale: 1.02, x: 5 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => onAnswer(option.id)}
-            className="w-full text-left p-5 rounded-xl transition-all duration-300 group border-2 border-black"
-            style={{
-              backgroundColor: selectedAnswer === option.id ? categoryColor.bg : 'white',
-              color: selectedAnswer === option.id ? categoryColor.text : 'rgb(66 43 33)',
-              boxShadow: selectedAnswer === option.id
-                ? '0 20px 50px rgba(0, 0, 0, 0.15)'
-                : 'none'
-            }}
-            onMouseEnter={(e) => {
-              if (selectedAnswer !== option.id) {
-                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
-              }
-            }}
-            onMouseLeave={(e) => {
-              if (selectedAnswer !== option.id) {
-                e.currentTarget.style.boxShadow = 'none';
-              }
-            }}
-          >
-            <div className="flex items-start gap-4">
-              {/* Radio Button */}
-              <motion.div
-                initial={false}
-                animate={{
-                  scale: selectedAnswer === option.id ? 1.2 : 1,
-                }}
-                transition={{ duration: 0.2 }}
-                className="mt-1 shrink-0"
-              >
-                {selectedAnswer === option.id ? (
-                  <CheckCircle2 className="w-6 h-6" style={{ color: categoryColor.text }} />
-                ) : (
-                  <Circle className="w-6 h-6 text-gray-400" />
-                )}
-              </motion.div>
+      <div className="space-y-2 sm:space-y-3 flex-1">
+        {question.options.map((option, index) => {
+          const isClicked = clickedOption === option.id;
+          const isSelected = selectedAnswer === option.id; // Önceden seçilmiş mi?
+          const isActive = isClicked || isSelected; // Aktif görünüm
 
-              {/* Seçenek Metni */}
-              <div className="flex-1">
-                <p className="font-semibold text-lg leading-relaxed">
-                  {option.text}
-                </p>
+          return (
+            <motion.button
+              key={option.id}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{
+                opacity: 1,
+                x: 0,
+                scale: isClicked ? 1.05 : 1,
+              }}
+              transition={{ delay: 0.2 + index * 0.05, duration: 0.3 }}
+              whileHover={{ scale: 1.02, x: 5 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => handleOptionClick(option.id)}
+              disabled={clickedOption !== null}
+              className="w-full text-left p-3 sm:p-4 lg:p-5 rounded-xl transition-all duration-300 group border-2 border-black disabled:opacity-50"
+              style={{
+                backgroundColor: isActive ? categoryColor.bg : 'white',
+                color: isActive ? categoryColor.text : 'rgb(66 43 33)',
+                boxShadow: isActive
+                  ? '0 20px 50px rgba(0, 0, 0, 0.15)'
+                  : 'none'
+              }}
+              onMouseEnter={(e) => {
+                if (!isActive) {
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (!isActive) {
+                  e.currentTarget.style.boxShadow = 'none';
+                }
+              }}
+            >
+              <div className="flex items-start gap-4">
+                {/* Radio Button */}
+                <motion.div
+                  initial={false}
+                  animate={{
+                    scale: isClicked ? 1.3 : 1,
+                    rotate: isClicked ? 360 : 0,
+                  }}
+                  transition={{ duration: 0.4 }}
+                  className="mt-1 shrink-0"
+                >
+                  {isActive ? (
+                    <CheckCircle2 className="w-6 h-6" style={{ color: categoryColor.text }} />
+                  ) : (
+                    <Circle className="w-6 h-6 text-gray-400" />
+                  )}
+                </motion.div>
+
+                {/* Seçenek Metni */}
+                <div className="flex-1">
+                  <p className="font-semibold text-sm sm:text-base lg:text-lg leading-relaxed">
+                    {option.text}
+                  </p>
+                </div>
               </div>
+            </motion.button>
+          );
+        })}
+
+        {/* Bilmiyorum Seçeneği */}
+        <motion.button
+          initial={{ opacity: 0, x: -20 }}
+          animate={{
+            opacity: 1,
+            x: 0,
+            scale: (clickedOption === 'UNKNOWN' || selectedAnswer === 'UNKNOWN') ? 1.05 : 1,
+          }}
+          transition={{ delay: 0.2 + question.options.length * 0.05, duration: 0.3 }}
+          whileHover={{ scale: 1.02, x: 5 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => handleOptionClick('UNKNOWN')}
+          disabled={clickedOption !== null}
+          className="w-full text-left p-3 sm:p-4 lg:p-5 rounded-xl transition-all duration-300 group border-2 border-dashed border-gray-400 disabled:opacity-50"
+          style={{
+            backgroundColor: (clickedOption === 'UNKNOWN' || selectedAnswer === 'UNKNOWN') ? 'rgb(200 200 200)' : 'white',
+            color: (clickedOption === 'UNKNOWN' || selectedAnswer === 'UNKNOWN') ? 'white' : 'rgb(100 100 100)',
+            boxShadow: (clickedOption === 'UNKNOWN' || selectedAnswer === 'UNKNOWN')
+              ? '0 20px 50px rgba(0, 0, 0, 0.15)'
+              : 'none'
+          }}
+          onMouseEnter={(e) => {
+            if (clickedOption !== 'UNKNOWN' && selectedAnswer !== 'UNKNOWN') {
+              e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+            }
+          }}
+          onMouseLeave={(e) => {
+            if (clickedOption !== 'UNKNOWN' && selectedAnswer !== 'UNKNOWN') {
+              e.currentTarget.style.boxShadow = 'none';
+            }
+          }}
+        >
+          <div className="flex items-start gap-4">
+            <motion.div
+              initial={false}
+              animate={{
+                scale: (clickedOption === 'UNKNOWN' || selectedAnswer === 'UNKNOWN') ? 1.3 : 1,
+                rotate: (clickedOption === 'UNKNOWN' || selectedAnswer === 'UNKNOWN') ? 360 : 0,
+              }}
+              transition={{ duration: 0.4 }}
+              className="mt-1 shrink-0"
+            >
+              {(clickedOption === 'UNKNOWN' || selectedAnswer === 'UNKNOWN') ? (
+                <CheckCircle2 className="w-6 h-6 text-white" />
+              ) : (
+                <Circle className="w-6 h-6 text-gray-400" />
+              )}
+            </motion.div>
+            <div className="flex-1">
+              <p className="font-semibold text-sm sm:text-base lg:text-lg leading-relaxed italic">
+                Bilmiyorum / Fikrim yok
+              </p>
             </div>
-          </motion.button>
-        ))}
+          </div>
+        </motion.button>
       </div>
 
       {/* Footer Info */}

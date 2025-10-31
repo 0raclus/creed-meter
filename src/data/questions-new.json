@@ -1,0 +1,458 @@
+[
+  {
+    "id": "AKD_001",
+    "category": "akide",
+    "weight": 1.5,
+    "text": "Kur'an'da geçen 'Allah'ın eli', 'yüzü', 'istivasıdır' gibi sıfatları nasıl yorumlarsınız?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zahir manasına, teşbih ve tecsim olmadan inanırım (bilâ keyf)",
+        "scores": {
+          "hanbeli": 5,
+          "selefi": 5,
+          "athari": 5,
+          "quietist_salafi": 5,
+          "ehlihadis": 5,
+          "esari": -2,
+          "maturidi": -2,
+          "mutazila": -4
+        }
+      },
+      {
+        "id": "B",
+        "text": "Kudret, güç, rahmet gibi manalara mecaz olarak te'vil ederim",
+        "scores": {
+          "esari": 5,
+          "shafii": 4,
+          "maliki": 4,
+          "maturidi": 3,
+          "sufi": 3,
+          "selefi": -3,
+          "hanbeli": -3,
+          "athari": -4
+        }
+      },
+      {
+        "id": "C",
+        "text": "Manasını Allah'a havale eder, te'vil yapmadan teslim olurum (tefviz)",
+        "scores": {
+          "esari": 4,
+          "maturidi": 4,
+          "maliki": 5,
+          "hanafi": 3,
+          "shafii": 3,
+          "selefi": -1,
+          "mutazila": -2
+        }
+      },
+      {
+        "id": "D",
+        "text": "Akılla çözümler, antropomorfik yorumları tamamen reddederim",
+        "scores": {
+          "mutazila": 5,
+          "liberal_islam": 4,
+          "modernist": 4,
+          "reformcu": 3,
+          "feminist_islam": 3,
+          "selefi": -4,
+          "hanbeli": -4,
+          "athari": -5
+        }
+      },
+      {
+        "id": "E",
+        "text": "Hem zahir hem te'vil meşrudur, mezhebime göre hareket ederim",
+        "scores": {
+          "hanafi": 3,
+          "shafii": 3,
+          "maliki": 3,
+          "maturidi": 2,
+          "esari": 2
+        }
+      },
+      {
+        "id": "F",
+        "text": "Sembolik/mecazi anlarım, literal yorumu reddederim",
+        "scores": {
+          "modernist": 5,
+          "liberal_islam": 5,
+          "progressive_islam": 5,
+          "feminist_islam": 4,
+          "mutazila": 3,
+          "selefi": -5,
+          "hanbeli": -5
+        }
+      },
+      {
+        "id": "G",
+        "text": "Tasavvufi bir bakışla, batıni mana ararım",
+        "scores": {
+          "sufi": 5,
+          "qadiri": 5,
+          "naqshbandi": 4,
+          "mevlevi": 5,
+          "bektashi": 4,
+          "alevi": 4,
+          "selefi": -4,
+          "zahiri": -5
+        }
+      },
+      {
+        "id": "H",
+        "text": "Şia perspektifinden, Ehl-i Beyt'in yorumuna göre anlarım",
+        "scores": {
+          "twelver_shia": 5,
+          "zaydi": 4,
+          "ismaili_shia": 4,
+          "alevi": 3,
+          "selefi": -3,
+          "hanbeli": -2
+        }
+      },
+      {
+        "id": "I",
+        "text": "Farklı yorumları meşru görür, kesin bir tercihim yoktur",
+        "scores": {
+          "reformcu": 4,
+          "liberal_islam": 4,
+          "progressive_islam": 3,
+          "modernist": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "AKD_002",
+    "category": "akide",
+    "weight": 1.5,
+    "text": "Kader ve insan iradesi konusunda ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Her şey Allah'ın takdiridir, insan özgür değildir (cebir)",
+        "scores": {
+          "jabriyya": 5,
+          "hanbeli": 1,
+          "selefi": 1,
+          "mutazila": -5,
+          "qadariyya": -5,
+          "liberal_islam": -4
+        }
+      },
+      {
+        "id": "B",
+        "text": "İnsan tamamen özgürdür, kendi fiillerini yaratır (kaderiyye)",
+        "scores": {
+          "mutazila": 5,
+          "qadariyya": 5,
+          "liberal_islam": 4,
+          "progressive_islam": 4,
+          "feminist_islam": 3,
+          "hanbeli": -4,
+          "selefi": -4,
+          "esari": -3,
+          "maturidi": -3
+        }
+      },
+      {
+        "id": "C",
+        "text": "Allah yaratır, insan kesb eder (Eş'ari görüşü)",
+        "scores": {
+          "esari": 5,
+          "shafii": 5,
+          "maliki": 4,
+          "sufi": 3,
+          "mutazila": -3,
+          "qadariyya": -3
+        }
+      },
+      {
+        "id": "D",
+        "text": "Allah bilir ve takdir eder, insan seçer (Mâtürîdî görüşü)",
+        "scores": {
+          "maturidi": 5,
+          "hanafi": 5,
+          "deobandi": 4,
+          "barelvi": 4,
+          "mutazila": -2,
+          "jabriyya": -3
+        }
+      },
+      {
+        "id": "E",
+        "text": "İnsan özgürdür ama Allah'ın ilmi her şeyi kuşatır",
+        "scores": {
+          "mutazila": 4,
+          "maturidi": 3,
+          "liberal_islam": 3,
+          "modernist": 3
+        }
+      },
+      {
+        "id": "F",
+        "text": "Kader vardır ama insanın sorumluluğunu ortadan kaldırmaz",
+        "scores": {
+          "esari": 4,
+          "maturidi": 4,
+          "hanafi": 3,
+          "shafii": 3,
+          "maliki": 3,
+          "hanbeli": 3,
+          "selefi": 2
+        }
+      },
+      {
+        "id": "G",
+        "text": "Tasavvufi bakışla, kader ve irade paradoksunu aşarım",
+        "scores": {
+          "sufi": 5,
+          "qadiri": 4,
+          "naqshbandi": 4,
+          "mevlevi": 5,
+          "bektashi": 4
+        }
+      },
+      {
+        "id": "H",
+        "text": "Şia perspektifinden, adalet ilkesi gereği insan özgürdür",
+        "scores": {
+          "twelver_shia": 5,
+          "zaydi": 5,
+          "ismaili_shia": 4,
+          "mutazila": 3
+        }
+      },
+      {
+        "id": "I",
+        "text": "Bu konuda kesin bir görüş yoktur, gizli bir sırdır",
+        "scores": {
+          "reformcu": 3,
+          "liberal_islam": 3,
+          "progressive_islam": 2
+        }
+      },
+      {
+        "id": "J",
+        "text": "Modern bilim ışığında, determinizm ve özgür iradeyi birleştiririm",
+        "scores": {
+          "modernist": 5,
+          "progressive_islam": 4,
+          "liberal_islam": 3,
+          "reformcu": 3,
+          "selefi": -3,
+          "hanbeli": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "AKD_003",
+    "category": "akide",
+    "weight": 1.5,
+    "text": "Kur'an'ın yaratılmışlığı konusunda ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kur'an Allah'ın kelâmıdır, yaratılmamıştır (kadîm)",
+        "scores": {
+          "hanbeli": 5,
+          "selefi": 5,
+          "athari": 5,
+          "ehlihadis": 5,
+          "quietist_salafi": 5,
+          "mutazila": -5,
+          "jabriyya": -2
+        }
+      },
+      {
+        "id": "B",
+        "text": "Kur'an yaratılmıştır (mahlûk)",
+        "scores": {
+          "mutazila": 5,
+          "qadariyya": 4,
+          "liberal_islam": 3,
+          "hanbeli": -5,
+          "selefi": -5,
+          "athari": -5,
+          "esari": -4,
+          "maturidi": -4
+        }
+      },
+      {
+        "id": "C",
+        "text": "Lafız yaratılmış, mana kadîmdir (Eş'arî görüşü)",
+        "scores": {
+          "esari": 5,
+          "shafii": 4,
+          "maliki": 4,
+          "sufi": 3,
+          "mutazila": -2,
+          "selefi": -2
+        }
+      },
+      {
+        "id": "D",
+        "text": "Allah'ın kelâmı nefsi kadîm, lafzı mahlûktur (Mâtürîdî)",
+        "scores": {
+          "maturidi": 5,
+          "hanafi": 5,
+          "deobandi": 4,
+          "barelvi": 4,
+          "selefi": -2
+        }
+      },
+      {
+        "id": "E",
+        "text": "Bu tartışma gereksizdir, önemli olan Kur'an'ı yaşamaktır",
+        "scores": {
+          "reformcu": 4,
+          "liberal_islam": 4,
+          "progressive_islam": 3,
+          "modernist": 3
+        }
+      },
+      {
+        "id": "F",
+        "text": "Kur'an Allah'ın sözüdür ama beşeri dille ifade edilmiştir",
+        "scores": {
+          "modernist": 5,
+          "progressive_islam": 5,
+          "liberal_islam": 4,
+          "feminist_islam": 4,
+          "mutazila": 2,
+          "selefi": -4,
+          "hanbeli": -4
+        }
+      },
+      {
+        "id": "G",
+        "text": "Tasavvufi bakışla, Kur'an Allah'ın tecellisidir",
+        "scores": {
+          "sufi": 5,
+          "qadiri": 4,
+          "mevlevi": 5,
+          "naqshbandi": 3,
+          "bektashi": 4
+        }
+      },
+      {
+        "id": "H",
+        "text": "Şia perspektifinden, Kur'an yaratılmamıştır",
+        "scores": {
+          "twelver_shia": 5,
+          "zaydi": 4,
+          "ismaili_shia": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "FU_001",
+    "category": "fiqh_usul",
+    "weight": 1.3,
+    "text": "Fıkıh usulünde kıyas (analoji) hakkında ne düşünüyorsunuz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kıyas dördüncü delildir, geniş kullanılmalıdır",
+        "scores": {
+          "hanafi": 5,
+          "shafii": 5,
+          "maliki": 4,
+          "maturidi": 4,
+          "esari": 4,
+          "zahiri": -5,
+          "kuranci": -4
+        }
+      },
+      {
+        "id": "B",
+        "text": "Kıyas geçerlidir ama sınırlı kullanılmalıdır",
+        "scores": {
+          "hanbeli": 4,
+          "maliki": 3,
+          "shafii": 3,
+          "zahiri": -3
+        }
+      },
+      {
+        "id": "C",
+        "text": "Kıyas bid'attir, sadece nass geçerlidir (Zâhirî)",
+        "scores": {
+          "zahiri": 5,
+          "kuranci": 4,
+          "selefi": 2,
+          "hanafi": -4,
+          "shafii": -4
+        }
+      },
+      {
+        "id": "D",
+        "text": "Kıyas yerine maslahat (kamu yararı) esas alınmalıdır",
+        "scores": {
+          "maliki": 5,
+          "modernist": 4,
+          "reformcu": 4,
+          "liberal_islam": 3
+        }
+      },
+      {
+        "id": "E",
+        "text": "Modern dönemde kıyas yetersizdir, içtihad gerekir",
+        "scores": {
+          "modernist": 5,
+          "progressive_islam": 5,
+          "liberal_islam": 4,
+          "reformcu": 4,
+          "feminist_islam": 4,
+          "zahiri": -2
+        }
+      },
+      {
+        "id": "F",
+        "text": "Kıyas akıl yürütmedir, Mu'tezile gibi geniş kullanırım",
+        "scores": {
+          "mutazila": 5,
+          "liberal_islam": 3,
+          "modernist": 2,
+          "zahiri": -4
+        }
+      },
+      {
+        "id": "G",
+        "text": "Sadece Kur'an ve Sünnet yeterlidir, kıyas gereksizdir",
+        "scores": {
+          "kuranci": 5,
+          "zahiri": 4,
+          "selefi": 3,
+          "hanafi": -4,
+          "shafii": -4,
+          "maliki": -3
+        }
+      },
+      {
+        "id": "H",
+        "text": "Şia perspektifinden, kıyas yerine akıl (aql) kullanırım",
+        "scores": {
+          "twelver_shia": 5,
+          "zaydi": 4,
+          "ismaili_shia": 4,
+          "mutazila": 3
+        }
+      },
+      {
+        "id": "I",
+        "text": "Tasavvufi bakışla, kalbin ilhamı kıyastan üstündür",
+        "scores": {
+          "sufi": 5,
+          "qadiri": 4,
+          "mevlevi": 4,
+          "naqshbandi": 3,
+          "bektashi": 4
+        }
+      }
+    ]
+  }
+]
+

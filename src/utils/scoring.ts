@@ -1,6 +1,7 @@
 import type { UserAnswers, SchoolProfile, TestResult, Category } from '../types';
 import questions from '../data/questions.json';
 import schools from '../data/schools.json';
+import { checkConsistency, calculateConfidenceScore } from './consistency';
 
 const SCHOOL_RELATIONSHIPS: Record<string, Record<string, number>> = {
   // Akide Mezhepleri
@@ -74,6 +75,9 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
     const selectedOptionId = answers[question.id];
     if (!selectedOptionId) return;
 
+    // "Bilmiyorum" seçeneğini atla
+    if (selectedOptionId === 'UNKNOWN') return;
+
     const option = question.options.find(opt => opt.id === selectedOptionId);
     if (!option) return;
 
@@ -86,8 +90,9 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
         schoolWeights[schoolId] = 0;
       }
 
+      // Negatif puanları da uygula
       schoolScores[schoolId] += score * questionWeight;
-      schoolWeights[schoolId] += questionWeight;
+      schoolWeights[schoolId] += Math.abs(questionWeight); // Ağırlık her zaman pozitif
 
       if (!categoryScores[schoolId][question.category as Category]) {
         categoryScores[schoolId][question.category as Category] = 0;
@@ -109,16 +114,24 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
     });
   });
 
-  // Normalize scores
+  // Normalize scores - İYİLEŞTİRİLMİŞ ALGORİTMA
   const profiles: SchoolProfile[] = schools.map(school => {
     const weight = schoolWeights[school.id] || 1;
-    const normalizedScore = weight > 0 ? schoolScores[school.id] / weight : 0;
-    const percentage = Math.max(0, Math.min(100, (normalizedScore / 5) * 100));
+    const rawScore = schoolScores[school.id];
+
+    // Normalize: raw score / weight
+    const normalizedScore = weight > 0 ? rawScore / weight : 0;
+
+    // Yüzdeye çevir: (normalized / max_possible) * 100
+    // Max possible = 5 (en yüksek puan) * 1.0 (ortalama ağırlık faktörü)
+    // Ancak negatif puanlar da olduğu için -5 ile +5 arasında normalize et
+    // -5 = 0%, 0 = 50%, +5 = 100%
+    const percentage = Math.max(0, Math.min(100, ((normalizedScore + 5) / 10) * 100));
 
     return {
       school: school.id as any,
       score: normalizedScore,
-      percentage: Math.round(percentage),
+      percentage: Math.round(percentage * 10) / 10, // 1 ondalık basamak
       categoryScores: categoryScores[school.id] || {}
     };
   });
@@ -126,7 +139,7 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
   return profiles.sort((a, b) => b.percentage - a.percentage);
 }
 
-export function generateTestResult(profiles: SchoolProfile[]): TestResult {
+export function generateTestResult(profiles: SchoolProfile[], answers: UserAnswers): TestResult {
   const topSchools = profiles.slice(0, 3).filter(p => p.percentage > 20);
 
   const categoryAnalysis: Record<Category, any> = {
@@ -152,12 +165,36 @@ export function generateTestResult(profiles: SchoolProfile[]): TestResult {
   const profile = generateProfileDescription(topSchools);
   const recommendations = generateRecommendations(topSchools);
 
+  // Tutarlılık kontrolü
+  const consistencyWarnings = checkConsistency(answers);
+
+  // Bilmiyorum sayısı
+  const unknownAnswersCount = Object.values(answers).filter(a => a === 'UNKNOWN').length;
+  const totalQuestions = questions.length;
+
+  // Avam kontrolü (%50+ bilmiyorum)
+  const isAwam = unknownAnswersCount / totalQuestions >= 0.5;
+
+  // Güven skoru hesapla
+  const baseConfidence = topSchools.length > 0 ? topSchools[0].percentage : 50;
+  const confidenceScore = calculateConfidenceScore(
+    baseConfidence,
+    consistencyWarnings,
+    unknownAnswersCount,
+    totalQuestions
+  );
+
   return {
     topSchools,
     allSchools: profiles,
     categoryAnalysis,
-    profile,
-    recommendations
+    profile: isAwam ? generateAwamProfile() : profile,
+    recommendations: isAwam ? generateAwamRecommendations() : recommendations,
+    confidenceScore,
+    consistencyWarnings,
+    unknownAnswersCount,
+    totalQuestions,
+    isAwam
   };
 }
 
@@ -221,5 +258,28 @@ function generateRecommendations(topSchools: SchoolProfile[]): string[] {
 function getSchoolName(schoolId: string): string {
   const school = schools.find(s => s.id === schoolId);
   return school?.name || schoolId;
+}
+
+function generateAwamProfile(): string {
+  return `Sonuçlarınız, İslami mezhep ve düşünce ekolleri konusunda henüz yeterli bilgi birikiminizin olmadığını göstermektedir. Soruların yarısından fazlasına "Bilmiyorum" cevabı verdiniz.
+
+Bu durum, İslami ilimler konusunda temel bilgi eksikliğiniz olduğunu gösterir. Ancak bu, öğrenme yolculuğunuzun başlangıcı olabilir.
+
+İslam'ın zengin ilmi mirasını keşfetmek için öncelikle temel İslami bilgileri öğrenmeniz önerilir. Akide, fıkıh, hadis ve tefsir gibi temel ilimlerde sağlam bir zemin oluşturmak, mezhep ve ekolleri anlamanız için gereklidir.
+
+Bilgisizlik ayıp değildir, öğrenmemek ayıptır. İlim tahsili her Müslüman için farzdır ve bu yolculuğa başlamak için asla geç değildir.`;
+}
+
+function generateAwamRecommendations(): string[] {
+  return [
+    "Temel İslami bilgileri öğrenmek için güvenilir kaynaklara başvurun. Diyanet İşleri Başkanlığı'nın yayınları, başlangıç için iyi bir kaynaktır.",
+    "Akide (inanç esasları) konusunda temel bir kitap okuyun. 'Akaid Risalesi' gibi klasik eserler başlangıç için uygundur.",
+    "Fıkıh (İslam hukuku) konusunda temel bilgileri öğrenin. İbadetlerin nasıl yapılacağını öğrenmek, pratik İslam bilgisi için önemlidir.",
+    "Hadis ilmine giriş yapın. Kırk Hadis gibi temel hadis koleksiyonlarını okuyun ve anlamaya çalışın.",
+    "Kur'an-ı Kerim mealini düzenli olarak okuyun. Tefsir kitaplarından yararlanarak ayetlerin anlamlarını öğrenin.",
+    "Güvenilir bir alimden veya kurumdan ders almayı düşünün. Sistematik eğitim, bilgi birikiminizi hızla artıracaktır.",
+    "İslam tarihi ve siyer (Hz. Muhammed'in hayatı) konusunda okumalar yapın. Tarihsel bağlamı anlamak, mezhepleri anlamanız için önemlidir.",
+    "Acele etmeyin ve sabırlı olun. İlim tahsili uzun bir yolculuktur ve her adım değerlidir."
+  ];
 }
 

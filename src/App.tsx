@@ -30,7 +30,7 @@ function App() {
 
   const completeTest = (finalAnswers: UserAnswers) => {
     const profiles = calculateScores(finalAnswers);
-    const testResult = generateTestResult(profiles);
+    const testResult = generateTestResult(profiles, finalAnswers);
     setResult(testResult);
     setTestComplete(true);
   };
@@ -50,13 +50,13 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="flex h-screen overflow-hidden">
+      <div className="flex flex-col lg:flex-row h-auto lg:h-screen overflow-hidden">
         {/* Sol Panel - Soft Contrast Tasarım */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-1/3 bg-gradient-cucumber text-white p-8 border-r-2 border-black flex flex-col justify-between shadow-modern-lg"
+          className="w-full lg:w-1/3 bg-gradient-cucumber text-white p-4 sm:p-6 lg:p-8 border-b-2 lg:border-b-0 lg:border-r-2 border-black flex flex-col justify-between shadow-modern-lg"
         >
           <div>
             {/* Header */}
@@ -66,19 +66,19 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 >
-                  <Sparkles className="w-8 h-8" style={{ color: 'rgb(66 43 33)' }} />
+                  <Sparkles className="w-6 sm:w-8 h-6 sm:h-8" style={{ color: 'rgb(66 43 33)' }} />
                 </motion.div>
-                <h1 className="text-4xl font-bold" style={{ color: 'rgb(66 43 33)' }}>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold" style={{ color: 'rgb(66 43 33)' }}>
                   İslam Mezhepleri
                 </h1>
               </div>
-              <h2 className="text-2xl font-semibold" style={{ color: 'rgb(66 43 33)' }}>Kişilik Testi</h2>
-              <p className="text-sm leading-relaxed font-light" style={{ color: 'rgb(66 43 33)' }}>
+              <h2 className="text-xl sm:text-2xl font-semibold" style={{ color: 'rgb(66 43 33)' }}>Kişilik Testi</h2>
+              <p className="text-xs sm:text-sm leading-relaxed font-light" style={{ color: 'rgb(66 43 33)' }}>
                 Teolojik, fıkhi, tasavvufi, siyasi ve felsefi eğilimlerinizi keşfedin.
               </p>
             </motion.div>
@@ -119,7 +119,7 @@ function App() {
 
             {/* Category Info */}
             <motion.div
-              className="space-y-3"
+              className="bg-white rounded-2xl p-6 mb-6 border-2 border-black shadow-modern"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -138,6 +138,51 @@ function App() {
                   {questions[currentQuestion]?.category === 'modernite' && '🌍 Modernite (Çağdaşlık)'}
                 </p>
               </div>
+            </motion.div>
+
+            {/* İstatistikler */}
+            <motion.div
+              className="bg-white rounded-2xl p-6 mb-6 border-2 border-black shadow-modern"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            >
+              <h3 className="font-bold mb-4 text-sm" style={{ color: 'rgb(66 43 33)' }}>📊 İstatistikler</h3>
+              <div className="space-y-3 text-xs">
+                <div className="flex justify-between items-center">
+                  <span style={{ color: 'rgb(66 43 33)' }}>Cevaplanan:</span>
+                  <span className="font-bold" style={{ color: 'rgb(168 185 119)' }}>
+                    {Object.keys(answers).length} soru
+                  </span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span style={{ color: 'rgb(66 43 33)' }}>Bilmiyorum:</span>
+                  <span className="font-bold" style={{ color: 'rgb(220 49 47)' }}>
+                    {Object.values(answers).filter(a => a === 'UNKNOWN').length} adet
+                  </span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span style={{ color: 'rgb(66 43 33)' }}>Kalan:</span>
+                  <span className="font-bold" style={{ color: 'rgb(228 208 133)' }}>
+                    {questions.length - Object.keys(answers).length} soru
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Motivasyon Mesajı */}
+            <motion.div
+              className="bg-white rounded-2xl p-6 border-2 border-black shadow-modern"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+            >
+              <p className="text-xs italic leading-relaxed" style={{ color: 'rgb(66 43 33)' }}>
+                {currentQuestion < 10 && '💡 "İlim, Çin\'de de olsa gidiniz." - Hz. Muhammed (s.a.v)'}
+                {currentQuestion >= 10 && currentQuestion < 20 && '🌟 "İlim öğrenmek her Müslüman\'a farzdır." - Hz. Muhammed (s.a.v)'}
+                {currentQuestion >= 20 && currentQuestion < 30 && '📚 "Beşikten mezara kadar ilim öğreniniz." - Hz. Muhammed (s.a.v)'}
+                {currentQuestion >= 30 && '🎯 Tebrikler! Teste neredeyse tamamladınız!'}
+              </p>
             </motion.div>
           </div>
 
@@ -169,7 +214,7 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="w-2/3 bg-white p-12 overflow-y-auto flex items-center justify-center"
+          className="w-full lg:w-2/3 bg-white p-4 sm:p-6 lg:p-12 overflow-y-auto flex items-center justify-center min-h-screen lg:min-h-0"
         >
           <div className="w-full max-w-2xl">
             <QuestionCard

@@ -80,6 +80,11 @@ export interface TestResult {
   }>;
   profile: string;
   recommendations: string[];
+  confidenceScore: number; // 0-100 arası güven skoru
+  consistencyWarnings: string[]; // Tutarsızlık uyarıları
+  unknownAnswersCount: number; // Bilmiyorum cevap sayısı
+  totalQuestions: number; // Toplam soru sayısı
+  isAwam: boolean; // %50+ bilmiyorum = avam
 }
 
 export interface Scholar {
