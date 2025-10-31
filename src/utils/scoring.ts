@@ -88,6 +88,7 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
       if (!schoolScores[schoolId]) {
         schoolScores[schoolId] = 0;
         schoolWeights[schoolId] = 0;
+        categoryScores[schoolId] = {}; // Initialize categoryScores for this school
       }
 
       // Negatif puanları da uygula

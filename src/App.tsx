@@ -21,12 +21,11 @@ function App() {
     };
     setAnswers(newAnswers);
 
-    // Otomatik olarak bir sonraki soruya geç
+    // Otomatik olarak bir sonraki soruya geç (son soru hariç)
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-    } else {
-      completeTest(newAnswers);
     }
+    // Son soruda otomatik tamamlama YOK, kullanıcı "Tamamla" butonuna basmalı
   };
 
   const handleNext = () => {
@@ -192,7 +191,7 @@ function App() {
                 {currentQuestion < 10 && '💡 "İlim, Çin\'de de olsa gidiniz." - Hz. Muhammed (s.a.v)'}
                 {currentQuestion >= 10 && currentQuestion < 20 && '🌟 "İlim öğrenmek her Müslüman\'a farzdır." - Hz. Muhammed (s.a.v)'}
                 {currentQuestion >= 20 && currentQuestion < 30 && '📚 "Beşikten mezara kadar ilim öğreniniz." - Hz. Muhammed (s.a.v)'}
-                {currentQuestion >= 30 && '🎯 Tebrikler! Teste neredeyse tamamladınız!'}
+                {currentQuestion >= 30 && '🎯 Tebrikler! Testi neredeyse tamamladınız!'}
               </p>
             </motion.div>
           </div>
