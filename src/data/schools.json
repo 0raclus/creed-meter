@@ -14,8 +14,17 @@
       "Nassalara katı bağlılık",
       "Fıkhi meselelerde muhafazakar"
     ],
-    "regions": ["Suudi Arabistan", "Suriye", "Filistin", "Necid"],
-    "modernRepresentatives": ["İbn Baz", "İbn Usemin", "Albani"],
+    "regions": [
+      "Suudi Arabistan",
+      "Suriye",
+      "Filistin",
+      "Necid"
+    ],
+    "modernRepresentatives": [
+      "İbn Baz",
+      "İbn Usemin",
+      "Albani"
+    ],
     "relationships": {
       "selefi": 0.85,
       "hanbeli": 1.0,
@@ -23,7 +32,54 @@
       "quietist_salafi": 0.75,
       "esari": 0.25,
       "maturidi": 0.2
-    }
+    },
+    "keyFigures": [
+      "İmam Ahmed bin Hanbel",
+      "İbn Teymiyye",
+      "İbn Kayyim el-Cevziyye",
+      "İbn Kudâme",
+      "Muvaffakuddîn İbn Kudâme"
+    ],
+    "keyBooks": [
+      "el-Müsned (Ahmed bin Hanbel)",
+      "el-Muğnî (İbn Kudâme)",
+      "Mecmû'ul-Fetâvâ (İbn Teymiyye)",
+      "İ'lâm'ul-Muvakkıîn (İbn Kayyim)"
+    ],
+    "modernCommunities": [
+      "Suudi Arabistan",
+      "Katar",
+      "BAE",
+      "Suriye",
+      "Filistin"
+    ],
+    "estimatedFollowers": "50-100 milyon",
+    "relatedSchools": [
+      "Selefî",
+      "Atharî"
+    ],
+    "commonMisconceptions": [
+      "Hanbelîler kıyası tamamen reddeder (YANLIŞ - Sınırlı kullanırlar)",
+      "Hanbelîler Selefîlerle aynıdır (YANLIŞ - Hanbelî bir fıkıh mezhebi, Selefîlik bir harekettir)",
+      "Hanbelîler teşbih yapar (YANLIŞ - Sıfatlarda zahiri anlayışı benimserler ama teşbih yapmazlar)"
+    ],
+    "faqs": [
+      {
+        "q": "Hanbelî mezhebinin en önemli özelliği nedir?",
+        "a": "Nassalara (Kur'an ve Sünnet) sıkı bağlılık ve rey'e karşı tutumlu olmak."
+      },
+      {
+        "q": "Hanbelîler hangi akideyi benimser?",
+        "a": "Atharî (Selef) akidesini benimserler."
+      },
+      {
+        "q": "İbn Teymiyye Hanbelî miydi?",
+        "a": "Evet, İbn Teymiyye Hanbelî mezhebine mensuptu ancak bazı konularda bağımsız içtihat da yapmıştır."
+      }
+    ],
+    "icon": "/icons/hanbeli.svg",
+    "color": "rgb(220 49 47)",
+    "pattern": "geometric"
   },
   {
     "id": "selefi",
@@ -40,8 +96,17 @@
       "Selef'in yolunu takip",
       "Bid'at karşıtlığı"
     ],
-    "regions": ["Suudi Arabistan", "Mısır", "Körfez", "Kuzey Afrika"],
-    "modernRepresentatives": ["Albani", "İbn Baz", "Uteymin"],
+    "regions": [
+      "Suudi Arabistan",
+      "Mısır",
+      "Körfez",
+      "Kuzey Afrika"
+    ],
+    "modernRepresentatives": [
+      "Albani",
+      "İbn Baz",
+      "Uteymin"
+    ],
     "relationships": {
       "hanbeli": 0.85,
       "selefi": 1.0,
@@ -50,7 +115,53 @@
       "jihadist_salafi": 0.65,
       "esari": 0.2,
       "maturidi": 0.15
-    }
+    },
+    "keyFigures": [
+      "Muhammed bin Abdulvehhab",
+      "Şeyh Albânî",
+      "İbn Bâz",
+      "İbn Useymîn",
+      "Muhammed Sâlih el-Muneccid"
+    ],
+    "keyBooks": [
+      "Kitab'ut-Tevhid (Muhammed bin Abdulvehhab)",
+      "Feth'ul-Mecîd (Abdurrahman bin Hasan)",
+      "Silsilet'ul-Ehâdîs'is-Sahîha (Albânî)"
+    ],
+    "modernCommunities": [
+      "Suudi Arabistan",
+      "Mısır",
+      "Körfez ülkeleri",
+      "Kuzey Afrika",
+      "Batı (diaspora)"
+    ],
+    "estimatedFollowers": "50-100 milyon",
+    "relatedSchools": [
+      "Hanbelî",
+      "Atharî"
+    ],
+    "commonMisconceptions": [
+      "Selefîler mezhep karşıtıdır (KISMEN DOĞRU - Mezhep taklidi karşıtıdırlar ama Hanbelî fıkhına yakındırlar)",
+      "Selefîler Vehhâbîdir (KISMEN DOĞRU - Vehhâbîlik Selefîliğin bir koludur)",
+      "Selefîler şiddet yanlısıdır (YANLIŞ - Çoğunluk apolitik ve barışçıldır)"
+    ],
+    "faqs": [
+      {
+        "q": "Selefîlik nedir?",
+        "a": "Kur'an ve Sünnet'e doğrudan dönüş yaparak, ilk üç neslin (Selef) yolunu takip etmeyi amaçlayan bir harekettir."
+      },
+      {
+        "q": "Selefîler hangi fıkıh mezhebini takip eder?",
+        "a": "Mezhep taklidi yapmamayı tercih ederler ama pratikte Hanbelî fıkhına yakındırlar."
+      },
+      {
+        "q": "Selefîlik ile Vehhâbîlik arasındaki fark nedir?",
+        "a": "Vehhâbîlik, Muhammed bin Abdulvehhab tarafından kurulan ve Suudi Arabistan'da yaygın olan Selefîliğin bir koludur."
+      }
+    ],
+    "icon": "/icons/selefi.svg",
+    "color": "rgb(168 185 119)",
+    "pattern": "geometric"
   },
   {
     "id": "esari",
@@ -67,8 +178,18 @@
       "Ehl-i Sünnet'in ana akımı",
       "Rasyonel teoloji"
     ],
-    "regions": ["Mısır", "Suriye", "Mağrib", "Endülüs", "Ezher"],
-    "modernRepresentatives": ["Gazali", "Razi", "Cüveynî"],
+    "regions": [
+      "Mısır",
+      "Suriye",
+      "Mağrib",
+      "Endülüs",
+      "Ezher"
+    ],
+    "modernRepresentatives": [
+      "Gazali",
+      "Razi",
+      "Cüveynî"
+    ],
     "relationships": {
       "maturidi": 0.8,
       "esari": 1.0,
@@ -78,7 +199,56 @@
       "sufi": 0.75,
       "selefi": 0.2,
       "hanbeli": 0.25
-    }
+    },
+    "keyFigures": [
+      "İmam Ebu'l-Hasan el-Eş'arî",
+      "İmam Gazali",
+      "Fahreddin er-Razi",
+      "İmam Cüveynî",
+      "İmam Bâkıllânî"
+    ],
+    "keyBooks": [
+      "İhya-u Ulumiddin (Gazali)",
+      "Mefatih'ul-Gayb (Razi)",
+      "el-Luma' (Eş'arî)",
+      "el-İrşad (Cüveynî)",
+      "Kitab'ut-Temhid (Bâkıllânî)"
+    ],
+    "modernCommunities": [
+      "Türkiye",
+      "Mısır",
+      "Suriye",
+      "Ürdün",
+      "Fas",
+      "Cezayir"
+    ],
+    "estimatedFollowers": "200-300 milyon",
+    "relatedSchools": [
+      "Şâfiî",
+      "Mâlikî"
+    ],
+    "commonMisconceptions": [
+      "Eş'arîler akılcı değildir (YANLIŞ - Akıl ve nakil dengesini savunurlar)",
+      "Eş'arîler cebriyedir (YANLIŞ - Kesb teorisi ile özgür iradeyi kabul ederler)",
+      "Eş'arîler Mu'tezile'dir (YANLIŞ - Mu'tezile'nin aşırı akılcılığına karşı çıkarlar)"
+    ],
+    "faqs": [
+      {
+        "q": "Eş'arî ile Mâtürîdî farkı nedir?",
+        "a": "Her ikisi de Ehl-i Sünnet akaidini savunur ancak bazı detaylarda farklılaşırlar. Eş'arîler sıfatlarda te'vil yaparken, Mâtürîdîler tefviz yolunu tercih eder. Mâtürîdîler akla biraz daha fazla yer verir."
+      },
+      {
+        "q": "Eş'arîler hangi fıkıh mezhebini takip eder?",
+        "a": "Eş'arî akidesi genellikle Şâfiî ve Mâlikî fıkıh mezhepleriyle birlikte görülür. Ancak bu zorunlu değildir."
+      },
+      {
+        "q": "Kesb teorisi nedir?",
+        "a": "İnsan fiillerinin Allah tarafından yaratıldığını ama insanın bu fiilleri \"kesb\" (kazanma) yoluyla kendine mal ettiğini savunan teoridir. Böylece hem ilahi takdir hem de insan sorumluluğu korunur."
+      }
+    ],
+    "icon": "/icons/esari.svg",
+    "color": "rgb(170 198 173)",
+    "pattern": "geometric"
   },
   {
     "id": "maturidi",
@@ -95,8 +265,16 @@
       "Orta Asya'da yaygın",
       "Osmanlı teolojisi"
     ],
-    "regions": ["Orta Asya", "Osmanlı", "Hindistan", "Anadolu"],
-    "modernRepresentatives": ["Osmanlı uleması", "Diyanet"],
+    "regions": [
+      "Orta Asya",
+      "Osmanlı",
+      "Hindistan",
+      "Anadolu"
+    ],
+    "modernRepresentatives": [
+      "Osmanlı uleması",
+      "Diyanet"
+    ],
     "relationships": {
       "esari": 0.8,
       "maturidi": 1.0,
@@ -105,7 +283,53 @@
       "sufi": 0.7,
       "selefi": 0.15,
       "hanbeli": 0.2
-    }
+    },
+    "keyFigures": [
+      "İmam Ebu Mansur el-Mâtürîdî",
+      "Ebu'l-Muîn en-Nesefî",
+      "Nureddin es-Sâbûnî",
+      "Alâeddin es-Semerkandî"
+    ],
+    "keyBooks": [
+      "Kitab'ut-Tevhid (Mâtürîdî)",
+      "Tebsırat'ul-Edille (Nesefî)",
+      "el-Bidâye (Sâbûnî)",
+      "Şerh'ul-Akaid (Taftazânî)"
+    ],
+    "modernCommunities": [
+      "Türkiye",
+      "Orta Asya",
+      "Hindistan",
+      "Pakistan",
+      "Afganistan",
+      "Balkanlar"
+    ],
+    "estimatedFollowers": "400-500 milyon",
+    "relatedSchools": [
+      "Hanefî"
+    ],
+    "commonMisconceptions": [
+      "Mâtürîdîler Eş'arî'den farklı değildir (YANLIŞ - Önemli farklar vardır)",
+      "Mâtürîdîler sadece Türkiye'de vardır (YANLIŞ - Orta Asya ve Hindistan'da da yaygındır)",
+      "Mâtürîdîlik yeni bir mezheptir (YANLIŞ - 10. yüzyıldan beri vardır)"
+    ],
+    "faqs": [
+      {
+        "q": "Mâtürîdî ile Eş'arî arasındaki temel fark nedir?",
+        "a": "Mâtürîdîler akla daha fazla yer verir ve sıfatlarda tefviz (Allah'a havale) yolunu tercih eder. Eş'arîler ise te'vil (yorumlama) yapar."
+      },
+      {
+        "q": "Mâtürîdîlik neden Hanefî fıkhıyla birlikte görülür?",
+        "a": "Her ikisi de Orta Asya'da ortaya çıkmış ve Osmanlı İmparatorluğu tarafından benimsenmiştir. Ancak bu zorunlu bir ilişki değildir."
+      },
+      {
+        "q": "Türkiye Diyanet hangi akideyi benimser?",
+        "a": "Türkiye Diyanet İşleri Başkanlığı resmi olarak Mâtürîdî akidesini benimser."
+      }
+    ],
+    "icon": "/icons/maturidi.svg",
+    "color": "rgb(168 185 119)",
+    "pattern": "floral"
   },
   {
     "id": "hanafi",
@@ -122,8 +346,16 @@
       "Pratik fıkıh",
       "Osmanlı mezhebı"
     ],
-    "regions": ["Osmanlı", "Hindistan", "Orta Asya", "Balkanlar"],
-    "modernRepresentatives": ["Osmanlı uleması", "Diyanet"],
+    "regions": [
+      "Osmanlı",
+      "Hindistan",
+      "Orta Asya",
+      "Balkanlar"
+    ],
+    "modernRepresentatives": [
+      "Osmanlı uleması",
+      "Diyanet"
+    ],
     "relationships": {
       "maturidi": 0.95,
       "hanafi": 1.0,
@@ -132,7 +364,56 @@
       "maliki": 0.35,
       "sufi": 0.6,
       "selefi": 0.15
-    }
+    },
+    "keyFigures": [
+      "İmam Ebu Hanife",
+      "İmam Ebu Yusuf",
+      "İmam Muhammed eş-Şeybânî",
+      "İmam Tahâvî",
+      "İbn Âbidîn"
+    ],
+    "keyBooks": [
+      "el-Mebsût (Serahsî)",
+      "Hidâye (Merginânî)",
+      "Redd'ul-Muhtâr (İbn Âbidîn)",
+      "Fetâvâ-yı Hindiyye",
+      "el-Muhît (Burhâneddîn)"
+    ],
+    "modernCommunities": [
+      "Türkiye",
+      "Pakistan",
+      "Hindistan",
+      "Afganistan",
+      "Orta Asya",
+      "Balkanlar",
+      "Mısır"
+    ],
+    "estimatedFollowers": "500-600 milyon (en yaygın fıkıh mezhebi)",
+    "relatedSchools": [
+      "Mâtürîdî"
+    ],
+    "commonMisconceptions": [
+      "Hanefîler rey'i hadisten üstün tutar (YANLIŞ - Rey sadece hadis yoksa kullanılır)",
+      "Hanefîler bid'atçıdır (YANLIŞ - Usul konusunda esnek ama akide konusunda muhafazakardır)",
+      "Hanefîlik sadece Osmanlı mezhebıdir (YANLIŞ - Orta Asya ve Hindistan'da da çok yaygındır)"
+    ],
+    "faqs": [
+      {
+        "q": "Hanefî mezhebinin en önemli özelliği nedir?",
+        "a": "Rey (akıl yürütme) ve kıyasa geniş yer vermesi. Bu sayede değişen şartlara uyum sağlayan esnek bir fıkıh anlayışı geliştirilmiştir."
+      },
+      {
+        "q": "Hanefî mezhebı neden en yaygın mezheptir?",
+        "a": "Osmanlı İmparatorluğu'nun resmi mezhebi olması ve Orta Asya ile Hindistan'da yaygınlaşması nedeniyle."
+      },
+      {
+        "q": "Hanefîler hangi akideyi benimser?",
+        "a": "Genellikle Mâtürîdî akidesini benimserler."
+      }
+    ],
+    "icon": "/icons/hanafi.svg",
+    "color": "rgb(228 208 133)",
+    "pattern": "geometric"
   },
   {
     "id": "shafii",
@@ -149,8 +430,17 @@
       "Sistematik fıkıh",
       "Doğu'da yaygın"
     ],
-    "regions": ["Mısır", "Yemen", "Doğu Afrika", "Güneydoğu Asya"],
-    "modernRepresentatives": ["Nevevi", "Suyuti", "Nawawi"],
+    "regions": [
+      "Mısır",
+      "Yemen",
+      "Doğu Afrika",
+      "Güneydoğu Asya"
+    ],
+    "modernRepresentatives": [
+      "Nevevi",
+      "Suyuti",
+      "Nawawi"
+    ],
     "relationships": {
       "esari": 0.85,
       "shafii": 1.0,
@@ -159,7 +449,55 @@
       "sufi": 0.7,
       "selefi": 0.25,
       "hanbeli": 0.3
-    }
+    },
+    "keyFigures": [
+      "İmam Şâfiî",
+      "İmam Nevevî",
+      "İmam Suyûtî",
+      "İmam Gazzâlî",
+      "İmam Râzî"
+    ],
+    "keyBooks": [
+      "er-Risâle (Şâfiî)",
+      "el-Umm (Şâfiî)",
+      "el-Mecmû' (Nevevî)",
+      "Minhâc'ut-Tâlibîn (Nevevî)",
+      "el-Muhazzab (Şîrâzî)"
+    ],
+    "modernCommunities": [
+      "Mısır",
+      "Yemen",
+      "Endonezya",
+      "Malezya",
+      "Doğu Afrika",
+      "Güneydoğu Asya"
+    ],
+    "estimatedFollowers": "200-300 milyon",
+    "relatedSchools": [
+      "Eş'arî"
+    ],
+    "commonMisconceptions": [
+      "Şâfiîler sadece hadis takipçisidir (YANLIŞ - Hadis ve rey dengesini savunurlar)",
+      "Şâfiîler Hanbelîlerle aynıdır (YANLIŞ - Metodolojik olarak farklıdırlar)",
+      "Şâfiîlik sadece Arap dünyasında vardır (YANLIŞ - Güneydoğu Asya'da çok yaygındır)"
+    ],
+    "faqs": [
+      {
+        "q": "Şâfiî mezhebinin en önemli özelliği nedir?",
+        "a": "Fıkıh metodolojisinde sistematiklik ve kesinlik arayışı. İmam Şâfiî, fıkıh usulünü ilk sistematize eden kişidir."
+      },
+      {
+        "q": "Şâfiîler hangi akideyi benimser?",
+        "a": "Genellikle Eş'arî akidesini benimserler."
+      },
+      {
+        "q": "Şâfiî mezhebı neden Güneydoğu Asya'da yaygındır?",
+        "a": "Ticaret yolları ve Arap tüccarlar aracılığıyla bu bölgeye yayılmıştır."
+      }
+    ],
+    "icon": "/icons/shafii.svg",
+    "color": "rgb(235 153 119)",
+    "pattern": "floral"
   },
   {
     "id": "maliki",
@@ -176,8 +514,16 @@
       "Sosyal fıkıh",
       "Mağrib mezhebı"
     ],
-    "regions": ["Mağrib", "Kuzey Afrika", "Batı Afrika", "Endülüs"],
-    "modernRepresentatives": ["Mağrib uleması", "Kuzey Afrika"],
+    "regions": [
+      "Mağrib",
+      "Kuzey Afrika",
+      "Batı Afrika",
+      "Endülüs"
+    ],
+    "modernRepresentatives": [
+      "Mağrib uleması",
+      "Kuzey Afrika"
+    ],
     "relationships": {
       "esari": 0.6,
       "maliki": 1.0,
@@ -186,7 +532,56 @@
       "sufi": 0.65,
       "selefi": 0.2,
       "hanbeli": 0.25
-    }
+    },
+    "keyFigures": [
+      "İmam Mâlik bin Enes",
+      "İmam Şâtıbî",
+      "Kādî İyâz",
+      "İbn Rüşd (Hafîd)",
+      "İbn Abdilberr"
+    ],
+    "keyBooks": [
+      "el-Muvatta' (Mâlik)",
+      "el-Mudavvene (Sahnûn)",
+      "el-Muvâfakāt (Şâtıbî)",
+      "Bidâyet'ul-Müctehid (İbn Rüşd)"
+    ],
+    "modernCommunities": [
+      "Fas",
+      "Cezayir",
+      "Tunus",
+      "Libya",
+      "Moritanya",
+      "Mali",
+      "Senegal",
+      "Sudan"
+    ],
+    "estimatedFollowers": "100-150 milyon",
+    "relatedSchools": [
+      "Eş'arî"
+    ],
+    "commonMisconceptions": [
+      "Mâlikîler sadece Mağrib'de vardır (YANLIŞ - Batı Afrika'da da çok yaygındır)",
+      "Mâlikîler maslahatı nasslardan üstün tutar (YANLIŞ - Maslahat nasslarla çelişmez)",
+      "Mâlikîlik en eski mezheptir (YANLIŞ - Hanefî mezhebı daha eskidir)"
+    ],
+    "faqs": [
+      {
+        "q": "Mâlikî mezhebinin en önemli özelliği nedir?",
+        "a": "Maslahat (kamu yararı) kavramını merkeze alması ve Medine'nin uygulamalarına önem vermesi."
+      },
+      {
+        "q": "Mâlikîler hangi akideyi benimser?",
+        "a": "Genellikle Eş'arî akidesini benimserler."
+      },
+      {
+        "q": "İstislah nedir?",
+        "a": "Nassda açık hüküm olmayan konularda kamu yararını gözetme yöntemidir."
+      }
+    ],
+    "icon": "/icons/maliki.svg",
+    "color": "rgb(170 198 173)",
+    "pattern": "geometric"
   },
   {
     "id": "mutazila",
@@ -203,8 +598,15 @@
       "Rasyonel teoloji",
       "Klasik İslam felsefesi"
     ],
-    "regions": ["Bağdat", "Basra", "Mısır"],
-    "modernRepresentatives": ["Modernist İslam", "Neo-Mutezile"],
+    "regions": [
+      "Bağdat",
+      "Basra",
+      "Mısır"
+    ],
+    "modernRepresentatives": [
+      "Modernist İslam",
+      "Neo-Mutezile"
+    ],
     "relationships": {
       "mutazila": 1.0,
       "modernist": 0.8,
@@ -212,7 +614,49 @@
       "reformcu": 0.7,
       "esari": 0.3,
       "maturidi": 0.25
-    }
+    },
+    "keyFigures": [
+      "Vâsıl bin Atâ",
+      "Amr bin Ubeyd",
+      "Nazzâm",
+      "Câhiz",
+      "Kādî Abdülcebbâr"
+    ],
+    "keyBooks": [
+      "Şerh'ul-Usûl'il-Hamse (Kādî Abdülcebbâr)",
+      "el-Muğnî (Kādî Abdülcebbâr)",
+      "Kitâb'ul-Hayevân (Câhiz)"
+    ],
+    "modernCommunities": [
+      "Çok az (modernist İslam hareketleri tarafından yeniden değerlendiriliyor)"
+    ],
+    "estimatedFollowers": "1-5 milyon (çoğunlukla akademik ilgi)",
+    "relatedSchools": [
+      "Modernist İslam",
+      "Liberal İslam"
+    ],
+    "commonMisconceptions": [
+      "Mu'tezile kâfirdir (YANLIŞ - Ehl-i Sünnet'ten farklı ama Müslümandır)",
+      "Mu'tezile tamamen yok olmuştur (KISMEN DOĞRU - Klasik Mu'tezile yok ama fikirleri yaşıyor)",
+      "Mu'tezile akılcılığı İslam'a aykırıdır (YANLIŞ - Akıl İslam'da önemlidir)"
+    ],
+    "faqs": [
+      {
+        "q": "Mu'tezile'nin beş ilkesi nedir?",
+        "a": "Tevhid (Allah'ın birliği), Adl (adalet), Va'd ve Vaîd (vaat ve tehdit), Menzile beyne'l-menzileteyn (iki durum arası), Emr-i bi'l-ma'rûf ve nehy-i ani'l-münker (iyiliği emretme kötülükten sakındırma)."
+      },
+      {
+        "q": "Mu'tezile neden Kur'an'ın yaratılmış olduğunu savunur?",
+        "a": "Allah'ın birliğini (tevhid) korumak için. Eğer Kur'an ezeli olsaydı, Allah'la birlikte ezeli bir varlık olurdu."
+      },
+      {
+        "q": "Mu'tezile günümüzde var mı?",
+        "a": "Klasik Mu'tezile yok ama fikirleri modernist İslam hareketleri tarafından yeniden değerlendiriliyor."
+      }
+    ],
+    "icon": "/icons/mutazila.svg",
+    "color": "rgb(235 153 119)",
+    "pattern": "geometric"
   },
   {
     "id": "imamiyye",
@@ -229,8 +673,17 @@
       "On iki İmam inancı",
       "Şia teolojisi"
     ],
-    "regions": ["İran", "Irak", "Lübnan", "Bahreyn"],
-    "modernRepresentatives": ["Sistani", "Hamanei", "Şirazi"],
+    "regions": [
+      "İran",
+      "Irak",
+      "Lübnan",
+      "Bahreyn"
+    ],
+    "modernRepresentatives": [
+      "Sistani",
+      "Hamanei",
+      "Şirazi"
+    ],
     "relationships": {
       "imamiyye": 1.0,
       "zeydi": 0.65,
@@ -252,8 +705,14 @@
       "Adalet vurgusu",
       "Cihad vurgusu"
     ],
-    "regions": ["Yemen", "Kuzey Yemen"],
-    "modernRepresentatives": ["Hûsîler", "Yemen Zeydîliği"]
+    "regions": [
+      "Yemen",
+      "Kuzey Yemen"
+    ],
+    "modernRepresentatives": [
+      "Hûsîler",
+      "Yemen Zeydîliği"
+    ]
   },
   {
     "id": "ismaili",
@@ -267,8 +726,16 @@
       "Ağa Han liderliği",
       "Modernleşme açık"
     ],
-    "regions": ["Hindistan", "Pakistan", "Doğu Afrika", "Orta Asya"],
-    "modernRepresentatives": ["Ağa Han", "Bohra Cemaati"]
+    "regions": [
+      "Hindistan",
+      "Pakistan",
+      "Doğu Afrika",
+      "Orta Asya"
+    ],
+    "modernRepresentatives": [
+      "Ağa Han",
+      "Bohra Cemaati"
+    ]
   },
   {
     "id": "zahiri",
@@ -282,8 +749,14 @@
       "Literalist",
       "Tarihsel"
     ],
-    "regions": ["Endülüs", "Mısır"],
-    "modernRepresentatives": ["İbn Hazm", "Tarihsel"]
+    "regions": [
+      "Endülüs",
+      "Mısır"
+    ],
+    "modernRepresentatives": [
+      "İbn Hazm",
+      "Tarihsel"
+    ]
   },
   {
     "id": "modernist",
@@ -297,8 +770,17 @@
       "Akıl merkezli",
       "Bilim dostu"
     ],
-    "regions": ["Mısır", "Hindistan", "İran", "Batı"],
-    "modernRepresentatives": ["Fazlur Rahman", "Nasr Hamid", "Suruş"]
+    "regions": [
+      "Mısır",
+      "Hindistan",
+      "İran",
+      "Batı"
+    ],
+    "modernRepresentatives": [
+      "Fazlur Rahman",
+      "Nasr Hamid",
+      "Suruş"
+    ]
   },
   {
     "id": "reformcu",
@@ -312,8 +794,17 @@
       "Sosyal adalet",
       "Mezhep üstü"
     ],
-    "regions": ["Mısır", "Türkiye", "Arap dünyası", "Batı"],
-    "modernRepresentatives": ["Milli Görüş", "İhvan", "Ennahda"]
+    "regions": [
+      "Mısır",
+      "Türkiye",
+      "Arap dünyası",
+      "Batı"
+    ],
+    "modernRepresentatives": [
+      "Milli Görüş",
+      "İhvan",
+      "Ennahda"
+    ]
   },
   {
     "id": "kuranci",
@@ -327,8 +818,15 @@
       "Modern yorum",
       "Mezhep reddi"
     ],
-    "regions": ["Mısır", "Türkiye", "Hindistan"],
-    "modernRepresentatives": ["Ahmed Subhi Mansur", "Kurancı hareketler"]
+    "regions": [
+      "Mısır",
+      "Türkiye",
+      "Hindistan"
+    ],
+    "modernRepresentatives": [
+      "Ahmed Subhi Mansur",
+      "Kurancı hareketler"
+    ]
   },
   {
     "id": "sufi",
@@ -342,8 +840,60 @@
       "Zikir ve seyr",
       "Şeyh-mürid ilişkisi"
     ],
-    "regions": ["Tüm İslam dünyası"],
-    "modernRepresentatives": ["Nakşibendi", "Kadiri", "Mevlevi"]
+    "regions": [
+      "Tüm İslam dünyası"
+    ],
+    "modernRepresentatives": [
+      "Nakşibendi",
+      "Kadiri",
+      "Mevlevi"
+    ],
+    "keyFigures": [
+      "Hasan el-Basrî",
+      "Rabia el-Adeviyye",
+      "İmam Gazali",
+      "İbn Arabî",
+      "Mevlânâ Celâleddîn Rûmî",
+      "Abdulkadir Geylânî"
+    ],
+    "keyBooks": [
+      "İhya-u Ulumiddin (Gazali)",
+      "Fusûs'ul-Hikem (İbn Arabî)",
+      "Mesnevî (Mevlânâ)",
+      "Risâle-i Kuşeyriyye (Kuşeyrî)",
+      "Kimyâ-yı Saâdet (Gazali)"
+    ],
+    "modernCommunities": [
+      "Tüm İslam dünyası (özellikle Türkiye, Pakistan, Mısır, Fas, Endonezya)"
+    ],
+    "estimatedFollowers": "200-300 milyon",
+    "relatedSchools": [
+      "Hanefî",
+      "Şâfiî",
+      "Mâlikî"
+    ],
+    "commonMisconceptions": [
+      "Tasavvuf bid'attir (YANLIŞ - Zühd ve takva İslam'ın özündendir)",
+      "Sûfîler şeriatı terk eder (YANLIŞ - Hakiki tasavvuf şeriat üzerine kuruludur)",
+      "Tasavvuf sadece tarikat demektir (YANLIŞ - Tasavvuf bir iç hayat ve maneviyat anlayışıdır)"
+    ],
+    "faqs": [
+      {
+        "q": "Tasavvuf nedir?",
+        "a": "İslam'ın iç boyutu, maneviyat, zühd, takva ve ihlas vurgusu yapan bir gelenektir."
+      },
+      {
+        "q": "Tarikat nedir?",
+        "a": "Tasavvufi eğitim ve pratiklerin organize edildiği yapılardır. Şeyh-mürid ilişkisi üzerine kuruludur."
+      },
+      {
+        "q": "Selefîler tasavvufu neden reddeder?",
+        "a": "Selefîler tasavvufun bazı pratiklerini (tarikat, zikir, türbe ziyareti) bid'at olarak görürler. Ancak zühd ve takvayı kabul ederler."
+      }
+    ],
+    "icon": "/icons/sufi.svg",
+    "color": "rgb(170 198 173)",
+    "pattern": "floral"
   },
   {
     "id": "quietist_salafi",
@@ -357,8 +907,16 @@
       "Devlete itaat",
       "İlmi çalışma"
     ],
-    "regions": ["Suudi Arabistan", "Körfez", "Mısır"],
-    "modernRepresentatives": ["Albani", "Uteymin", "Ferkus"]
+    "regions": [
+      "Suudi Arabistan",
+      "Körfez",
+      "Mısır"
+    ],
+    "modernRepresentatives": [
+      "Albani",
+      "Uteymin",
+      "Ferkus"
+    ]
   },
   {
     "id": "jihadist_salafi",
@@ -372,8 +930,17 @@
       "Radikal siyaset",
       "Tekfir geniş"
     ],
-    "regions": ["Afganistan", "Suriye", "Irak", "Somali"],
-    "modernRepresentatives": ["El-Kaide", "IŞİD", "Nusra"]
+    "regions": [
+      "Afganistan",
+      "Suriye",
+      "Irak",
+      "Somali"
+    ],
+    "modernRepresentatives": [
+      "El-Kaide",
+      "IŞİD",
+      "Nusra"
+    ]
   },
   {
     "id": "liberal_islam",
@@ -387,8 +954,16 @@
       "Sekülerleşme açık",
       "İnsan hakları"
     ],
-    "regions": ["Endonezya", "Malezya", "Batı"],
-    "modernRepresentatives": ["JIL", "Sisters in Islam", "Progresif Müslümanlar"]
+    "regions": [
+      "Endonezya",
+      "Malezya",
+      "Batı"
+    ],
+    "modernRepresentatives": [
+      "JIL",
+      "Sisters in Islam",
+      "Progresif Müslümanlar"
+    ]
   },
   {
     "id": "feminist_islam",
@@ -402,8 +977,17 @@
       "Feminist yorum",
       "Kadın merkezli"
     ],
-    "regions": ["Batı", "Mısır", "Hindistan", "Endonezya"],
-    "modernRepresentatives": ["Musawah", "Fatima Mernissi", "Riffat Hassan"]
+    "regions": [
+      "Batı",
+      "Mısır",
+      "Hindistan",
+      "Endonezya"
+    ],
+    "modernRepresentatives": [
+      "Musawah",
+      "Fatima Mernissi",
+      "Riffat Hassan"
+    ]
   },
   {
     "id": "secular_muslim",
@@ -417,8 +1001,16 @@
       "Seküler hukuk",
       "Kültürel kimlik"
     ],
-    "regions": ["Türkiye", "Tunus", "Batı", "Mısır"],
-    "modernRepresentatives": ["Laiklik savunucuları", "Ateist Müslümanlar"]
+    "regions": [
+      "Türkiye",
+      "Tunus",
+      "Batı",
+      "Mısır"
+    ],
+    "modernRepresentatives": [
+      "Laiklik savunucuları",
+      "Ateist Müslümanlar"
+    ]
   },
   {
     "id": "ehlihadis",
@@ -432,8 +1024,16 @@
       "Selefi öncüsü",
       "Zahiri sıfat anlayışı"
     ],
-    "regions": ["Bağdat", "Horasan", "Mısır"],
-    "modernRepresentatives": ["Darimi", "Tirmizi", "Nesai"]
+    "regions": [
+      "Bağdat",
+      "Horasan",
+      "Mısır"
+    ],
+    "modernRepresentatives": [
+      "Darimi",
+      "Tirmizi",
+      "Nesai"
+    ]
   },
   {
     "id": "murcie",
@@ -447,8 +1047,14 @@
       "Tolerans",
       "Siyasi tarafsızlık"
     ],
-    "regions": ["Bağdat", "Basra", "Kufa"],
-    "modernRepresentatives": ["Tarihsel"]
+    "regions": [
+      "Bağdat",
+      "Basra",
+      "Kufa"
+    ],
+    "modernRepresentatives": [
+      "Tarihsel"
+    ]
   },
   {
     "id": "harici",
@@ -462,8 +1068,15 @@
       "Liyakat merkezli",
       "Radikal"
     ],
-    "regions": ["Arabistan", "Kuzey Afrika", "Oman"],
-    "modernRepresentatives": ["İbazi", "Oman İbaziliği"]
+    "regions": [
+      "Arabistan",
+      "Kuzey Afrika",
+      "Oman"
+    ],
+    "modernRepresentatives": [
+      "İbazi",
+      "Oman İbaziliği"
+    ]
   },
   {
     "id": "ibazi",
@@ -477,8 +1090,15 @@
       "Demokrasi",
       "Oman'da yaygın"
     ],
-    "regions": ["Oman", "Cezayir", "Tunus"],
-    "modernRepresentatives": ["Oman İbaziliği", "Cezayir İbaziliği"]
+    "regions": [
+      "Oman",
+      "Cezayir",
+      "Tunus"
+    ],
+    "modernRepresentatives": [
+      "Oman İbaziliği",
+      "Cezayir İbaziliği"
+    ]
   },
   {
     "id": "qadariyya",
@@ -492,8 +1112,13 @@
       "Akıl merkezli",
       "Adalet vurgusu"
     ],
-    "regions": ["Bağdat", "Basra"],
-    "modernRepresentatives": ["Mu'tezile"]
+    "regions": [
+      "Bağdat",
+      "Basra"
+    ],
+    "modernRepresentatives": [
+      "Mu'tezile"
+    ]
   },
   {
     "id": "jabriyya",
@@ -507,8 +1132,13 @@
       "Determinizm",
       "Devlete itaat"
     ],
-    "regions": ["Bağdat", "Suriye"],
-    "modernRepresentatives": ["Tarihsel"]
+    "regions": [
+      "Bağdat",
+      "Suriye"
+    ],
+    "modernRepresentatives": [
+      "Tarihsel"
+    ]
   },
   {
     "id": "qadiriyya",
@@ -522,8 +1152,16 @@
       "Geniş ağ",
       "Sosyal hizmet"
     ],
-    "regions": ["Irak", "Mısır", "Kuzey Afrika", "Hindistan"],
-    "modernRepresentatives": ["Abdulkadir Geylani", "Tarikat şubesi"]
+    "regions": [
+      "Irak",
+      "Mısır",
+      "Kuzey Afrika",
+      "Hindistan"
+    ],
+    "modernRepresentatives": [
+      "Abdulkadir Geylani",
+      "Tarikat şubesi"
+    ]
   },
   {
     "id": "naqshbandi",
@@ -537,8 +1175,16 @@
       "Osmanlı'da yaygın",
       "Entelektüel"
     ],
-    "regions": ["Orta Asya", "Osmanlı", "Hindistan", "Kafkasya"],
-    "modernRepresentatives": ["Osmanlı Nakşibendiliği", "Nurculuk"]
+    "regions": [
+      "Orta Asya",
+      "Osmanlı",
+      "Hindistan",
+      "Kafkasya"
+    ],
+    "modernRepresentatives": [
+      "Osmanlı Nakşibendiliği",
+      "Nurculuk"
+    ]
   },
   {
     "id": "mevlevi",
@@ -552,8 +1198,15 @@
       "Kültürel etki",
       "Sanat dostu"
     ],
-    "regions": ["Osmanlı", "Anadolu", "Batı"],
-    "modernRepresentatives": ["Mevlana", "Mevlevi tarikatı"]
+    "regions": [
+      "Osmanlı",
+      "Anadolu",
+      "Batı"
+    ],
+    "modernRepresentatives": [
+      "Mevlana",
+      "Mevlevi tarikatı"
+    ]
   },
   {
     "id": "rifaiyya",
@@ -567,8 +1220,15 @@
       "Mısır'da yaygın",
       "Halk tarafından sevilen"
     ],
-    "regions": ["Mısır", "Irak", "Suriye"],
-    "modernRepresentatives": ["Ahmed er-Rifai", "Rifaiyye tarikatı"]
+    "regions": [
+      "Mısır",
+      "Irak",
+      "Suriye"
+    ],
+    "modernRepresentatives": [
+      "Ahmed er-Rifai",
+      "Rifaiyye tarikatı"
+    ]
   },
   {
     "id": "shadhili",
@@ -582,8 +1242,15 @@
       "Pratik",
       "Sosyal katılım"
     ],
-    "regions": ["Mağrib", "Kuzey Afrika", "Mısır"],
-    "modernRepresentatives": ["Şadhili tarikatı", "Mağrib Şadhililiği"]
+    "regions": [
+      "Mağrib",
+      "Kuzey Afrika",
+      "Mısır"
+    ],
+    "modernRepresentatives": [
+      "Şadhili tarikatı",
+      "Mağrib Şadhililiği"
+    ]
   },
   {
     "id": "tijaniyya",
@@ -597,8 +1264,16 @@
       "Eğitim merkezli",
       "Geniş ağ"
     ],
-    "regions": ["Batı Afrika", "Senegal", "Mali", "Mauritanya"],
-    "modernRepresentatives": ["Ahmed et-Tijani", "Ticaniyye tarikatı"]
+    "regions": [
+      "Batı Afrika",
+      "Senegal",
+      "Mali",
+      "Mauritanya"
+    ],
+    "modernRepresentatives": [
+      "Ahmed et-Tijani",
+      "Ticaniyye tarikatı"
+    ]
   },
   {
     "id": "deobandi",
@@ -612,8 +1287,16 @@
       "Eğitim merkezli",
       "Hindistan'da yaygın"
     ],
-    "regions": ["Hindistan", "Pakistan", "Bangladeş", "Batı"],
-    "modernRepresentatives": ["Darul Uloom Deoband", "Deobandi uleması"]
+    "regions": [
+      "Hindistan",
+      "Pakistan",
+      "Bangladeş",
+      "Batı"
+    ],
+    "modernRepresentatives": [
+      "Darul Uloom Deoband",
+      "Deobandi uleması"
+    ]
   },
   {
     "id": "barelvi",
@@ -627,8 +1310,15 @@
       "Halk tarafından sevilen",
       "Hindistan'da yaygın"
     ],
-    "regions": ["Hindistan", "Pakistan", "Bangladeş"],
-    "modernRepresentatives": ["Ahmed Riza Khan", "Barelvi tarikatı"]
+    "regions": [
+      "Hindistan",
+      "Pakistan",
+      "Bangladeş"
+    ],
+    "modernRepresentatives": [
+      "Ahmed Riza Khan",
+      "Barelvi tarikatı"
+    ]
   },
   {
     "id": "ikhwan",
@@ -642,8 +1332,16 @@
       "Mezhep üstü",
       "Geniş ağ"
     ],
-    "regions": ["Mısır", "Arap dünyası", "Batı", "Türkiye"],
-    "modernRepresentatives": ["Hasan el-Benna", "İhvan örgütü"]
+    "regions": [
+      "Mısır",
+      "Arap dünyası",
+      "Batı",
+      "Türkiye"
+    ],
+    "modernRepresentatives": [
+      "Hasan el-Benna",
+      "İhvan örgütü"
+    ]
   },
   {
     "id": "nurculuk",
@@ -657,8 +1355,15 @@
       "Eğitim merkezli",
       "Türkiye'de yaygın"
     ],
-    "regions": ["Türkiye", "Balkanlar", "Orta Asya"],
-    "modernRepresentatives": ["Bediuzzaman Said Nursi", "Nur cemaati"]
+    "regions": [
+      "Türkiye",
+      "Balkanlar",
+      "Orta Asya"
+    ],
+    "modernRepresentatives": [
+      "Bediuzzaman Said Nursi",
+      "Nur cemaati"
+    ]
   },
   {
     "id": "salafi_jihadist",
@@ -672,8 +1377,17 @@
       "Radikal eylem",
       "Tekfir geniş"
     ],
-    "regions": ["Afganistan", "Suriye", "Irak", "Somali"],
-    "modernRepresentatives": ["El-Kaide", "IŞİD", "Nusra Cephesi"]
+    "regions": [
+      "Afganistan",
+      "Suriye",
+      "Irak",
+      "Somali"
+    ],
+    "modernRepresentatives": [
+      "El-Kaide",
+      "IŞİD",
+      "Nusra Cephesi"
+    ]
   },
   {
     "id": "quietist_salafi_2",
@@ -687,8 +1401,16 @@
       "Devlete itaat",
       "İlmi çalışma"
     ],
-    "regions": ["Suudi Arabistan", "Körfez", "Mısır"],
-    "modernRepresentatives": ["Albani", "Uteymin", "Ferkus"]
+    "regions": [
+      "Suudi Arabistan",
+      "Körfez",
+      "Mısır"
+    ],
+    "modernRepresentatives": [
+      "Albani",
+      "Uteymin",
+      "Ferkus"
+    ]
   },
   {
     "id": "progressive_islam",
@@ -702,8 +1424,15 @@
       "Feminist yorum",
       "Batı dostu"
     ],
-    "regions": ["Batı", "Endonezya", "Malezya"],
-    "modernRepresentatives": ["Progresif Müslümanlar", "Sisters in Islam"]
+    "regions": [
+      "Batı",
+      "Endonezya",
+      "Malezya"
+    ],
+    "modernRepresentatives": [
+      "Progresif Müslümanlar",
+      "Sisters in Islam"
+    ]
   },
   {
     "id": "ahmadiyya",
@@ -717,8 +1446,16 @@
       "Eğitim merkezli",
       "Hindistan'da yaygın"
     ],
-    "regions": ["Hindistan", "Pakistan", "Batı", "Afrika"],
-    "modernRepresentatives": ["Mirza Gulam Ahmad", "Ahmadiyya cemaati"]
+    "regions": [
+      "Hindistan",
+      "Pakistan",
+      "Batı",
+      "Afrika"
+    ],
+    "modernRepresentatives": [
+      "Mirza Gulam Ahmad",
+      "Ahmadiyya cemaati"
+    ]
   },
   {
     "id": "twelver_shia",
@@ -732,8 +1469,66 @@
       "Takiyye",
       "Usûlî fıkıh"
     ],
-    "regions": ["İran", "Irak", "Lübnan", "Bahreyn"],
-    "modernRepresentatives": ["Sistani", "Hamanei", "Şirazi"]
+    "regions": [
+      "İran",
+      "Irak",
+      "Lübnan",
+      "Bahreyn"
+    ],
+    "modernRepresentatives": [
+      "Sistani",
+      "Hamanei",
+      "Şirazi"
+    ],
+    "keyFigures": [
+      "İmam Cafer es-Sâdık",
+      "Şeyh Mufîd",
+      "Şeyh Tûsî",
+      "Allâme Hillî",
+      "Ayetullah Sistânî",
+      "Ayetullah Hâmeneî"
+    ],
+    "keyBooks": [
+      "el-Kâfî (Küleynî)",
+      "Men lâ Yahduruhu'l-Fakīh (Sadûk)",
+      "Tehzîb'ul-Ahkâm (Tûsî)",
+      "el-İstibsâr (Tûsî)"
+    ],
+    "modernCommunities": [
+      "İran",
+      "Irak",
+      "Lübnan",
+      "Bahreyn",
+      "Azerbaycan",
+      "Pakistan (Hazara)"
+    ],
+    "estimatedFollowers": "150-200 milyon",
+    "relatedSchools": [
+      "Zeydî Şia",
+      "İsmâilî Şia"
+    ],
+    "commonMisconceptions": [
+      "Şiîler Kur'an'ı değiştirmiştir (YANLIŞ - Aynı Kur'an'ı kullanırlar)",
+      "Şiîler sahabeye küfreder (KISMEN YANLIŞ - Bazı sahabeyi eleştirirler ama hepsine küfretmezler)",
+      "Şiîler Ali'yi peygamberden üstün tutar (YANLIŞ - Ali'yi çok severler ama peygamberden üstün tutmazlar)"
+    ],
+    "faqs": [
+      {
+        "q": "On İki İmam kimlerdir?",
+        "a": "Ali, Hasan, Hüseyin, Zeynelâbidîn, Muhammed el-Bâkır, Cafer es-Sâdık, Musa el-Kâzım, Ali er-Rızâ, Muhammed el-Cevâd, Ali el-Hâdî, Hasan el-Askerî, Muhammed el-Mehdî."
+      },
+      {
+        "q": "Velâyet-i Fakīh nedir?",
+        "a": "İmam Humeyni tarafından geliştirilen, İslam âlimlerinin (fakihlerin) siyasi liderlik yapması gerektiğini savunan teoridir."
+      },
+      {
+        "q": "Şiîler ile Sünnîler arasındaki temel fark nedir?",
+        "a": "Şiîler Hz. Peygamber'in vefatından sonra Hz. Ali'nin halife olması gerektiğini savunurlar ve İmamet konseptine inanırlar."
+      }
+    ],
+    "icon": "/icons/twelver_shia.svg",
+    "color": "rgb(228 208 133)",
+    "pattern": "floral"
   },
   {
     "id": "zaydi_shia",
@@ -747,8 +1542,14 @@
       "Adalet vurgusu",
       "Cihad vurgusu"
     ],
-    "regions": ["Yemen", "Kuzey Yemen"],
-    "modernRepresentatives": ["Hûsîler", "Yemen Zeydîliği"]
+    "regions": [
+      "Yemen",
+      "Kuzey Yemen"
+    ],
+    "modernRepresentatives": [
+      "Hûsîler",
+      "Yemen Zeydîliği"
+    ]
   },
   {
     "id": "ismaili_shia",
@@ -762,8 +1563,16 @@
       "Ağa Han liderliği",
       "Modernleşme açık"
     ],
-    "regions": ["Hindistan", "Pakistan", "Doğu Afrika", "Orta Asya"],
-    "modernRepresentatives": ["Ağa Han", "Bohra Cemaati"]
+    "regions": [
+      "Hindistan",
+      "Pakistan",
+      "Doğu Afrika",
+      "Orta Asya"
+    ],
+    "modernRepresentatives": [
+      "Ağa Han",
+      "Bohra Cemaati"
+    ]
   },
   {
     "id": "athari",
@@ -780,8 +1589,17 @@
       "Akılcılığa karşı",
       "Nassalara katı bağlılık"
     ],
-    "regions": ["Suudi Arabistan", "Körfez", "Mısır", "Suriye"],
-    "modernRepresentatives": ["İbn Baz", "Albani", "Uteymin"],
+    "regions": [
+      "Suudi Arabistan",
+      "Körfez",
+      "Mısır",
+      "Suriye"
+    ],
+    "modernRepresentatives": [
+      "İbn Baz",
+      "Albani",
+      "Uteymin"
+    ],
     "relationships": {
       "athari": 1.0,
       "hanbeli": 0.9,
@@ -790,162 +1608,6 @@
       "esari": 0.15,
       "maturidi": 0.1,
       "mutazila": 0.05
-    }
-  },
-  {
-    "id": "esari",
-    "name": "Eş'arî",
-    "era": "10. yüzyıl",
-    "founder": "Ebu'l-Hasan el-Eş'arî",
-    "description": "Akıl ve nakil dengesi, sıfatlarda te'vil, Mu'tezile ile Ehl-i Hadis arasında orta yol",
-    "detailedProfile": "Eş'arî akidesi, Mu'tezile'nin aşırı akılcılığı ile Ehl-i Hadis'in zahiri yaklaşımı arasında orta bir yol benimser. Allah'ın sıfatlarını akla uygun şekilde te'vil eder. Kaza ve kader meselesinde 'kesb' (seçim) teorisini kabul eder. Kur'an'ın yaratılmışlığını reddeder. Gazzâlî, Râzî, Âmidî gibi büyük düşünürler Eş'arî mezhebine mensuptur. Mısır, Suriye, Mağrib ve Osmanlı'da yaygındır.",
-    "characteristics": [
-      "Akıl ve nakil dengesi",
-      "Sıfatlarda te'vil",
-      "Kesb teorisi",
-      "Kur'an'ın ezeliliği",
-      "Mu'tezile ile Ehl-i Hadis arasında orta yol",
-      "Felsefi yaklaşım"
-    ],
-    "regions": ["Mısır", "Suriye", "Mağrib", "Osmanlı", "Ezher"],
-    "modernRepresentatives": ["Gazzâlî", "Râzî", "Âmidî"],
-    "relationships": {
-      "esari": 1.0,
-      "maturidi": 0.8,
-      "mutazila": 0.6,
-      "athari": 0.15,
-      "selefi": 0.2,
-      "hanbeli": 0.1
-    }
-  },
-  {
-    "id": "maturidi",
-    "name": "Mâtürîdî",
-    "era": "10. yüzyıl",
-    "founder": "Ebu Mansur el-Mâtürîdî",
-    "description": "Akıl ve nakil dengesi, Eş'arî'ye benzer ama daha akılcı, Orta Asya'da yaygın",
-    "detailedProfile": "Mâtürîdî akidesi, Eş'arî mezhebine benzer şekilde akıl ve nakil arasında denge kurar, ancak akla daha fazla yer verir. Allah'ın sıfatlarını te'vil eder. Kaza ve kader meselesinde 'kesb' teorisini kabul eder. Kur'an'ın ezeliliğini savunur. Orta Asya, Osmanlı ve Hindistan'da yaygındır. Hanefî fıkhı ile birlikte yaygın olmuştur.",
-    "characteristics": [
-      "Akıl ve nakil dengesi",
-      "Akla daha fazla yer",
-      "Sıfatlarda te'vil",
-      "Kesb teorisi",
-      "Kur'an'ın ezeliliği",
-      "Hanefî fıkhı ile birlikte"
-    ],
-    "regions": ["Orta Asya", "Osmanlı", "Hindistan", "Türkiye"],
-    "modernRepresentatives": ["Osmanlı Müftüleri", "Hindistan Ulemâ"],
-    "relationships": {
-      "maturidi": 1.0,
-      "esari": 0.8,
-      "mutazila": 0.65,
-      "athari": 0.1,
-      "selefi": 0.15,
-      "hanafi": 0.85
-    }
-  },
-  {
-    "id": "quietist_salafi",
-    "name": "Sessiz Selefilik (Ilmi Selefilik)",
-    "era": "20. yüzyıl",
-    "founder": "Albani, İbn Baz",
-    "description": "Siyasetten uzak, ilmi çalışmaya odaklanmış, Medine Üniversitesi ekolü",
-    "detailedProfile": "Sessiz Selefilik, siyasi aktivizmden uzak durarak ilmi çalışmalara odaklanır. Hadis otoritesine yüksek değer verir ve bid'at karşıtlığı konusunda katıdır. Devlet otoritesine itaat etmeyi vurgular. Albani ve İbn Baz tarafından temsil edilir. Medine Üniversitesi'nde güçlü bir temele sahiptir.",
-    "characteristics": [
-      "Siyasetten uzak",
-      "İlmi çalışmaya odaklanmış",
-      "Hadis otoritesi yüksek",
-      "Bid'at karşıtlığı",
-      "Devlet otoritesine itaat",
-      "Akademik yaklaşım"
-    ],
-    "regions": ["Suudi Arabistan", "Mısır", "Körfez"],
-    "modernRepresentatives": ["Albani", "İbn Baz", "Uteymin"],
-    "relationships": {
-      "quietist_salafi": 1.0,
-      "athari": 0.9,
-      "selefi": 0.85,
-      "hanbeli": 0.8,
-      "jihadist_salafi": 0.3,
-      "esari": 0.1
-    }
-  },
-  {
-    "id": "jihadist_salafi",
-    "name": "Cihadi Selefilik",
-    "era": "20. yüzyıl (1980'ler)",
-    "founder": "Abdullah Azzam, Eyman ez-Zevahiri",
-    "description": "Siyasi aktivizm, cihad vurgusu, radikal yorumlar",
-    "detailedProfile": "Cihadi Selefilik, Selefi akideyi siyasi aktivizm ve cihad ile birleştirir. Devlet otoritesine karşı çıkabilir ve radikal yorumlar yapabilir. El-Kaide, IŞİD gibi örgütler bu ideolojiden etkilenmiştir. Sessiz Selefilikten farklı olarak siyasi mücadeleyi ön planda tutar.",
-    "characteristics": [
-      "Siyasi aktivizm",
-      "Cihad vurgusu",
-      "Radikal yorumlar",
-      "Devlet otoritesine karşı çıkabilir",
-      "Şiddet kullanabilir",
-      "Takfir eğilimi"
-    ],
-    "regions": ["Orta Doğu", "Kuzey Afrika", "Afganistan"],
-    "modernRepresentatives": ["Abdullah Azzam", "Eyman ez-Zevahiri"],
-    "relationships": {
-      "jihadist_salafi": 1.0,
-      "quietist_salafi": 0.3,
-      "selefi": 0.5,
-      "athari": 0.2,
-      "esari": 0.05,
-      "sufi": 0.05
-    }
-  },
-  {
-    "id": "mutazila",
-    "name": "Mu'tezile",
-    "era": "8. yüzyıl",
-    "founder": "Vasıl bin Ata",
-    "description": "Akılcı yaklaşım, Kur'an'ın yaratılmışlığı, adalet vurgusu",
-    "detailedProfile": "Mu'tezile, İslami düşüncede akılcı bir yaklaşım benimser. Kur'an'ın yaratılmış olduğunu savunur. Allah'ın sıfatlarını akla uygun şekilde yorumlar. İnsan özgürlüğü ve adalet konularında vurgu yapar. Abbâsî döneminde güçlü olmuş, ancak sonradan Eş'arî ve Mâtürîdî mezhepleri tarafından gölgede bırakılmıştır.",
-    "characteristics": [
-      "Akılcı yaklaşım",
-      "Kur'an'ın yaratılmışlığı",
-      "Sıfatlarda te'vil",
-      "İnsan özgürlüğü",
-      "Adalet vurgusu",
-      "Felsefi yaklaşım"
-    ],
-    "regions": ["Bağdat", "Basra", "Mısır"],
-    "modernRepresentatives": ["Vasıl bin Ata", "Nazzâm"],
-    "relationships": {
-      "mutazila": 1.0,
-      "esari": 0.6,
-      "maturidi": 0.65,
-      "athari": 0.05,
-      "selefi": 0.1,
-      "hanbeli": 0.05
-    }
-  },
-  {
-    "id": "zahiri",
-    "name": "Zâhirî (Zâhiriyye)",
-    "era": "9. yüzyıl",
-    "founder": "Dâvûd ez-Zâhirî",
-    "description": "Nassların zahiri anlamı, kıyas ve istihsan reddi, İbn Hazm tarafından temsil",
-    "detailedProfile": "Zâhirî mezhebinde, Kur'an ve Sünnet'in zahiri anlamı esas alınır. Kıyas ve istihsan reddedilir. Nassların zahiri anlamından başka bir anlam çıkarılmaz. İbn Hazm tarafından temsil edilmiş ve Endülüs'te yaygın olmuştur. Modern dönemde sınırlı sayıda takipçisi vardır.",
-    "characteristics": [
-      "Nassların zahiri anlamı",
-      "Kıyas reddi",
-      "İstihsan reddi",
-      "Katı zahirilik",
-      "Fıkhi esneklik yok",
-      "Nassalara tam bağlılık"
-    ],
-    "regions": ["Endülüs", "Mısır", "Suriye"],
-    "modernRepresentatives": ["İbn Hazm", "Dâvûd ez-Zâhirî"],
-    "relationships": {
-      "zahiri": 1.0,
-      "hanbeli": 0.6,
-      "athari": 0.75,
-      "selefi": 0.7,
-      "esari": 0.2,
-      "maturidi": 0.15
     }
   },
   {
@@ -963,8 +1625,15 @@
       "İhlas vurgusu",
       "Bid'at karşıtlığı"
     ],
-    "regions": ["Suudi Arabistan", "Mısır", "Körfez"],
-    "modernRepresentatives": ["İbn Kayyim el-Cevziyye", "Albani"],
+    "regions": [
+      "Suudi Arabistan",
+      "Mısır",
+      "Körfez"
+    ],
+    "modernRepresentatives": [
+      "İbn Kayyim el-Cevziyye",
+      "Albani"
+    ],
     "relationships": {
       "sufi_selefi": 1.0,
       "quietist_salafi": 0.85,
@@ -972,32 +1641,6 @@
       "sufi": 0.4,
       "naqshbandi": 0.3,
       "qadiri": 0.25
-    }
-  },
-  {
-    "id": "naqshbandi",
-    "name": "Nakşibendî",
-    "era": "14. yüzyıl",
-    "founder": "Bahauddin Naqshband",
-    "description": "Orta Asya'da yaygın, sessiz zikir, şeyh-mürid ilişkisi, Osmanlı'da güçlü",
-    "detailedProfile": "Nakşibendî tarikatı, Orta Asya'da ortaya çıkmış ve Osmanlı İmparatorluğu'nda güçlü bir temele sahip olmuştur. Sessiz zikir (zikr-i hafî) yapılır. Şeyh-mürid ilişkisine önem verilir. Mâtürîdî akideyi benimser. Modern dönemde Türkiye, Orta Asya ve Hindistan'da yaygındır.",
-    "characteristics": [
-      "Sessiz zikir",
-      "Şeyh-mürid ilişkisi",
-      "Mâtürîdî akide",
-      "Orta Asya kökenli",
-      "Osmanlı geleneği",
-      "Sosyal aktivizm"
-    ],
-    "regions": ["Orta Asya", "Osmanlı", "Türkiye", "Hindistan"],
-    "modernRepresentatives": ["Bahauddin Naqshband", "Mevlânâ Hâlid Bağdâdî"],
-    "relationships": {
-      "naqshbandi": 1.0,
-      "maturidi": 0.85,
-      "sufi": 0.9,
-      "qadiri": 0.6,
-      "suleymanci": 0.8,
-      "athari": 0.2
     }
   },
   {
@@ -1015,8 +1658,16 @@
       "Sosyal hizmet",
       "Eğitim vurgusu"
     ],
-    "regions": ["Mısır", "Suriye", "Mağrib", "Hindistan", "Somali"],
-    "modernRepresentatives": ["Abdülkadir Geylani"],
+    "regions": [
+      "Mısır",
+      "Suriye",
+      "Mağrib",
+      "Hindistan",
+      "Somali"
+    ],
+    "modernRepresentatives": [
+      "Abdülkadir Geylani"
+    ],
     "relationships": {
       "qadiri": 1.0,
       "esari": 0.8,
@@ -1024,32 +1675,6 @@
       "naqshbandi": 0.6,
       "mevlevi": 0.7,
       "athari": 0.15
-    }
-  },
-  {
-    "id": "mevlevi",
-    "name": "Mevlevî",
-    "era": "13. yüzyıl",
-    "founder": "Mevlânâ Celâleddin Rûmî",
-    "description": "Aşk ve tasavvuf, sema ritüeli, Osmanlı'da saray tarikatı",
-    "detailedProfile": "Mevlevî tarikatı, Mevlânâ Celâleddin Rûmî tarafından kurulmuş ve Osmanlı İmparatorluğu'nda saray tarikatı olarak kabul edilmiştir. Aşk, tasavvuf ve müzik ön plandadır. Sema ritüeli (dönüş) yapılır. Eş'arî akideyi benimser. Kültür ve sanat alanında önemli katkılar yapmıştır.",
-    "characteristics": [
-      "Aşk ve tasavvuf",
-      "Sema ritüeli",
-      "Müzik ve şiir",
-      "Eş'arî akide",
-      "Osmanlı geleneği",
-      "Kültür ve sanat"
-    ],
-    "regions": ["Konya", "Osmanlı", "Türkiye"],
-    "modernRepresentatives": ["Mevlânâ Celâleddin Rûmî"],
-    "relationships": {
-      "mevlevi": 1.0,
-      "esari": 0.85,
-      "sufi": 0.95,
-      "qadiri": 0.7,
-      "naqshbandi": 0.5,
-      "athari": 0.1
     }
   },
   {
@@ -1067,8 +1692,14 @@
       "Anadolu kökenli",
       "Yeniçeri bağlantısı"
     ],
-    "regions": ["Anadolu", "Balkanlar", "Arnavutluk"],
-    "modernRepresentatives": ["Hacı Bektaş Veli"],
+    "regions": [
+      "Anadolu",
+      "Balkanlar",
+      "Arnavutluk"
+    ],
+    "modernRepresentatives": [
+      "Hacı Bektaş Veli"
+    ],
     "relationships": {
       "bektashi": 1.0,
       "alevi": 0.9,
@@ -1093,8 +1724,15 @@
       "Anadolu kökenli",
       "Sosyal aktivizm"
     ],
-    "regions": ["Anadolu", "Balkanlar", "Türkiye"],
-    "modernRepresentatives": ["Pir Sultan Abdal", "Hacı Bektaş Veli"],
+    "regions": [
+      "Anadolu",
+      "Balkanlar",
+      "Türkiye"
+    ],
+    "modernRepresentatives": [
+      "Pir Sultan Abdal",
+      "Hacı Bektaş Veli"
+    ],
     "relationships": {
       "alevi": 1.0,
       "bektashi": 0.9,
@@ -1102,32 +1740,6 @@
       "sufi": 0.8,
       "naqshbandi": 0.2,
       "athari": 0.05
-    }
-  },
-  {
-    "id": "twelver_shia",
-    "name": "On İki İmamcı Şia (İmâmiyye)",
-    "era": "8. yüzyıl",
-    "founder": "Cafer es-Sadık",
-    "description": "İran'da yaygın, İmam konsepti, Usûlî ve Ahbârî kolları",
-    "detailedProfile": "On İki İmamcı Şia, İran'da yaygın olan Şia mezhebinin ana kollarından biridir. İmam konsepti merkezi bir rol oynar. Usûlî (akılcı) ve Ahbârî (hadis merkezli) olmak üzere iki ana kola ayrılır. Velâyet-i Fakīh teorisi İran İslam Cumhuriyeti'nin temelini oluşturmuştur.",
-    "characteristics": [
-      "İmam konsepti",
-      "Usûlî-Ahbârî ayrılığı",
-      "Velâyet-i Fakīh",
-      "Taqiyya (gizli ibadet)",
-      "Mut'a (geçici nikah)",
-      "Khums (beşte bir vergi)"
-    ],
-    "regions": ["İran", "Irak", "Lübnan", "Bahreyn"],
-    "modernRepresentatives": ["Sistani", "Hamaney"],
-    "relationships": {
-      "twelver_shia": 1.0,
-      "zaydi": 0.6,
-      "ismaili_shia": 0.5,
-      "esari": 0.4,
-      "sufi": 0.5,
-      "athari": 0.1
     }
   },
   {
@@ -1145,8 +1757,14 @@
       "Hûsî hareketi",
       "Siyasi aktivizm"
     ],
-    "regions": ["Yemen", "Kuzey Yemen"],
-    "modernRepresentatives": ["Hûsîler", "Yemen Zeydîliği"],
+    "regions": [
+      "Yemen",
+      "Kuzey Yemen"
+    ],
+    "modernRepresentatives": [
+      "Hûsîler",
+      "Yemen Zeydîliği"
+    ],
     "relationships": {
       "zaydi": 1.0,
       "twelver_shia": 0.6,
@@ -1154,33 +1772,6 @@
       "sufi": 0.5,
       "athari": 0.15,
       "esari": 0.3
-    }
-  },
-  {
-    "id": "sufi",
-    "name": "Tasavvuf (Genel)",
-    "era": "8. yüzyıldan itibaren",
-    "founder": "Rabia al-Adawiyya, Hasan al-Basri",
-    "description": "İç hayat, zühd, takva, ihlas, tasavvufi pratikler",
-    "detailedProfile": "Tasavvuf, İslami düşüncede iç hayat, zühd, takva ve ihlas vurgusu yapan bir geleneğe sahiptir. Tarikatlar aracılığıyla organize olmuştur. Selefi yaklaşım tasavvufu tamamen reddetmez; zühd ve takva gibi kavramları kabul eder. Ancak bid'at olarak gördükleri pratikleri (mürid-şeyh ilişkisi, zikir, vb.) reddedebilir.",
-    "characteristics": [
-      "İç hayat vurgusu",
-      "Zühd ve takva",
-      "İhlas vurgusu",
-      "Tasavvufi pratikler",
-      "Tarikat yapısı",
-      "Şeyh-mürid ilişkisi"
-    ],
-    "regions": ["Tüm İslam dünyası"],
-    "modernRepresentatives": ["Rabia al-Adawiyya", "Hasan al-Basri"],
-    "relationships": {
-      "sufi": 1.0,
-      "qadiri": 0.95,
-      "mevlevi": 0.95,
-      "naqshbandi": 0.9,
-      "bektashi": 0.85,
-      "athari": 0.2,
-      "selefi": 0.15
     }
   },
   {
@@ -1198,8 +1789,16 @@
       "Örgütlü yapı",
       "Eğitim vurgusu"
     ],
-    "regions": ["Mısır", "Suriye", "Filistin", "Türkiye"],
-    "modernRepresentatives": ["Hasan el-Benna", "Seyyid Kutub"],
+    "regions": [
+      "Mısır",
+      "Suriye",
+      "Filistin",
+      "Türkiye"
+    ],
+    "modernRepresentatives": [
+      "Hasan el-Benna",
+      "Seyyid Kutub"
+    ],
     "relationships": {
       "ikhwan_muslim": 1.0,
       "esari": 0.7,
@@ -1207,84 +1806,6 @@
       "modernist": 0.8,
       "quietist_salafi": 0.3,
       "athari": 0.2
-    }
-  },
-  {
-    "id": "modernist",
-    "name": "Modernist İslam",
-    "era": "19-20. yüzyıl",
-    "founder": "Cemaleddin Afgani, Muhammed Abduh",
-    "description": "Akıl ve nakil dengesi, modernleşme, İslam'ın yeniden yorumlanması",
-    "detailedProfile": "Modernist İslam, 19-20. yüzyılda ortaya çıkmış ve İslam'ın modern dünya ile uyumlu hale getirilmesini amaçlamıştır. Akıl ve nakil arasında denge kurar. Cemaleddin Afgani ve Muhammed Abduh tarafından temsil edilir. Eş'arî akideyi benimser.",
-    "characteristics": [
-      "Akıl ve nakil dengesi",
-      "Modernleşme",
-      "İslam'ın yeniden yorumlanması",
-      "Eş'arî akide",
-      "Eğitim vurgusu",
-      "Sosyal reform"
-    ],
-    "regions": ["Mısır", "Osmanlı", "Hindistan"],
-    "modernRepresentatives": ["Cemaleddin Afgani", "Muhammed Abduh"],
-    "relationships": {
-      "modernist": 1.0,
-      "esari": 0.8,
-      "maturidi": 0.75,
-      "ikhwan_muslim": 0.8,
-      "athari": 0.2,
-      "selefi": 0.3
-    }
-  },
-  {
-    "id": "deobandi",
-    "name": "Deobandî",
-    "era": "19. yüzyıl",
-    "founder": "Muhammed Kasım Nanautvi",
-    "description": "Hindistan'da kurulmuş, Hanefî-Mâtürîdî, Tablighi Cemaat",
-    "detailedProfile": "Deobandî hareketi, Hindistan'da kurulmuş ve Pakistan, Afganistan'da yaygın olmuştur. Hanefî fıkhı ve Mâtürîdî akideyi benimser. Tablighi Cemaat Deobandî geleneğinden ortaya çıkmıştır. Taliban hareketi Deobandî etkisindedir.",
-    "characteristics": [
-      "Hanefî fıkhı",
-      "Mâtürîdî akide",
-      "Tablighi Cemaat",
-      "Hindistan kökenli",
-      "Hadis otoritesi",
-      "Siyasi aktivizm"
-    ],
-    "regions": ["Hindistan", "Pakistan", "Afganistan"],
-    "modernRepresentatives": ["Muhammed Kasım Nanautvi", "Tablighi Cemaat"],
-    "relationships": {
-      "deobandi": 1.0,
-      "maturidi": 0.85,
-      "hanafi": 0.9,
-      "quietist_salafi": 0.4,
-      "athari": 0.15,
-      "sufi": 0.3
-    }
-  },
-  {
-    "id": "barelvi",
-    "name": "Barelvi",
-    "era": "19. yüzyıl",
-    "founder": "Ahmed Riza Khan Barelvi",
-    "description": "Hindistan'da kurulmuş, Hanefî-Mâtürîdî, tasavvuf vurgusu",
-    "detailedProfile": "Barelvi hareketi, Hindistan'da kurulmuş ve Pakistan'da yaygın olmuştur. Hanefî fıkhı ve Mâtürîdî akideyi benimser. Tasavvuf ve Hz. Peygamber'e sevgi vurgusu yapılır. Deobandî hareketi ile farklılıklar gösterir.",
-    "characteristics": [
-      "Hanefî fıkhı",
-      "Mâtürîdî akide",
-      "Tasavvuf vurgusu",
-      "Hz. Peygamber sevgisi",
-      "Hindistan kökenli",
-      "Sosyal hizmet"
-    ],
-    "regions": ["Hindistan", "Pakistan"],
-    "modernRepresentatives": ["Ahmed Riza Khan Barelvi"],
-    "relationships": {
-      "barelvi": 1.0,
-      "maturidi": 0.85,
-      "hanafi": 0.9,
-      "sufi": 0.7,
-      "deobandi": 0.5,
-      "athari": 0.1
     }
   },
   {
@@ -1302,8 +1823,13 @@
       "Türkiye kökenli",
       "Sosyal hizmet"
     ],
-    "regions": ["Türkiye", "Avrupa"],
-    "modernRepresentatives": ["Süleyman Hilmi Tunahan"],
+    "regions": [
+      "Türkiye",
+      "Avrupa"
+    ],
+    "modernRepresentatives": [
+      "Süleyman Hilmi Tunahan"
+    ],
     "relationships": {
       "suleymanci": 1.0,
       "naqshbandi": 0.9,
@@ -1328,8 +1854,13 @@
       "Eğitim vurgusu",
       "Sosyal aktivizm"
     ],
-    "regions": ["Türkiye", "Balkanlar"],
-    "modernRepresentatives": ["Bediuzzaman Said Nursi"],
+    "regions": [
+      "Türkiye",
+      "Balkanlar"
+    ],
+    "modernRepresentatives": [
+      "Bediuzzaman Said Nursi"
+    ],
     "relationships": {
       "nurcu": 1.0,
       "esari": 0.8,
@@ -1340,4 +1871,3 @@
     }
   }
 ]
-

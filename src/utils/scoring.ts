@@ -1,4 +1,4 @@
-import type { UserAnswers, SchoolProfile, TestResult, Category } from '../types';
+import type { UserAnswers, SchoolProfile, TestResult, Category, QuestionAnalysis, School } from '../types';
 import questions from '../data/questions.json';
 import schools from '../data/schools.json';
 import { checkConsistency, calculateConfidenceScore } from './consistency';
@@ -158,6 +158,64 @@ export function calculateScores(answers: UserAnswers): SchoolProfile[] {
   return profiles.sort((a, b) => b.percentage - a.percentage);
 }
 
+function generateQuestionAnalysis(answers: UserAnswers): QuestionAnalysis[] {
+  const analysis: QuestionAnalysis[] = [];
+
+  questions.forEach(question => {
+    const selectedOptionId = answers[question.id];
+    if (!selectedOptionId || selectedOptionId === 'UNKNOWN') return;
+
+    const option = question.options.find(opt => opt.id === selectedOptionId);
+    if (!option) return;
+
+    // Bu seçeneğin hangi mezheplere puan verdiğini bul
+    const schoolScores = Object.entries(option.scores)
+      .filter(([_, score]) => score > 0)
+      .map(([schoolId, score]) => ({ school: schoolId as School, score }))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3);
+
+    if (schoolScores.length === 0) {
+      analysis.push({
+        questionId: question.id,
+        questionText: question.text,
+        category: question.category as Category,
+        selectedOption: option.text,
+        topSchools: [],
+        insight: 'Bu cevap herhangi bir mezhebe özel değil.'
+      });
+      return;
+    }
+
+    // En yüksek skorlu mezhep
+    const topSchool = schoolScores[0];
+    const schoolName = getSchoolName(topSchool.school);
+
+    // Negatif puan alan mezhepler
+    const negativeSchools = Object.entries(option.scores)
+      .filter(([_, score]) => score < 0)
+      .map(([schoolId]) => getSchoolName(schoolId as School))
+      .slice(0, 2);
+
+    // Insight oluştur
+    let insight = `Bu cevap ${schoolName} yaklaşımını yansıtıyor.`;
+    if (negativeSchools.length > 0) {
+      insight += ` Bu görüş ${negativeSchools.join(' ve ')} mezhebinden uzaklaştırıyor.`;
+    }
+
+    analysis.push({
+      questionId: question.id,
+      questionText: question.text,
+      category: question.category as Category,
+      selectedOption: option.text,
+      topSchools: schoolScores,
+      insight
+    });
+  });
+
+  return analysis;
+}
+
 export function generateTestResult(profiles: SchoolProfile[], answers: UserAnswers): TestResult {
   const topSchools = profiles.slice(0, 3).filter(p => p.percentage > 20);
 
@@ -203,6 +261,9 @@ export function generateTestResult(profiles: SchoolProfile[], answers: UserAnswe
     totalQuestions
   );
 
+  // Soru bazlı analiz
+  const questionAnalysis = generateQuestionAnalysis(answers);
+
   return {
     topSchools,
     allSchools: profiles,
@@ -213,7 +274,8 @@ export function generateTestResult(profiles: SchoolProfile[], answers: UserAnswe
     consistencyWarnings,
     unknownAnswersCount,
     totalQuestions,
-    isAwam
+    isAwam,
+    questionAnalysis
   };
 }
 

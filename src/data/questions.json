@@ -12,7 +12,6 @@
           "hanbeli": 5,
           "selefi": 5,
           "ehlihadis": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -157,7 +156,6 @@
         "scores": {
           "hanbeli": 2,
           "selefi": 1,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -561,7 +559,6 @@
         "scores": {
           "hanbeli": 5,
           "selefi": 5,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -800,7 +797,6 @@
           "selefi": 5,
           "hanbeli": 4,
           "modernist": 3,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -896,7 +892,6 @@
           "jihadist_salafi": 4,
           "selefi": 2,
           "hanbeli": 2,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -1014,7 +1009,7 @@
   {
     "id": "AKD_DETAIL_001",
     "category": "akide",
-    "weight": 2.0,
+    "weight": 1.7,
     "text": "Allah'ın isim ve sıfatları konusunda: 'Semî' (İşiten) ve 'Basîr' (Gören) sıfatlarını nasıl anlarsınız?",
     "options": [
       {
@@ -1025,7 +1020,6 @@
           "quietist_salafi": 5,
           "hanbeli": 4,
           "zahiri": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -1160,127 +1154,9 @@
     ]
   },
   {
-    "id": "AKD_DETAIL_002",
-    "category": "akide",
-    "weight": 2.0,
-    "text": "Kur'an'ın yaratılmışlığı meselesinde ne düşünüyorsunuz?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Kur'an ezeli ve ezelî, yaratılmamıştır",
-        "scores": {
-          "esari": 5,
-          "maturidi": 5,
-          "athari": 4,
-          "hanbeli": 4,
-          "selefi": -3,
-          "mutazila": -3,
-          "liberal_islam": -3,
-          "progressive_islam": -3,
-          "feminist_islam": -3
-        }
-      },
-      {
-        "id": "B",
-        "text": "Kur'an yaratılmıştır, Allah'ın sözü değil",
-        "scores": {
-          "mutazila": 5,
-          "modernist": 3,
-          "hanbeli": -3,
-          "selefi": -3,
-          "athari": -3
-        }
-      },
-      {
-        "id": "C",
-        "text": "Kur'an'ın lafzı yaratılmış, anlamı ezelî",
-        "scores": {
-          "esari": 3,
-          "maturidi": 3,
-          "reformcu": 4,
-          "hanbeli": -3,
-          "selefi": -3,
-          "athari": -3,
-          "mutazila": -3
-        }
-      },
-      {
-        "id": "D",
-        "text": "Bu meselenin modern dönemde önemi yoktur",
-        "scores": {
-          "liberal_islam": 5,
-          "modernist": 4
-        }
-      },
-      {
-        "id": "E",
-        "text": "Kur'an'ın yaratılmışlığı Kur'an'da açıkça belirtilmiştir",
-        "scores": {
-          "mutazila": 4,
-          "modernist": 3,
-          "hanbeli": -3,
-          "selefi": -3,
-          "athari": -3
-        }
-      },
-      {
-        "id": "F",
-        "text": "Kur'an'ın ezeli kelam, mushaf'ın yaratılmış olduğunu söylerim",
-        "scores": {
-          "sufi": 5,
-          "qadiri": 4,
-          "naqshbandi": 4,
-          "mevlevi": 4,
-          "zahiri": -5,
-          "selefi": -4,
-          "athari": -3
-        }
-      },
-      {
-        "id": "G",
-        "text": "Kur'an'ın yaratılmışlığını felsefi bir mesele olarak görürüm",
-        "scores": {
-          "modernist": 5,
-          "liberal": 4,
-          "reformist": 4,
-          "mutazila": 3,
-          "athari": -4,
-          "selefi": -5,
-          "hanbeli": -4,
-          "zahiri": -5
-        }
-      },
-      {
-        "id": "H",
-        "text": "Kur'an'ın yaratılmışlığı tartışmasında farklı görüşleri anlayışla karşılarım",
-        "scores": {
-          "liberal": 5,
-          "modernist": 4,
-          "reformist": 4,
-          "selefi": -4,
-          "zahiri": -5,
-          "jihadist_salafi": -5
-        }
-      },
-      {
-        "id": "I",
-        "text": "Kur'an kadimdir, hadislerde açıktır, yaratılmış değildir",
-        "scores": {
-          "athari": 5,
-          "selefi": 5,
-          "hanbeli": 4,
-          "zahiri": 4,
-          "mutazila": -5,
-          "liberal": -4,
-          "modernist": -4
-        }
-      }
-    ]
-  },
-  {
     "id": "AKD_DETAIL_003",
     "category": "akide",
-    "weight": 2.0,
+    "weight": 1.7,
     "text": "Allah'ın 'Vech' (Yüz) sıfatı hakkında ne düşünüyorsunuz?",
     "options": [
       {
@@ -1385,7 +1261,7 @@
   {
     "id": "AKD_DETAIL_004",
     "category": "akide",
-    "weight": 2.0,
+    "weight": 1.7,
     "text": "Kaza ve kader meselesinde 'Kesb' (seçim) teorisini nasıl anlarsınız?",
     "options": [
       {
@@ -1535,6 +1411,11 @@
           "liberal": -4,
           "modernist": -4
         }
+      },
+      {
+        "id": "M",
+        "text": "Bilmiyorum / Bu konuda bilgim yok",
+        "scores": {}
       }
     ]
   },
@@ -1551,7 +1432,6 @@
           "hanbeli": 5,
           "selefi": 5,
           "ehlihadis": 5,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -1682,7 +1562,6 @@
           "selefi": 5,
           "hanbeli": 4,
           "modernist": 5,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -1707,7 +1586,6 @@
           "selefi": 4,
           "kuranci": 5,
           "modernist": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -1783,7 +1661,6 @@
           "hanbeli": 5,
           "selefi": 5,
           "ehlihadis": 5,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -2013,7 +1890,6 @@
           "selefi": 5,
           "hanbeli": 4,
           "ehlihadis": 5,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -2163,7 +2039,6 @@
           "zahiri": 5,
           "selefi": 4,
           "athari": 3,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -2244,7 +2119,6 @@
           "zahiri": 5,
           "selefi": 4,
           "athari": 3,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -2301,6 +2175,11 @@
           "hanafi": -3,
           "liberal": -4
         }
+      },
+      {
+        "id": "I",
+        "text": "Bilmiyorum / Bu konuda bilgim yok",
+        "scores": {}
       }
     ]
   },
@@ -2317,8 +2196,6 @@
           "maliki": 5,
           "hanbeli": 5,
           "athari": 4,
-          "esari": -3,
-          "maturidi": -3,
           "mutazila": -3,
           "zahiri": -3,
           "liberal_islam": -3,
@@ -2402,6 +2279,11 @@
           "zahiri": -5,
           "athari": -3
         }
+      },
+      {
+        "id": "J",
+        "text": "Bilmiyorum / Bu konuda bilgim yok",
+        "scores": {}
       }
     ]
   },
@@ -2431,8 +2313,6 @@
           "shafii": 5,
           "hanbeli": 5,
           "selefi": 4,
-          "esari": -3,
-          "maturidi": -3,
           "mutazila": -3,
           "zahiri": -3,
           "liberal_islam": -3,
@@ -2616,7 +2496,6 @@
           "hanbeli": 5,
           "selefi": 5,
           "imamiyye": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -2749,7 +2628,6 @@
           "hanbeli": 3,
           "selefi": 3,
           "jihadist_salafi": 5,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -3007,7 +2885,6 @@
           "hanbeli": 5,
           "athari": 4,
           "selefi": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -3021,7 +2898,6 @@
         "scores": {
           "selefi": 5,
           "quietist_salafi": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -3113,8 +2989,6 @@
           "maliki": 5,
           "hanbeli": 5,
           "selefi": 5,
-          "esari": -3,
-          "maturidi": -3,
           "mutazila": -3,
           "zahiri": -3,
           "liberal_islam": -3,
@@ -3249,7 +3123,6 @@
           "selefi": 5,
           "hanbeli": 3,
           "jihadist_salafi": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -3356,7 +3229,6 @@
           "selefi": 5,
           "hanbeli": 4,
           "jihadist_salafi": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -3473,7 +3345,6 @@
           "selefi": 5,
           "hanbeli": 4,
           "jihadist_salafi": 3,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -3555,13 +3426,18 @@
           "liberal": 3,
           "selefi": -1
         }
+      },
+      {
+        "id": "J",
+        "text": "Bilmiyorum / Bu konuda bilgim yok",
+        "scores": {}
       }
     ]
   },
   {
     "id": "TAS_DETAIL_001",
     "category": "tasavvuf",
-    "weight": 2.0,
+    "weight": 1.7,
     "text": "Tasavvuf konusunda hangi yaklaşımı benimsiyorsunuz?",
     "options": [
       {
@@ -3692,7 +3568,7 @@
   {
     "id": "TAS_DETAIL_002",
     "category": "tasavvuf",
-    "weight": 2.0,
+    "weight": 1.7,
     "text": "Zühd (dünyadan el çekme) ve takva vurgusu hakkında ne düşünüyorsunuz?",
     "options": [
       {
@@ -3716,7 +3592,6 @@
           "quietist_salafi": 4,
           "athari": 3,
           "selefi": 3,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -3835,7 +3710,6 @@
           "selefi": 4,
           "jihadist_salafi": 5,
           "imamiyye": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -3937,7 +3811,6 @@
           "jihadist_salafi": 5,
           "hanbeli": 3,
           "selefi": 2,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -4071,7 +3944,6 @@
           "hanbeli": 3,
           "selefi": 3,
           "modernist": 3,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -4153,6 +4025,11 @@
           "jihadist_salafi": -5,
           "conservative": -4
         }
+      },
+      {
+        "id": "L",
+        "text": "Bilmiyorum / Bu konuda bilgim yok",
+        "scores": {}
       }
     ]
   },
@@ -4257,7 +4134,6 @@
           "selefi": 5,
           "hanbeli": 4,
           "jihadist_salafi": 4,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -4433,7 +4309,6 @@
         "scores": {
           "selefi": 3,
           "hanbeli": 2,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -4511,7 +4386,6 @@
           "hanbeli": 3,
           "selefi": 3,
           "jihadist_salafi": 3,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,
@@ -4639,7 +4513,6 @@
           "selefi": 4,
           "quietist_salafi": 3,
           "jihadist_salafi": 5,
-          "esari": -3,
           "maturidi": -3,
           "mutazila": -3,
           "liberal_islam": -3,

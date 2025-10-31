@@ -46,6 +46,29 @@ export type School =
   | 'zaydi_shia'
   | 'ismaili_shia';
 
+export interface SchoolData {
+  id: School;
+  name: string;
+  era: string;
+  founder: string;
+  description: string;
+  detailedProfile?: string;
+  characteristics: string[];
+  regions: string[];
+  modernRepresentatives: string[];
+  relationships?: Record<string, number>;
+  keyFigures?: string[];
+  keyBooks?: string[];
+  modernCommunities?: string[];
+  estimatedFollowers?: string;
+  relatedSchools?: string[];
+  commonMisconceptions?: string[];
+  faqs?: { q: string; a: string }[];
+  icon?: string;
+  color?: string;
+  pattern?: string;
+}
+
 export interface QuestionOption {
   id: string;
   text: string;
@@ -71,6 +94,15 @@ export interface SchoolProfile {
   categoryScores: Partial<Record<Category, number>>;
 }
 
+export interface QuestionAnalysis {
+  questionId: string;
+  questionText: string;
+  category: Category;
+  selectedOption: string;
+  topSchools: { school: School; score: number }[];
+  insight: string;
+}
+
 export interface TestResult {
   topSchools: SchoolProfile[];
   allSchools: SchoolProfile[];
@@ -85,6 +117,7 @@ export interface TestResult {
   unknownAnswersCount: number; // Bilmiyorum cevap sayısı
   totalQuestions: number; // Toplam soru sayısı
   isAwam: boolean; // %50+ bilmiyorum = avam
+  questionAnalysis: QuestionAnalysis[]; // Soru bazlı analiz
 }
 
 export interface Scholar {

@@ -10,8 +10,10 @@ import scholars from '../data/scholars.json';
 import recommendations from '../data/recommendations.json';
 import ScholarCard from './ScholarCard';
 import ReadingRecommendations from './ReadingRecommendations';
+import SchoolProfileCard from './SchoolProfileCard';
 import Confetti from 'react-confetti';
 import { useState, useEffect } from 'react';
+import type { SchoolData } from '../types';
 
 interface ResultsPageProps {
   result: TestResult;
@@ -289,43 +291,23 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
             transition={{ delay: 0.2, duration: 0.5 }}
           >
           {result.topSchools.slice(0, 3).map((school, index) => {
-            const schoolData = schools.find(s => s.id === school.school) as any;
+            const schoolData = schools.find(s => s.id === school.school) as SchoolData;
             const colors = [
               { bg: 'rgb(168 185 119)', text: 'rgb(66 43 33)' }, // Cucumber
               { bg: 'rgb(235 153 119)', text: 'rgb(66 43 33)' }, // Grapefruit
               { bg: 'rgb(170 198 173)', text: 'rgb(66 43 33)' }  // Mint
             ];
+
+            if (!schoolData) return null;
+
             return (
-              <motion.div
+              <SchoolProfileCard
                 key={school.school}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="rounded-2xl shadow-modern-lg p-4 sm:p-6 lg:p-8 border-2 border-black"
-                style={{ backgroundColor: colors[index].bg, color: colors[index].text }}
-              >
-                <div className="flex items-center justify-between mb-3 sm:mb-4">
-                  <motion.span
-                    className="text-2xl sm:text-3xl lg:text-4xl font-bold opacity-40"
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
-                  >
-                    #{index + 1}
-                  </motion.span>
-                  <motion.span
-                    className="text-2xl sm:text-3xl font-bold"
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ delay: 0.4 + index * 0.1, duration: 0.4 }}
-                  >
-                    {school.percentage}%
-                  </motion.span>
-                </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2" style={{ fontFamily: 'Space Grotesk' }}>{getSchoolName(school.school)}</h3>
-                <p className="text-xs sm:text-sm mb-3 sm:mb-4 opacity-70">{schoolData?.era}</p>
-                <p className="text-xs sm:text-sm leading-relaxed opacity-80">{schoolData?.description}</p>
-              </motion.div>
+                school={schoolData}
+                percentage={school.percentage}
+                rank={index}
+                color={colors[index]}
+              />
             );
           })}
         </motion.div>
@@ -461,6 +443,73 @@ export default function ResultsPage({ result, onReset }: ResultsPageProps) {
             })}
           </div>
         </motion.div>
+
+        {/* Soru Bazlı Analiz */}
+        {result.questionAnalysis && result.questionAnalysis.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
+            className="bg-white rounded-2xl shadow-modern-lg p-8 mb-12 border-2 border-black"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <BookOpen className="w-6 h-6" style={{ color: 'rgb(168 185 119)' }} />
+              <h2 className="text-2xl font-bold text-black" style={{ fontFamily: 'Space Grotesk' }}>
+                Soru Bazlı Analiz
+              </h2>
+            </div>
+            <p className="text-base mb-6" style={{ color: 'rgb(66 43 33)' }}>
+              Her soruda hangi mezhebe yakın cevap verdiğinizi görebilirsiniz:
+            </p>
+            <div className="space-y-4 max-h-96 overflow-y-auto pr-2">
+              {result.questionAnalysis.slice(0, 10).map((qa, index) => (
+                <motion.div
+                  key={qa.questionId}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.8 + index * 0.03, duration: 0.3 }}
+                  className="p-4 rounded-lg border-2 hover:shadow-modern"
+                  style={{
+                    backgroundColor: index % 2 === 0 ? 'rgb(170 198 173)' : 'rgb(228 208 133)',
+                    borderColor: 'rgb(66 43 33)'
+                  }}
+                >
+                  <div className="flex items-start gap-3">
+                    <span
+                      className="font-bold text-sm px-2 py-1 rounded border-2 shrink-0"
+                      style={{
+                        backgroundColor: 'rgb(66 43 33)',
+                        color: 'white',
+                        borderColor: 'rgb(66 43 33)'
+                      }}
+                    >
+                      {index + 1}
+                    </span>
+                    <div className="flex-1">
+                      <p className="font-bold text-sm mb-1" style={{ color: 'rgb(66 43 33)' }}>
+                        {categoryLabels[qa.category]}
+                      </p>
+                      <p className="text-sm mb-2 font-medium" style={{ color: 'rgb(66 43 33)' }}>
+                        {qa.questionText}
+                      </p>
+                      <p className="text-sm italic mb-2" style={{ color: 'rgb(66 43 33)', opacity: 0.8 }}>
+                        Cevabınız: "{qa.selectedOption}"
+                      </p>
+                      <p className="text-sm font-medium" style={{ color: 'rgb(66 43 33)' }}>
+                        💡 {qa.insight}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            {result.questionAnalysis.length > 10 && (
+              <p className="text-sm mt-4 text-center" style={{ color: 'rgb(66 43 33)', opacity: 0.7 }}>
+                İlk 10 soru gösteriliyor. Toplam {result.questionAnalysis.length} soru analiz edildi.
+              </p>
+            )}
+          </motion.div>
+        )}
 
         {/* Öneriler */}
         <motion.div
